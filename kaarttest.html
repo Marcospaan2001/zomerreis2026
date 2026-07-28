@@ -1,4 +1,4 @@
-<meta charset="utf-8">
+<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Nazomerdroom · Roos & Marco · 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -786,7 +786,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
 
 /* ============ ROLLENDE PIZZA ============ */
 .pizza-rol{
-  position:fixed;bottom:14px;left:-90px;z-index:85;
+  position:fixed;bottom:14px;left:-90px;z-index:250;
   font-size:56px;line-height:1;pointer-events:none;user-select:none;
   filter:drop-shadow(0 6px 14px rgba(4,19,31,.55));
   animation:pizzaRol 1.5s cubic-bezier(.32,.05,.4,1) forwards;
@@ -834,3 +834,138 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
   .cover-maan{width:80px;height:80px;top:9%;right:7%}
 }
 </style>
+<style>body::before,body::after{display:none}body{background:#071a29}</style></head><body><div class="page" style="padding-top:1rem"><section aria-label="Kaart van de route">
+  <div class="kaart-wrap">
+    <div class="kaart-titel">De Route</div>
+    <svg viewBox="0 0 740 941" role="img" aria-label="Kaart van Europa met de route van Leerbroek via Cassano Magnago en San Gregorio da Sassola naar Bürchen en terug">
+      <title>Routekaart Nazomerdroom 2026</title>
+      <defs>
+        <radialGradient id="kaartgloed" cx="45%" cy="55%" r="70%">
+          <stop offset="0" stop-color="rgba(242,207,126,.09)"/><stop offset="1" stop-color="rgba(242,207,126,0)"/>
+        </radialGradient>
+      </defs>
+
+      <!-- zee als ondergrond -->
+      <rect width="740" height="941" class="kaart-zee"/>
+
+      <!-- landmassa (alles behalve de zeeën) -->
+      <rect width="740" height="941" class="kaart-land-vlak"/>
+
+      <!-- Noordzee en Het Kanaal -->
+      <path class="kaart-zee-vorm" d="M 0 0 L 278 0 L 199 3 L 157 8 L 127 36 L 120 70 L 98 102 L 73 138 L 43 152 L 18 166 L 0 175 Z"/>
+      <!-- Middellandse Zee: Golfe du Lion, Ligurische en Tyrrheense Zee -->
+      <path class="kaart-zee-vorm" d="M 0 941 L 0 823 L 8 813 L 37 794 L 60 752 L 48 726 L 46 694 L 88 678 L 156 686 L 182 698 L 215 688 L 244 659 L 321 612 L 362 633 L 384 670 L 394 711 L 453 768 L 476 792 L 535 827 L 568 851 L 591 862 L 620 941 Z"/>
+      <!-- Adriatische Zee -->
+      <path class="kaart-zee-vorm" d="M 544 527 L 478 541 L 489 634 L 533 663 L 565 742 L 601 773 L 656 780 L 688 832 L 737 865 L 740 880 L 740 729 L 668 671 L 612 630 L 575 548 Z"/>
+
+      <!-- eilanden -->
+      <path class="kaart-eiland" d="M 325 704 L 349 730 L 340 780 L 318 815 L 303 780 L 310 730 Z"/>
+      <path class="kaart-eiland" d="M 300 825 L 330 822 L 350 860 L 345 910 L 320 941 L 290 941 L 284 880 Z"/>
+
+      <rect width="740" height="941" fill="url(#kaartgloed)"/>
+
+      <!-- de Alpenboog, op de echte toppen -->
+      <g class="kaart-piek">
+        <path d="M 217 522 l 8 -11 l 8 11"/>
+        <path d="M 254 512 l 8 -12 l 8 12"/>
+        <path d="M 268 474 l 8 -11 l 8 11"/>
+        <path d="M 296 473 l 8 -12 l 8 12"/>
+        <path d="M 358 485 l 8 -11 l 8 11"/>
+        <path d="M 387 476 l 8 -12 l 8 12"/>
+        <path d="M 448 482 l 8 -11 l 8 11"/>
+        <path d="M 487 439 l 8 -11 l 8 11"/>
+      </g>
+      <text class="kaart-alpenlabel" x="455" y="508">ALPEN</text>
+
+      <!-- de Apennijnen -->
+      <g class="kaart-piek">
+        <path d="M 377 625 l 7 -10 l 7 10"/>
+        <path d="M 419 672 l 7 -10 l 7 10"/>
+        <path d="M 469 732 l 7 -10 l 7 10"/>
+        <path d="M 515 773 l 7 -10 l 7 10"/>
+        <path d="M 557 826 l 7 -10 l 7 10"/>
+      </g>
+
+      <!-- landnamen -->
+      <g class="kaart-landnaam">
+        <text x="393" y="168">Duitsland</text>
+        <text x="74" y="403">Frankrijk</text>
+        <text x="392" y="428" text-anchor="middle">Zwitserland</text>
+        <text x="452" y="700" text-anchor="end">Italië</text>
+        <text x="555" y="416">Oostenrijk</text>
+      </g>
+      <g class="kaart-zeenaam">
+        <text x="80" y="116" text-anchor="end">Noordzee</text>
+        <text x="150" y="790">Middellandse Zee</text>
+        <text x="625" y="690">Adriatische Zee</text>
+        <text x="424" y="832">Tyrrheense Zee</text>
+      </g>
+
+      <!-- terugreis: Bürchen › Bern › Basel › Karlsruhe › Frankfurt › Köln › thuis -->
+      <path class="route-terug" d="M 269.6 486.6 L 252.1 440.2 L 258.6 399.2 L 296.0 301.7 L 308.9 227.8 L 229.4 172.1 L 140.1 106.2"/>
+
+      <!-- derde etappe: San Gregorio › Simplonpas › Bürchen (iets verschoven waar hij de heenweg volgt) -->
+      <path class="route-lijn route-b" d="M 502.7 778.3 L 487.1 742.0 L 464.0 674.8 L 434.8 653.9 L 439.0 605.5 L 363.1 567.9 L 339.5 540.3 L 290.9 496.0 L 278.9 487.3 L 277.1 482.6 L 269.6 486.6"/>
+
+      <!-- heenreis: Leerbroek › Gotthard › Cassano › A1 › San Gregorio -->
+      <path id="route-pad" class="route-lijn" d="M 140.1 106.2 L 192.9 143.2 L 229.4 172.1 L 308.9 227.8 L 296.0 301.7 L 258.6 399.2 L 291.8 433.5 L 304.8 466.4 L 324.7 491.3 L 327.9 516.8 L 314.5 526.3 L 332.5 540.3 L 356.1 567.9 L 432.0 605.5 L 427.8 653.9 L 457.0 674.8 L 480.1 742.0 L 502.7 778.3"/>
+
+      <!-- doorrijsteden ter oriëntatie -->
+      <g class="kaart-via">
+        <circle cx="229.4" cy="172.1" r="2.6"/><text x="238" y="169">Keulen</text>
+        <circle cx="308.9" cy="227.8" r="2.6"/><text x="318" y="231">Frankfurt</text>
+        <circle cx="258.6" cy="399.2" r="2.6"/><text x="267" y="396">Basel</text>
+        <circle cx="332.5" cy="540.3" r="2.6"/><text x="341" y="551">Milaan</text>
+        <circle cx="432.0" cy="605.5" r="2.6"/><text x="441" y="602">Bologna</text>
+        <circle cx="427.8" cy="653.9" r="2.6"/><text x="437" y="657">Florence</text>
+      </g>
+
+      <!-- dagtrips vanuit het borgo -->
+      <g class="kaart-uitstap">
+        <circle cx="485.6" cy="779.7" r="4"/><text x="476" y="786" text-anchor="end">Rome</text>
+        <circle cx="567.5" cy="850.9" r="4"/><circle cx="577.7" cy="857.0" r="4"/>
+        <text x="590" y="852">Napels &amp; Pompeii</text>
+      </g>
+
+      <!-- thuis -->
+      <g class="kaart-stop kaart-thuis">
+        <circle class="kern" cx="140.1" cy="106.2" r="5.5"/>
+        <text x="152" y="102">Leerbroek</text>
+      </g>
+
+      <!-- de drie haltes -->
+      <a href="#cassano"><g class="kaart-stop">
+        <circle class="ring" cx="314.5" cy="526.3" r="6"/><circle class="kern" cx="314.5" cy="526.3" r="6"/>
+        <text x="327" y="517">I · Cassano Magnago</text>
+      </g></a>
+      <a href="#sangregorio"><g class="kaart-stop">
+        <circle class="ring" cx="502.7" cy="778.3" r="6"/><circle class="kern" cx="502.7" cy="778.3" r="6"/>
+        <text x="515" y="774">II · San Gregorio</text>
+        <text class="kaart-stop-sub" x="515" y="789">da Sassola</text>
+      </g></a>
+      <a href="#burchen"><g class="kaart-stop">
+        <circle class="ring" cx="269.6" cy="486.6" r="6"/><circle class="kern" cx="269.6" cy="486.6" r="6"/>
+        <text x="259" y="481" text-anchor="end">III · Bürchen</text>
+      </g></a>
+
+      <!-- het autootje rijdt de heenreis -->
+      <g class="auto-dot"><circle r="4.5" fill="#ffe28a">
+        <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#route-pad"/>
+        </animateMotion>
+      </circle></g>
+
+      <!-- legenda -->
+      <g class="kaart-legenda">
+        <line x1="16" y1="868" x2="46" y2="868" stroke="#f2cf7e" stroke-width="2.5" stroke-dasharray="7 8" stroke-linecap="round"/>
+        <text x="52" y="872">heenreis en doorreis</text>
+        <line x1="16" y1="888" x2="46" y2="888" stroke="rgba(169,212,189,.6)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+        <text x="52" y="892">terugreis naar huis</text>
+        <circle cx="31" cy="906" r="4" fill="#e78aa0"/>
+        <text x="52" y="910">dagtrips vanuit het borgo</text>
+      </g>
+    </svg>
+  </div>
+  <p class="kaart-onderschrift">Alle plaatsen staan op hun echte coördinaten. Tik op een halte om naar dat hoofdstuk te springen.</p>
+</section>
+</div></body></html>

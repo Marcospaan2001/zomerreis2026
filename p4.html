@@ -27,6 +27,21 @@ var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelect
 var toastTimer=null;
 function toast(t){var el=$("#toast");el.textContent=t;el.classList.add("zichtbaar");clearTimeout(toastTimer);toastTimer=setTimeout(function(){el.classList.remove("zichtbaar");},2600);}
 
+/* ============ ROLLENDE PIZZA BIJ ELKE WISSEL ============ */
+var pizzaTeller=0;
+function rolPizza(){
+  try{if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;}catch(e){}
+  var el=document.createElement("div");
+  el.className="pizza-rol"+(pizzaTeller++%2?" terug":"");
+  el.setAttribute("aria-hidden","true");
+  el.textContent="🍕";
+  document.body.appendChild(el);
+  var weg=function(){if(el.parentNode)el.parentNode.removeChild(el);};
+  el.addEventListener("animationend",weg);
+  setTimeout(weg,2600);
+}
+$$(".kompas-stop").forEach(function(s){s.addEventListener("click",rolPizza);});
+
 /* ============ PERSONA ============ */
 function zetPersona(p){
   staat.persona=p;schrijf("persona",p);
@@ -156,6 +171,7 @@ $$(".duo-zone").forEach(function(zone){
   var loc=zone.dataset.loc;
   $$(".duo-tab",zone).forEach(function(tab){
     tab.addEventListener("click",function(){
+      if(!tab.classList.contains("active"))rolPizza();
       $$(".duo-tab",zone).forEach(function(t){t.classList.remove("active");});
       tab.classList.add("active");
       $$(".duo-paneel",zone).forEach(function(p){p.classList.remove("active");});
@@ -234,6 +250,7 @@ renderStempels();
 /* ============ DAGPLANNER ============ */
 $$("#dagplan-tabs .dagplan-tab").forEach(function(tab){
   tab.addEventListener("click",function(){
+    if(!tab.classList.contains("active"))rolPizza();
     $$("#dagplan-tabs .dagplan-tab").forEach(function(t){t.classList.remove("active");});
     tab.classList.add("active");
     $$("#dagplan .dagplan-paneel").forEach(function(p){p.classList.toggle("active",p.dataset.dag===tab.dataset.dag);});
@@ -271,7 +288,7 @@ function renderQuestTabs(){
     var b=document.createElement("button");
     b.className="qd-tab"+(di===actieveQuestDag?" active":"");
     b.innerHTML=dag.d+'<span class="qd-klaar">'+questKlaarPerDag(di)+"/"+dag.ops.length+"</span>";
-    b.addEventListener("click",function(){actieveQuestDag=di;renderQuestTabs();renderQuestLijst();});
+    b.addEventListener("click",function(){if(di!==actieveQuestDag)rolPizza();actieveQuestDag=di;renderQuestTabs();renderQuestLijst();});
     wrap.appendChild(b);
   });
   $("#quest-dag-naam").textContent=questDagen[actieveQuestDag].naam;

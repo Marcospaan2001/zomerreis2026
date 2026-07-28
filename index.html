@@ -283,20 +283,48 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
 
 /* ============ EUROPA KAART ============ */
 .kaart-wrap{
-  margin:2.6rem auto 0;border-radius:22px;overflow:hidden;
+  margin:2.6rem auto 0;max-width:560px;border-radius:22px;overflow:hidden;
   border:1px solid rgba(242,207,126,.4);box-shadow:var(--shadow-deep);
-  background:linear-gradient(180deg,#0c2a40,#092033);
+  background:#04141f;
   position:relative;
 }
 .kaart-wrap svg{display:block;width:100%;height:auto}
 .kaart-titel{
-  position:absolute;top:14px;left:18px;font-family:var(--f-display);
+  position:absolute;top:14px;right:18px;z-index:2;font-family:var(--f-display);
   font-size:.7rem;letter-spacing:.35em;color:var(--oro-licht);text-transform:uppercase;
+}
+.kaart-onderschrift{
+  max-width:520px;margin:.8rem auto 0;text-align:center;
+  font-family:var(--f-body);font-style:italic;font-size:.92rem;color:rgba(253,241,211,.6);
+}
+.kaart-zee{fill:#04141f}
+.kaart-land-vlak{fill:#1a4c66}
+.kaart-zee-vorm{fill:#04141f;stroke:rgba(169,212,189,.4);stroke-width:1.2}
+.kaart-eiland{fill:#1a4c66;stroke:rgba(169,212,189,.35);stroke-width:1}
+.kaart-meer{fill:none;stroke:#5d9bb8;stroke-width:3.5;stroke-linecap:round;opacity:.75}
+.kaart-piek{fill:none;stroke:rgba(253,241,211,.4);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.kaart-alpenlabel{
+  font-family:var(--f-ui);font-size:11px;font-weight:700;letter-spacing:.3em;
+  fill:rgba(253,241,211,.4);
+}
+.kaart-landnaam text{
+  font-family:var(--f-ui);font-size:11px;font-weight:600;letter-spacing:.16em;
+  fill:rgba(169,212,189,.55);text-transform:uppercase;
+}
+.kaart-zeenaam text{
+  font-family:var(--f-body);font-style:italic;font-size:12.5px;letter-spacing:.12em;
+  fill:rgba(93,155,184,.85);
 }
 .route-lijn{
   fill:none;stroke:var(--oro-licht);stroke-width:2.5;stroke-dasharray:7 8;
-  stroke-linecap:round;filter:drop-shadow(0 0 6px rgba(255,226,138,.6));
+  stroke-linecap:round;stroke-linejoin:round;
+  filter:drop-shadow(0 0 6px rgba(255,226,138,.6));
   animation:routeFlow 30s linear infinite;
+}
+.route-b{opacity:.9}
+.route-terug{
+  fill:none;stroke:rgba(169,212,189,.6);stroke-width:2;stroke-dasharray:2 7;
+  stroke-linecap:round;stroke-linejoin:round;
 }
 @keyframes routeFlow{to{stroke-dashoffset:-600}}
 .kaart-stop{cursor:pointer}
@@ -305,10 +333,24 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
 @keyframes kring{0%{r:6;opacity:.6}100%{r:20;opacity:0}}
 .kaart-stop text{
   font-family:var(--f-ui);font-size:13px;font-weight:600;fill:var(--parchment);
-  paint-order:stroke;stroke:rgba(4,19,31,.75);stroke-width:3px;
+  paint-order:stroke;stroke:rgba(4,19,31,.8);stroke-width:3px;
 }
+.kaart-stop text.kaart-stop-sub{font-size:10.5px;font-weight:500;fill:rgba(253,241,211,.75)}
 .kaart-thuis text{fill:var(--salvia)}
+.kaart-thuis circle.kern{fill:var(--salvia);stroke:#fff;stroke-width:1.2}
+.kaart-via circle{fill:rgba(253,241,211,.55)}
+.kaart-via text{
+  font-family:var(--f-ui);font-size:10.5px;fill:rgba(253,241,211,.65);
+  paint-order:stroke;stroke:rgba(4,19,31,.7);stroke-width:2.5px;
+}
+.kaart-uitstap circle{fill:var(--rosa);stroke:rgba(255,255,255,.75);stroke-width:.9}
+.kaart-uitstap text{
+  font-family:var(--f-ui);font-size:11.5px;font-weight:600;fill:var(--rosa-gloed);
+  paint-order:stroke;stroke:rgba(4,19,31,.75);stroke-width:2.5px;
+}
+.kaart-legenda text{font-family:var(--f-ui);font-size:10.5px;fill:rgba(253,241,211,.7)}
 .auto-dot{filter:drop-shadow(0 0 8px rgba(255,226,138,.9))}
+@media (prefers-reduced-motion:reduce){.route-lijn{animation:none}}
 
 /* ============ TEAM ============ */
 .team{padding:1rem 0}
@@ -483,7 +525,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
 .quiz-vraag.klaar .quiz-optie.fout-gekozen{opacity:1;border-color:#c0392b;background:#fbe9e5}
 .quiz-feedback{display:none;margin-top:.55rem;font-size:.92rem;font-style:italic;color:var(--salvia-diep)}
 .quiz-vraag.klaar .quiz-feedback{display:block}
-.bingo{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.bingo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
 .bingo-item{
   border-radius:12px;border:1.5px solid var(--parchment-edge);background:#fffdf4;
   padding:.7rem .4rem;text-align:center;font-size:.82rem;cursor:pointer;user-select:none;
@@ -745,6 +787,24 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
 .persona-modal .pm-voet{font-family:var(--f-hand);font-size:1.1rem;color:var(--paper-soft);margin-top:1.1rem}
 .persona-sluit{position:absolute;top:.7rem;right:1rem;border:none;background:none;font-size:1.5rem;cursor:pointer;color:var(--paper-soft)}
 
+/* ============ ROLLENDE PIZZA ============ */
+.pizza-rol{
+  position:fixed;bottom:14px;left:-90px;z-index:85;
+  font-size:56px;line-height:1;pointer-events:none;user-select:none;
+  filter:drop-shadow(0 6px 14px rgba(4,19,31,.55));
+  animation:pizzaRol 1.5s cubic-bezier(.32,.05,.4,1) forwards;
+}
+.pizza-rol.terug{animation-name:pizzaRolTerug}
+@keyframes pizzaRol{
+  0%{transform:translateX(0) rotate(0deg)}
+  100%{transform:translateX(calc(100vw + 150px)) rotate(1080deg)}
+}
+@keyframes pizzaRolTerug{
+  0%{transform:translateX(calc(100vw + 150px)) rotate(0deg)}
+  100%{transform:translateX(0) rotate(-1080deg)}
+}
+@media (prefers-reduced-motion:reduce){.pizza-rol{display:none}}
+
 /* ============ TOAST + MUZIEK ============ */
 .toast{
   position:fixed;left:50%;bottom:5rem;transform:translate(-50%,20px);z-index:300;
@@ -839,54 +899,136 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
 <section aria-label="Kaart van de route">
   <div class="kaart-wrap">
     <div class="kaart-titel">De Route</div>
-    <svg viewBox="0 0 940 560" role="img" aria-label="Routekaart van Leerbroek via Cassano Magnago en San Gregorio da Sassola naar Bürchen">
+    <svg viewBox="0 0 740 941" role="img" aria-label="Kaart van Europa met de route van Leerbroek via Cassano Magnago en San Gregorio da Sassola naar Bürchen en terug">
+      <title>Routekaart Nazomerdroom 2026</title>
       <defs>
-        <linearGradient id="kaartlucht" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#0c2a40"/><stop offset="1" stop-color="#092033"/>
-        </linearGradient>
-        <radialGradient id="kaartgloed" cx="50%" cy="45%" r="65%">
-          <stop offset="0" stop-color="rgba(242,207,126,.10)"/><stop offset="1" stop-color="rgba(242,207,126,0)"/>
+        <radialGradient id="kaartgloed" cx="45%" cy="55%" r="70%">
+          <stop offset="0" stop-color="rgba(242,207,126,.09)"/><stop offset="1" stop-color="rgba(242,207,126,0)"/>
         </radialGradient>
       </defs>
-      <rect width="940" height="560" fill="url(#kaartlucht)"/>
-      <rect width="940" height="560" fill="url(#kaartgloed)"/>
-      <!-- gestileerd Europa: kustlijnen -->
-      <path d="M 240 40 L 300 55 L 330 95 L 310 130 L 340 150 L 330 195 L 360 230 L 350 275 L 385 300 L 375 345 L 410 370 L 430 420 L 470 445 L 460 490 L 490 520 L 520 555 L 200 555 L 190 500 L 220 470 L 205 430 L 235 400 L 220 355 L 250 320 L 235 280 L 265 250 L 250 205 L 280 175 L 260 135 L 285 100 L 250 75 Z" fill="rgba(31,106,138,.28)" stroke="rgba(169,212,189,.35)" stroke-width="1.5"/>
-      <path d="M 520 555 L 490 520 L 505 480 L 545 455 L 560 415 L 600 400 L 640 420 L 660 470 L 700 500 L 720 555 Z" fill="rgba(31,106,138,.22)" stroke="rgba(169,212,189,.3)" stroke-width="1.5"/>
-      <path d="M 700 40 L 940 40 L 940 350 L 860 330 L 820 290 L 780 300 L 740 260 L 760 210 L 720 170 L 740 120 L 710 80 Z" fill="rgba(31,106,138,.18)" stroke="rgba(169,212,189,.22)" stroke-width="1"/>
-      <!-- Alpen suggestie -->
-      <g fill="none" stroke="rgba(253,241,211,.35)" stroke-width="2" stroke-linecap="round">
-        <path d="M 380 330 l 14 -18 l 12 18"/><path d="M 415 322 l 14 -20 l 12 20"/><path d="M 450 330 l 13 -16 l 11 16"/><path d="M 340 340 l 12 -14 l 10 14"/>
+
+      <!-- zee als ondergrond -->
+      <rect width="740" height="941" class="kaart-zee"/>
+
+      <!-- landmassa (alles behalve de zeeën) -->
+      <rect width="740" height="941" class="kaart-land-vlak"/>
+
+      <!-- Noordzee en Het Kanaal -->
+      <path class="kaart-zee-vorm" d="M 0 0 L 278 0 L 199 3 L 157 8 L 127 36 L 120 70 L 98 102 L 73 138 L 43 152 L 18 166 L 0 175 Z"/>
+      <!-- Middellandse Zee: Golfe du Lion, Ligurische en Tyrrheense Zee -->
+      <path class="kaart-zee-vorm" d="M 0 941 L 0 823 L 8 813 L 37 794 L 60 752 L 48 726 L 46 694 L 88 678 L 156 686 L 182 698 L 215 688 L 244 659 L 321 612 L 362 633 L 384 670 L 394 711 L 453 768 L 476 792 L 535 827 L 568 851 L 591 862 L 620 941 Z"/>
+      <!-- Adriatische Zee -->
+      <path class="kaart-zee-vorm" d="M 544 527 L 478 541 L 489 634 L 533 663 L 565 742 L 601 773 L 656 780 L 688 832 L 737 865 L 740 880 L 740 729 L 668 671 L 612 630 L 575 548 Z"/>
+
+      <!-- eilanden -->
+      <path class="kaart-eiland" d="M 325 704 L 349 730 L 340 780 L 318 815 L 303 780 L 310 730 Z"/>
+      <path class="kaart-eiland" d="M 300 825 L 330 822 L 350 860 L 345 910 L 320 941 L 290 941 L 284 880 Z"/>
+
+      <rect width="740" height="941" fill="url(#kaartgloed)"/>
+
+      <!-- de Alpenboog, op de echte toppen -->
+      <g class="kaart-piek">
+        <path d="M 217 522 l 8 -11 l 8 11"/>
+        <path d="M 254 512 l 8 -12 l 8 12"/>
+        <path d="M 268 474 l 8 -11 l 8 11"/>
+        <path d="M 296 473 l 8 -12 l 8 12"/>
+        <path d="M 358 485 l 8 -11 l 8 11"/>
+        <path d="M 387 476 l 8 -12 l 8 12"/>
+        <path d="M 448 482 l 8 -11 l 8 11"/>
+        <path d="M 487 439 l 8 -11 l 8 11"/>
       </g>
-      <!-- laars van Italië -->
-      <path d="M 430 360 L 470 375 L 500 420 L 520 470 L 560 505 L 600 520 L 590 545 L 545 540 L 505 505 L 480 460 L 450 420 L 425 390 Z" fill="rgba(211,118,63,.2)" stroke="rgba(242,207,126,.4)" stroke-width="1.5"/>
-      <!-- route -->
-      <path id="route-pad" class="route-lijn" d="M 300 120 C 330 190, 350 240, 395 320 C 420 365, 445 380, 460 415 C 475 450, 490 470, 505 490 C 480 470, 450 440, 430 400 C 415 370, 400 350, 390 335"/>
+      <text class="kaart-alpenlabel" x="455" y="508">ALPEN</text>
+
+      <!-- de Apennijnen -->
+      <g class="kaart-piek">
+        <path d="M 377 625 l 7 -10 l 7 10"/>
+        <path d="M 419 672 l 7 -10 l 7 10"/>
+        <path d="M 469 732 l 7 -10 l 7 10"/>
+        <path d="M 515 773 l 7 -10 l 7 10"/>
+        <path d="M 557 826 l 7 -10 l 7 10"/>
+      </g>
+
+      <!-- landnamen -->
+      <g class="kaart-landnaam">
+        <text x="393" y="168">Duitsland</text>
+        <text x="74" y="403">Frankrijk</text>
+        <text x="392" y="428" text-anchor="middle">Zwitserland</text>
+        <text x="452" y="700" text-anchor="end">Italië</text>
+        <text x="555" y="416">Oostenrijk</text>
+      </g>
+      <g class="kaart-zeenaam">
+        <text x="80" y="116" text-anchor="end">Noordzee</text>
+        <text x="150" y="790">Middellandse Zee</text>
+        <text x="625" y="690">Adriatische Zee</text>
+        <text x="424" y="832">Tyrrheense Zee</text>
+      </g>
+
+      <!-- terugreis: Bürchen › Bern › Basel › Karlsruhe › Frankfurt › Köln › thuis -->
+      <path class="route-terug" d="M 269.6 486.6 L 252.1 440.2 L 258.6 399.2 L 296.0 301.7 L 308.9 227.8 L 229.4 172.1 L 140.1 106.2"/>
+
+      <!-- derde etappe: San Gregorio › Simplonpas › Bürchen (iets verschoven waar hij de heenweg volgt) -->
+      <path class="route-lijn route-b" d="M 502.7 778.3 L 487.1 742.0 L 464.0 674.8 L 434.8 653.9 L 439.0 605.5 L 363.1 567.9 L 339.5 540.3 L 290.9 496.0 L 278.9 487.3 L 277.1 482.6 L 269.6 486.6"/>
+
+      <!-- heenreis: Leerbroek › Gotthard › Cassano › A1 › San Gregorio -->
+      <path id="route-pad" class="route-lijn" d="M 140.1 106.2 L 192.9 143.2 L 229.4 172.1 L 308.9 227.8 L 296.0 301.7 L 258.6 399.2 L 291.8 433.5 L 304.8 466.4 L 324.7 491.3 L 327.9 516.8 L 314.5 526.3 L 332.5 540.3 L 356.1 567.9 L 432.0 605.5 L 427.8 653.9 L 457.0 674.8 L 480.1 742.0 L 502.7 778.3"/>
+
+      <!-- doorrijsteden ter oriëntatie -->
+      <g class="kaart-via">
+        <circle cx="229.4" cy="172.1" r="2.6"/><text x="238" y="169">Keulen</text>
+        <circle cx="308.9" cy="227.8" r="2.6"/><text x="318" y="231">Frankfurt</text>
+        <circle cx="258.6" cy="399.2" r="2.6"/><text x="267" y="396">Basel</text>
+        <circle cx="332.5" cy="540.3" r="2.6"/><text x="341" y="551">Milaan</text>
+        <circle cx="432.0" cy="605.5" r="2.6"/><text x="441" y="602">Bologna</text>
+        <circle cx="427.8" cy="653.9" r="2.6"/><text x="437" y="657">Florence</text>
+      </g>
+
+      <!-- dagtrips vanuit het borgo -->
+      <g class="kaart-uitstap">
+        <circle cx="485.6" cy="779.7" r="4"/><text x="476" y="786" text-anchor="end">Rome</text>
+        <circle cx="567.5" cy="850.9" r="4"/><circle cx="577.7" cy="857.0" r="4"/>
+        <text x="590" y="852">Napels &amp; Pompeii</text>
+      </g>
+
       <!-- thuis -->
       <g class="kaart-stop kaart-thuis">
-        <circle class="kern" cx="300" cy="120" r="6" fill="#a9d4bd"/>
-        <text x="315" y="116">🏡 Leerbroek</text>
+        <circle class="kern" cx="140.1" cy="106.2" r="5.5"/>
+        <text x="152" y="102">Leerbroek</text>
       </g>
+
+      <!-- de drie haltes -->
       <a href="#cassano"><g class="kaart-stop">
-        <circle class="ring" cx="395" cy="320" r="6"/><circle class="kern" cx="395" cy="320" r="6"/>
-        <text x="410" y="315">I · Cassano Magnago</text>
+        <circle class="ring" cx="314.5" cy="526.3" r="6"/><circle class="kern" cx="314.5" cy="526.3" r="6"/>
+        <text x="327" y="517">I · Cassano Magnago</text>
       </g></a>
       <a href="#sangregorio"><g class="kaart-stop">
-        <circle class="ring" cx="505" cy="490" r="6"/><circle class="kern" cx="505" cy="490" r="6"/>
-        <text x="520" y="486">II · San Gregorio da Sassola</text>
+        <circle class="ring" cx="502.7" cy="778.3" r="6"/><circle class="kern" cx="502.7" cy="778.3" r="6"/>
+        <text x="515" y="774">II · San Gregorio</text>
+        <text class="kaart-stop-sub" x="515" y="789">da Sassola</text>
       </g></a>
       <a href="#burchen"><g class="kaart-stop">
-        <circle class="ring" cx="390" cy="335" r="6"/><circle class="kern" cx="390" cy="335" r="6"/>
-        <text x="290" y="360" text-anchor="end">III · Bürchen ⛰️</text>
+        <circle class="ring" cx="269.6" cy="486.6" r="6"/><circle class="kern" cx="269.6" cy="486.6" r="6"/>
+        <text x="259" y="481" text-anchor="end">III · Bürchen</text>
       </g></a>
-      <!-- rijdend autootje over de route -->
-      <g class="auto-dot"><circle r="5" fill="#ffe28a">
-        <animateMotion dur="18s" repeatCount="indefinite" rotate="auto">
+
+      <!-- het autootje rijdt de heenreis -->
+      <g class="auto-dot"><circle r="4.5" fill="#ffe28a">
+        <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
           <mpath href="#route-pad"/>
         </animateMotion>
       </circle></g>
+
+      <!-- legenda -->
+      <g class="kaart-legenda">
+        <line x1="16" y1="868" x2="46" y2="868" stroke="#f2cf7e" stroke-width="2.5" stroke-dasharray="7 8" stroke-linecap="round"/>
+        <text x="52" y="872">heenreis en doorreis</text>
+        <line x1="16" y1="888" x2="46" y2="888" stroke="rgba(169,212,189,.6)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+        <text x="52" y="892">terugreis naar huis</text>
+        <circle cx="31" cy="906" r="4" fill="#e78aa0"/>
+        <text x="52" y="910">dagtrips vanuit het borgo</text>
+      </g>
     </svg>
   </div>
+  <p class="kaart-onderschrift">Alle plaatsen staan op hun echte coördinaten. Tik op een halte om naar dat hoofdstuk te springen.</p>
 </section>
 
 <section class="team" id="team">
@@ -1054,7 +1196,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
         </div>
       </div>
       <div class="duo-paneel bingo">
-        <div class="bingo">
+        <div class="bingo-grid">
           <div class="bingo-item" data-i="0"><span class="ic">🚗</span>Fiat 500</div>
           <div class="bingo-item" data-i="1"><span class="ic">🛵</span>Vespa</div>
           <div class="bingo-item" data-i="2"><span class="ic">🌴</span>Palmboom</div>
@@ -1290,7 +1432,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
         </div>
       </div>
       <div class="duo-paneel bingo">
-        <div class="bingo">
+        <div class="bingo-grid">
           <div class="bingo-item" data-i="0"><span class="ic">🏛️</span>Zuil ouder dan 2000 jaar</div>
           <div class="bingo-item" data-i="1"><span class="ic">⛲</span>Drinkfonteintje (nasone)</div>
           <div class="bingo-item" data-i="2"><span class="ic">🛡️</span>Verklede gladiator</div>
@@ -1448,7 +1590,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-
         </div>
       </div>
       <div class="duo-paneel bingo">
-        <div class="bingo">
+        <div class="bingo-grid">
           <div class="bingo-item" data-i="0"><span class="ic">🐄</span>Koe met bel</div>
           <div class="bingo-item" data-i="1"><span class="ic">🏔️</span>De Matterhorn</div>
           <div class="bingo-item" data-i="2"><span class="ic">🚠</span>Kabelbaan</div>
@@ -1655,6 +1797,21 @@ var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelect
 var toastTimer=null;
 function toast(t){var el=$("#toast");el.textContent=t;el.classList.add("zichtbaar");clearTimeout(toastTimer);toastTimer=setTimeout(function(){el.classList.remove("zichtbaar");},2600);}
 
+/* ============ ROLLENDE PIZZA BIJ ELKE WISSEL ============ */
+var pizzaTeller=0;
+function rolPizza(){
+  try{if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;}catch(e){}
+  var el=document.createElement("div");
+  el.className="pizza-rol"+(pizzaTeller++%2?" terug":"");
+  el.setAttribute("aria-hidden","true");
+  el.textContent="🍕";
+  document.body.appendChild(el);
+  var weg=function(){if(el.parentNode)el.parentNode.removeChild(el);};
+  el.addEventListener("animationend",weg);
+  setTimeout(weg,2600);
+}
+$$(".kompas-stop").forEach(function(s){s.addEventListener("click",rolPizza);});
+
 /* ============ PERSONA ============ */
 function zetPersona(p){
   staat.persona=p;schrijf("persona",p);
@@ -1784,6 +1941,7 @@ $$(".duo-zone").forEach(function(zone){
   var loc=zone.dataset.loc;
   $$(".duo-tab",zone).forEach(function(tab){
     tab.addEventListener("click",function(){
+      if(!tab.classList.contains("active"))rolPizza();
       $$(".duo-tab",zone).forEach(function(t){t.classList.remove("active");});
       tab.classList.add("active");
       $$(".duo-paneel",zone).forEach(function(p){p.classList.remove("active");});
@@ -1862,6 +2020,7 @@ renderStempels();
 /* ============ DAGPLANNER ============ */
 $$("#dagplan-tabs .dagplan-tab").forEach(function(tab){
   tab.addEventListener("click",function(){
+    if(!tab.classList.contains("active"))rolPizza();
     $$("#dagplan-tabs .dagplan-tab").forEach(function(t){t.classList.remove("active");});
     tab.classList.add("active");
     $$("#dagplan .dagplan-paneel").forEach(function(p){p.classList.toggle("active",p.dataset.dag===tab.dataset.dag);});
@@ -1899,7 +2058,7 @@ function renderQuestTabs(){
     var b=document.createElement("button");
     b.className="qd-tab"+(di===actieveQuestDag?" active":"");
     b.innerHTML=dag.d+'<span class="qd-klaar">'+questKlaarPerDag(di)+"/"+dag.ops.length+"</span>";
-    b.addEventListener("click",function(){actieveQuestDag=di;renderQuestTabs();renderQuestLijst();});
+    b.addEventListener("click",function(){if(di!==actieveQuestDag)rolPizza();actieveQuestDag=di;renderQuestTabs();renderQuestLijst();});
     wrap.appendChild(b);
   });
   $("#quest-dag-naam").textContent=questDagen[actieveQuestDag].naam;
