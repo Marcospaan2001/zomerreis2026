@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Nazomerdroom · Roos & Marco · 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --notte:#0a1f2e;
+  --notte-deep:#04131f;
+  --notte-mid:#10314a;
+  --petrol:#175070;
+  --zee:#1f6a8a;
+  --parchment:#fdf1d3;
+  --parchment-warm:#fff6de;
+  --parchment-soft:#fffae9;
+  --parchment-edge:#e6d0a2;
+  --oro:#d9a441;
+  --oro-licht:#f2cf7e;
+  --oro-diep:#8f6524;
+  --oro-glans:#ffe28a;
+  --rosa:#e78aa0;
+  --rosa-zacht:#f6bccb;
+  --rosa-gloed:#ffd3de;
+  --koper:#d3763f;
+  --salvia:#a9d4bd;
+  --salvia-diep:#4f8267;
+  --lago:#5d9bb8;
+  --lago-diep:#2d6b8a;
+  --paper-text:#3a2c16;
+  --paper-soft:#6f5b39;
+  --wijn:#7a2a3a;
+  --shadow-soft:0 8px 28px rgba(4,19,31,.4);
+  --shadow-deep:0 24px 70px rgba(4,19,31,.6);
+  --f-display:"Cinzel","Palatino Linotype","Book Antiqua",Georgia,serif;
+  --f-body:"Cormorant Garamond","Palatino Linotype","Book Antiqua",Georgia,serif;
+  --f-hand:"Caveat","Segoe Script","Bradley Hand",cursive;
+  --f-ui:"Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{
+  margin:0;
+  font-family:var(--f-body);
+  color:var(--paper-text);
+  background:var(--notte-deep);
+  line-height:1.7;
+  font-size:19px;
+  overflow-x:hidden;
+  min-height:100vh;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(2px 2px at 12% 18%,#fff4cc 60%,transparent 70%),
+    radial-gradient(1px 1px at 32% 42%,#fff 60%,transparent 70%),
+    radial-gradient(2.5px 2.5px at 67% 25%,#fff4cc 60%,transparent 70%),
+    radial-gradient(1.5px 1.5px at 85% 62%,#ffe9b3 60%,transparent 70%),
+    radial-gradient(2px 2px at 22% 78%,#fff 60%,transparent 70%),
+    radial-gradient(1.5px 1.5px at 48% 90%,#ffe9b3 60%,transparent 70%),
+    radial-gradient(2.5px 2.5px at 78% 86%,#fff4cc 60%,transparent 70%),
+    radial-gradient(1px 1px at 58% 12%,#fff 60%,transparent 70%),
+    radial-gradient(2px 2px at 8% 58%,#ffe9b3 60%,transparent 70%),
+    radial-gradient(1.5px 1.5px at 92% 38%,#fff 60%,transparent 70%),
+    radial-gradient(ellipse 60% 40% at 15% 25%,rgba(93,155,184,.16) 0%,transparent 60%),
+    radial-gradient(ellipse 70% 45% at 85% 70%,rgba(231,138,160,.13) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 35% at 50% 100%,rgba(211,118,63,.12) 0%,transparent 60%),
+    radial-gradient(ellipse at 50% -10%,rgba(31,106,138,.4) 0%,transparent 55%),
+    linear-gradient(180deg,#03101c 0%,#0a2438 30%,#0e2f47 55%,#143a54 80%,#071a29 100%);
+  background-size:1200px 900px,800px 700px,1500px 1100px,1000px 800px,1100px 900px,900px 700px,1300px 1000px,700px 600px,1400px 1000px,800px 700px,100% 100%,100% 100%,100% 100%,100% 100%,100% 100%;
+  background-attachment:fixed;
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(circle 100px at 25% 35%,rgba(255,255,255,.04),transparent 70%),
+    radial-gradient(circle 80px at 75% 55%,rgba(255,226,138,.05),transparent 70%),
+    radial-gradient(circle 90px at 50% 80%,rgba(231,138,160,.04),transparent 70%);
+  animation:dreamShift 14s ease-in-out infinite alternate;
+}
+@keyframes dreamShift{from{opacity:.6;transform:translate(0,0)}to{opacity:1;transform:translate(8px,-6px)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
+::selection{background:var(--oro);color:var(--notte-deep)}
+.page{max-width:940px;margin:0 auto;padding:0 1rem;position:relative;z-index:1}
+a{color:var(--lago-diep)}
+button{font-family:inherit}
+button:focus-visible,a:focus-visible{outline:2px solid var(--oro-licht);outline-offset:2px}
+
+/* ============ FLOURISH ============ */
+.flourish{
+  text-align:center;margin:2.4rem auto;color:var(--oro-licht);
+  letter-spacing:.4em;font-size:1.1rem;opacity:.85;
+  display:flex;align-items:center;justify-content:center;gap:.8rem;
+}
+.flourish::before,.flourish::after{
+  content:"";flex:0 0 80px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--oro) 50%,transparent);
+}
+
+/* ============ KOMPAS ============ */
+.kompas{
+  position:sticky;top:0;z-index:100;
+  background:linear-gradient(180deg,rgba(8,34,52,.96) 0%,rgba(5,22,36,.94) 100%);
+  backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);
+  border-bottom:1px solid rgba(242,207,126,.45);
+  box-shadow:0 4px 24px rgba(4,19,31,.5),0 0 30px rgba(231,138,160,.08);
+}
+.kompas-inner{
+  max-width:940px;margin:0 auto;padding:.5rem .9rem .6rem;
+  display:flex;align-items:center;gap:.7rem;position:relative;
+}
+.kompas-brand{
+  font-family:var(--f-display);font-weight:700;color:var(--oro-licht);
+  font-size:.72rem;letter-spacing:.22em;white-space:nowrap;
+  display:flex;align-items:center;gap:.3rem;flex-shrink:0;
+}
+.kompas-brand .star{color:var(--oro);font-size:1.15rem;line-height:1}
+.kompas-route{
+  flex:1;display:flex;align-items:center;overflow-x:auto;scrollbar-width:none;
+  padding:.2rem .1rem;gap:0;-webkit-overflow-scrolling:touch;
+}
+.kompas-route::-webkit-scrollbar{display:none}
+.kompas-stop{
+  display:flex;flex-direction:column;align-items:center;gap:.18rem;
+  text-decoration:none;color:rgba(245,232,202,.55);
+  font-family:var(--f-ui);font-size:.6rem;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;
+  flex-shrink:0;padding:.15rem .35rem;position:relative;min-width:58px;transition:color .25s;
+}
+.kompas-stop::after{
+  content:"";position:absolute;left:100%;top:14px;width:16px;height:2px;
+  background:repeating-linear-gradient(90deg,rgba(217,164,65,.35) 0 4px,transparent 4px 7px);
+}
+.kompas-stop:last-child::after{display:none}
+.kompas-dot{
+  width:14px;height:14px;border-radius:50%;
+  background:rgba(245,232,202,.15);border:1.5px solid rgba(217,164,65,.45);
+  display:flex;align-items:center;justify-content:center;font-size:.65rem;
+  transition:all .3s ease;position:relative;
+}
+.kompas-stop.visited .kompas-dot{background:var(--oro);border-color:var(--oro-licht)}
+.kompas-stop.visited{color:var(--oro-licht)}
+.kompas-stop.current .kompas-dot{
+  background:var(--oro-glans);border-color:#fff;
+  box-shadow:0 0 0 4px rgba(243,217,122,.25),0 0 16px rgba(243,217,122,.6);
+  transform:scale(1.25);
+}
+.kompas-stop.current{color:#fff}
+.kompas-stop.current .kompas-dot::after{
+  content:"";position:absolute;inset:-6px;border-radius:50%;
+  border:1.5px solid var(--oro-glans);opacity:.6;animation:pulse 2s ease-out infinite;
+}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.6);opacity:0}}
+.kompas-badge{
+  flex-shrink:0;width:34px;height:34px;border-radius:50%;cursor:pointer;
+  border:2px solid var(--oro);background:var(--notte-mid);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.05rem;transition:transform .2s;padding:0;
+}
+.kompas-badge:hover{transform:scale(1.1)}
+.kompas-badge span{pointer-events:none}
+.kompas-badge.p-roos{border-color:var(--rosa);box-shadow:0 0 12px rgba(231,138,160,.5)}
+.kompas-badge.p-marco{border-color:var(--lago);box-shadow:0 0 12px rgba(93,155,184,.5)}
+.kompas-progress{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(217,164,65,.15)}
+.kompas-progress-bar{
+  height:100%;width:0%;
+  background:linear-gradient(90deg,var(--oro-diep),var(--oro-licht),var(--oro-glans));
+  transition:width .25s ease;box-shadow:0 0 10px var(--oro-glans);
+}
+
+/* ============ COVER ============ */
+.cover{
+  position:relative;min-height:94vh;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  padding:5rem 1.25rem 6rem;overflow:hidden;color:#fff;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 98%,rgba(211,118,63,.4) 0%,transparent 55%),
+    radial-gradient(ellipse 60% 50% at 18% 18%,rgba(93,155,184,.35) 0%,transparent 55%),
+    radial-gradient(ellipse 55% 45% at 82% 25%,rgba(231,138,160,.28) 0%,transparent 55%),
+    linear-gradient(180deg,#051523 0%,#0d2c44 35%,#175070 62%,#31688a 78%,#8a5a5f 92%,#b56b4a 100%);
+}
+.cover::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:
+    radial-gradient(2px 2px at 15% 30%,#fff4cc,transparent 50%),
+    radial-gradient(1.5px 1.5px at 35% 45%,#fff,transparent 50%),
+    radial-gradient(2.5px 2.5px at 55% 25%,#fff4cc,transparent 50%),
+    radial-gradient(1.5px 1.5px at 72% 55%,#fff,transparent 50%),
+    radial-gradient(2px 2px at 85% 30%,#fff4cc,transparent 50%),
+    radial-gradient(1px 1px at 22% 70%,#fff,transparent 50%),
+    radial-gradient(1.5px 1.5px at 48% 80%,#fff,transparent 50%);
+  opacity:.95;
+}
+#vuurvliegjes{position:absolute;inset:0;pointer-events:none;z-index:1}
+.cover-maan{
+  position:absolute;top:12%;right:10%;width:110px;height:110px;border-radius:50%;
+  background:radial-gradient(circle at 38% 35%,#fffbe8 0%,#fdeebc 45%,#f2cf7e 75%,#b98a3d 100%);
+  box-shadow:0 0 70px rgba(255,228,138,.55),0 0 140px rgba(231,138,160,.3),inset -12px -10px 26px rgba(120,84,30,.3);
+  cursor:pointer;z-index:2;transition:transform .4s ease;
+}
+.cover-maan:hover{transform:scale(1.06) rotate(6deg)}
+.cover-eyebrow{
+  font-family:var(--f-display);font-size:.78rem;letter-spacing:.5em;
+  color:var(--oro-licht);text-transform:uppercase;margin-bottom:1.4rem;position:relative;z-index:2;
+}
+.cover h1{
+  font-family:var(--f-display);font-weight:700;text-wrap:balance;
+  font-size:clamp(3rem,10vw,5.6rem);line-height:1.05;margin:.1em 0 .15em;
+  background:linear-gradient(180deg,#fff8e0 20%,var(--oro-glans) 55%,var(--oro) 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 4px 24px rgba(217,164,65,.35));position:relative;z-index:2;
+}
+.cover-sub{
+  font-family:var(--f-hand);font-size:clamp(1.4rem,4vw,2rem);
+  color:var(--rosa-gloed);margin:0 0 1.2rem;position:relative;z-index:2;
+}
+.cover-meta{
+  font-family:var(--f-display);font-size:.8rem;letter-spacing:.35em;text-transform:uppercase;
+  color:rgba(255,244,204,.85);position:relative;z-index:2;
+}
+.cover-namen{
+  display:flex;gap:1.6rem;align-items:center;margin:2.2rem 0 0;position:relative;z-index:2;
+}
+.cover-naam{
+  display:flex;flex-direction:column;align-items:center;gap:.4rem;
+  font-family:var(--f-display);font-size:.85rem;letter-spacing:.25em;text-transform:uppercase;
+}
+.cover-avatar{
+  width:74px;height:74px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:2.2rem;border:2.5px solid var(--oro);
+  background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.25),rgba(255,255,255,.02));
+  box-shadow:0 0 30px rgba(217,164,65,.35);
+}
+.cover-naam.roos .cover-avatar{border-color:var(--rosa);box-shadow:0 0 30px rgba(231,138,160,.45)}
+.cover-naam.marco .cover-avatar{border-color:var(--lago);box-shadow:0 0 30px rgba(93,155,184,.45)}
+.cover-amp{font-family:var(--f-hand);font-size:2.6rem;color:var(--oro-glans)}
+.countdown{
+  margin-top:2.4rem;position:relative;z-index:2;
+  display:flex;gap:.7rem;align-items:stretch;justify-content:center;flex-wrap:wrap;
+}
+.cd-cel{
+  min-width:74px;padding:.55rem .6rem .5rem;border-radius:14px;
+  border:1px solid rgba(242,207,126,.4);
+  background:linear-gradient(180deg,rgba(255,244,204,.1),rgba(255,244,204,.03));
+  backdrop-filter:blur(6px);
+}
+.cd-num{font-family:var(--f-display);font-size:1.9rem;font-weight:700;color:var(--oro-glans);line-height:1.1;font-variant-numeric:tabular-nums}
+.cd-label{font-family:var(--f-ui);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,244,204,.7)}
+.cd-titel{width:100%;font-family:var(--f-hand);font-size:1.3rem;color:var(--rosa-gloed);margin-bottom:.2rem}
+.scrollhint{
+  position:absolute;bottom:1.6rem;left:50%;transform:translateX(-50%);
+  color:rgba(255,244,204,.75);font-family:var(--f-ui);font-size:.62rem;letter-spacing:.3em;
+  text-transform:uppercase;z-index:2;animation:bob 2.4s ease-in-out infinite;
+}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* ============ INTRO ============ */
+.intro{padding:3.4rem 0 1rem;text-align:center;color:var(--parchment)}
+.intro-eyebrow{font-family:var(--f-display);font-size:.72rem;letter-spacing:.4em;color:var(--oro-licht);text-transform:uppercase}
+.intro h2{
+  font-family:var(--f-display);font-weight:700;font-size:clamp(1.9rem,5vw,2.8rem);
+  color:var(--parchment-warm);margin:.4rem 0 .3rem;text-wrap:balance;
+}
+.intro-sub{font-family:var(--f-hand);font-size:1.5rem;color:var(--rosa-zacht);margin:0 0 1.6rem}
+.intro p.lead{max-width:640px;margin:0 auto;font-size:1.16rem;line-height:1.85;color:rgba(253,241,211,.92);font-style:italic}
+.stats-rij{
+  display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin:2.4rem auto 0;
+}
+.stat-tegel{
+  min-width:118px;padding:.9rem 1.1rem .8rem;border-radius:16px;
+  border:1px solid rgba(242,207,126,.35);
+  background:linear-gradient(180deg,rgba(23,80,112,.5),rgba(10,31,46,.6));
+  box-shadow:var(--shadow-soft);
+}
+.stat-num{font-family:var(--f-display);font-weight:700;font-size:1.7rem;color:var(--oro-glans);font-variant-numeric:tabular-nums}
+.stat-label{font-family:var(--f-ui);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(253,241,211,.7)}
+
+/* ============ EUROPA KAART ============ */
+.kaart-wrap{
+  margin:2.6rem auto 0;border-radius:22px;overflow:hidden;
+  border:1px solid rgba(242,207,126,.4);box-shadow:var(--shadow-deep);
+  background:linear-gradient(180deg,#0c2a40,#092033);
+  position:relative;
+}
+.kaart-wrap svg{display:block;width:100%;height:auto}
+.kaart-titel{
+  position:absolute;top:14px;left:18px;font-family:var(--f-display);
+  font-size:.7rem;letter-spacing:.35em;color:var(--oro-licht);text-transform:uppercase;
+}
+.route-lijn{
+  fill:none;stroke:var(--oro-licht);stroke-width:2.5;stroke-dasharray:7 8;
+  stroke-linecap:round;filter:drop-shadow(0 0 6px rgba(255,226,138,.6));
+  animation:routeFlow 30s linear infinite;
+}
+@keyframes routeFlow{to{stroke-dashoffset:-600}}
+.kaart-stop{cursor:pointer}
+.kaart-stop circle.kern{fill:var(--oro-glans);stroke:#fff;stroke-width:1.5}
+.kaart-stop circle.ring{fill:none;stroke:var(--oro-glans);opacity:.5;animation:kring 2.6s ease-out infinite}
+@keyframes kring{0%{r:6;opacity:.6}100%{r:20;opacity:0}}
+.kaart-stop text{
+  font-family:var(--f-ui);font-size:13px;font-weight:600;fill:var(--parchment);
+  paint-order:stroke;stroke:rgba(4,19,31,.75);stroke-width:3px;
+}
+.kaart-thuis text{fill:var(--salvia)}
+.auto-dot{filter:drop-shadow(0 0 8px rgba(255,226,138,.9))}
+
+/* ============ TEAM ============ */
+.team{padding:1rem 0}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem;margin-top:1.6rem}
+.team-kaart{
+  border-radius:20px;padding:1.5rem 1.4rem 1.3rem;text-align:center;position:relative;overflow:hidden;
+  background:linear-gradient(165deg,var(--parchment-soft) 0%,var(--parchment) 70%,var(--parchment-edge) 100%);
+  border:1px solid var(--parchment-edge);box-shadow:var(--shadow-soft);
+}
+.team-kaart::before{content:"";position:absolute;inset:0;border-radius:20px;border:1px dashed rgba(143,101,36,.3);margin:7px;pointer-events:none}
+.team-kaart .grote-avatar{
+  width:92px;height:92px;border-radius:50%;margin:0 auto .7rem;
+  display:flex;align-items:center;justify-content:center;font-size:2.9rem;
+  border:3px solid var(--oro);background:radial-gradient(circle at 35% 30%,#fff,#f6e3b8);
+  box-shadow:0 6px 18px rgba(143,101,36,.3);
+}
+.team-kaart.roos .grote-avatar{border-color:var(--rosa)}
+.team-kaart.marco .grote-avatar{border-color:var(--lago)}
+.team-kaart h3{font-family:var(--f-display);font-size:1.5rem;margin:.1rem 0;color:var(--paper-text)}
+.team-rol{font-family:var(--f-hand);font-size:1.25rem;color:var(--wijn);margin:0 0 .6rem}
+.team-kaart p.bio{font-size:1rem;line-height:1.65;color:var(--paper-soft);margin:0}
+.team-leeftijd{
+  position:absolute;top:14px;right:16px;font-family:var(--f-display);font-weight:700;
+  font-size:.95rem;color:var(--oro-diep);border:1.5px solid var(--oro);
+  border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;
+  background:rgba(255,250,233,.8);transform:rotate(8deg);
+}
+
+/* ============ DAGTELLER ============ */
+.dagteller{
+  margin:2.6rem auto;max-width:560px;text-align:center;border-radius:22px;
+  padding:1.8rem 1.4rem 1.6rem;position:relative;
+  background:linear-gradient(165deg,var(--parchment-soft),var(--parchment));
+  border:1px solid var(--parchment-edge);box-shadow:var(--shadow-deep);
+}
+.dagteller .dt-eyebrow{font-family:var(--f-display);font-size:.66rem;letter-spacing:.35em;text-transform:uppercase;color:var(--oro-diep)}
+.dagteller .dt-groot{font-family:var(--f-display);font-weight:700;font-size:4rem;line-height:1;color:var(--wijn);margin:.15em 0;font-variant-numeric:tabular-nums}
+.dagteller .dt-sub{font-family:var(--f-hand);font-size:1.5rem;color:var(--paper-soft)}
+.dagteller .dt-vandaag{margin-top:.7rem;font-size:1rem;color:var(--paper-text)}
+.dagteller .dt-vandaag b{color:var(--wijn)}
+
+/* ============ FEITJES ============ */
+.feitjes{max-width:560px;margin:0 auto 1rem;text-align:center}
+.feit-kaart{
+  border-radius:20px;padding:1.6rem 1.5rem;min-height:150px;position:relative;
+  background:linear-gradient(165deg,#123a54,#0b2740);
+  border:1px solid rgba(242,207,126,.45);box-shadow:var(--shadow-deep);
+  display:flex;flex-direction:column;justify-content:center;gap:.5rem;color:var(--parchment);
+}
+.feit-kaart .f-icoon{font-size:2rem}
+.feit-kaart .f-tekst{font-size:1.08rem;line-height:1.7;font-style:italic;color:rgba(253,241,211,.95)}
+.feit-knoppen{display:flex;gap:.7rem;justify-content:center;margin-top:1rem}
+.feit-btn{
+  font-family:var(--f-display);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  padding:.65rem 1.3rem;border-radius:999px;cursor:pointer;
+  border:1.5px solid var(--oro);color:var(--oro-licht);background:rgba(217,164,65,.08);
+  transition:all .25s;
+}
+.feit-btn:hover{background:var(--oro);color:var(--notte-deep);box-shadow:0 0 20px rgba(217,164,65,.5)}
+
+/* ============ TELLERS ============ */
+.tellers{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin:2.2rem 0}
+.teller{
+  display:flex;flex-direction:column;align-items:center;gap:.15rem;
+  padding:.9rem 1.4rem .7rem;border-radius:18px;cursor:pointer;user-select:none;
+  border:1px solid rgba(242,207,126,.4);
+  background:linear-gradient(180deg,rgba(23,80,112,.55),rgba(10,31,46,.65));
+  box-shadow:var(--shadow-soft);transition:transform .15s;min-width:96px;
+}
+.teller:active{transform:scale(.94)}
+.teller .t-icoon{font-size:1.9rem;line-height:1.2}
+.teller .t-num{font-family:var(--f-display);font-weight:700;font-size:1.5rem;color:var(--oro-glans);font-variant-numeric:tabular-nums}
+.teller .t-label{font-family:var(--f-ui);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(253,241,211,.7)}
+.tellers-hint{text-align:center;font-family:var(--f-hand);font-size:1.2rem;color:var(--rosa-zacht);margin-top:-.6rem}
+
+/* ============ LOCATIE HOOFDSTUK ============ */
+.loc{
+  margin:3rem 0;border-radius:26px;overflow:hidden;
+  background:linear-gradient(180deg,var(--parchment-soft) 0%,var(--parchment) 55%,var(--parchment-warm) 100%);
+  border:1px solid var(--parchment-edge);box-shadow:var(--shadow-deep);
+}
+.loc-hero{position:relative;overflow:hidden}
+.loc-hero svg{display:block;width:100%;height:auto}
+.loc-hero .label{
+  position:absolute;left:0;right:0;bottom:0;padding:2.6rem 1.6rem 1.2rem;
+  background:linear-gradient(180deg,transparent,rgba(4,19,31,.82));color:#fff;
+}
+.loc-hero .num{font-family:var(--f-display);font-size:.72rem;letter-spacing:.35em;color:var(--oro-licht);text-transform:uppercase}
+.loc-hero h2{font-family:var(--f-display);font-weight:700;font-size:clamp(1.9rem,5.5vw,2.9rem);margin:.1em 0;text-wrap:balance}
+.loc-hero .meta{font-family:var(--f-ui);font-size:.78rem;letter-spacing:.08em;color:rgba(255,255,255,.85)}
+.loc-body{padding:1.8rem 1.6rem 2rem}
+@media(min-width:700px){.loc-body{padding:2.2rem 2.6rem 2.4rem}}
+.hero-text{font-size:1.18rem;line-height:1.85;font-style:italic;color:var(--paper-text);margin-top:0}
+.loc-body p.expanded{font-size:1.04rem;color:var(--paper-soft)}
+.facts{
+  border-radius:16px;overflow:hidden;margin:1.4rem 0;
+  border:1px solid var(--parchment-edge);background:var(--parchment-warm);
+}
+.facts .row{display:flex;gap:1rem;padding:.65rem 1rem;border-bottom:1px dashed var(--parchment-edge);font-size:.98rem}
+.facts .row:last-child{border-bottom:none}
+.facts .k{flex:0 0 108px;font-family:var(--f-display);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--oro-diep);padding-top:.25rem}
+.facts .v{flex:1;color:var(--paper-text)}
+.activity-guide{margin:1.6rem 0}
+.activity-guide-title{font-family:var(--f-display);font-size:1.15rem;color:var(--paper-text);margin:0 0 .8rem}
+.activity-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.activity-card{
+  border-radius:16px;padding:1rem 1.2rem;border:1px solid var(--parchment-edge);
+  background:var(--parchment-soft);
+}
+.activity-card.must-see{border-left:4px solid var(--oro)}
+.activity-card.rain{border-left:4px solid var(--lago)}
+.activity-card h4{margin:0 0 .5rem;font-family:var(--f-display);font-size:.95rem;color:var(--paper-text)}
+.activity-card ul{margin:0;padding-left:1.1rem;font-size:.97rem;color:var(--paper-soft)}
+.activity-card li{margin:.35rem 0}
+.food-card{
+  margin-top:1rem;border-radius:16px;padding:1rem 1.2rem;
+  border:1px solid var(--parchment-edge);border-left:4px solid var(--rosa);
+  background:linear-gradient(165deg,#fff3ec,#fde8de);
+}
+.food-card h4{margin:0 0 .5rem;font-family:var(--f-display);font-size:.95rem;color:var(--wijn)}
+.food-card ul{margin:0;padding-left:1.1rem;font-size:.97rem;color:var(--paper-soft)}
+.food-card li{margin:.35rem 0}
+
+/* ============ DAGPLANNER (San Gregorio) ============ */
+.dagplan{margin:1.8rem 0}
+.dagplan-tabs{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:1rem}
+.dagplan-tab{
+  font-family:var(--f-display);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+  padding:.5rem .85rem;border-radius:999px;cursor:pointer;border:1.5px solid var(--parchment-edge);
+  background:var(--parchment-soft);color:var(--paper-soft);transition:all .2s;
+}
+.dagplan-tab.active{background:var(--wijn);border-color:var(--wijn);color:#fff;box-shadow:0 4px 14px rgba(122,42,58,.35)}
+.dagplan-paneel{display:none;border-radius:16px;border:1px solid var(--parchment-edge);background:var(--parchment-soft);padding:1.1rem 1.3rem}
+.dagplan-paneel.active{display:block}
+.dagplan-paneel h4{margin:0 0 .2rem;font-family:var(--f-display);font-size:1.05rem;color:var(--wijn)}
+.dagplan-paneel .dp-sub{font-family:var(--f-hand);font-size:1.25rem;color:var(--paper-soft);margin:0 0 .7rem}
+.dagplan-paneel ul{margin:.4rem 0 0;padding-left:1.1rem;font-size:.97rem;color:var(--paper-soft)}
+.dagplan-paneel li{margin:.4rem 0}
+.dp-tijd{font-family:var(--f-display);font-size:.72rem;letter-spacing:.08em;color:var(--oro-diep);margin-right:.35rem}
+
+/* ============ DUO ZONE (quiz/bingo/taal) ============ */
+.duo-zone{
+  margin:1.8rem 0 .4rem;border-radius:20px;padding:1.3rem 1.2rem 1.1rem;
+  border:2px dashed var(--oro);background:linear-gradient(165deg,#fdf6e0,#faeccb);
+}
+.duo-zone h3{font-family:var(--f-display);font-size:1.15rem;margin:0 0 .1rem;color:var(--paper-text)}
+.duo-zone .sub{font-family:var(--f-hand);font-size:1.3rem;color:var(--paper-soft);margin:0 0 .8rem}
+.duo-tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.9rem}
+.duo-tab{
+  font-family:var(--f-display);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:.55rem .95rem;border-radius:999px;cursor:pointer;border:1.5px solid var(--parchment-edge);
+  background:#fff;color:var(--paper-soft);display:flex;align-items:center;gap:.4rem;transition:all .2s;
+}
+.duo-tab.active{background:var(--oro);border-color:var(--oro-diep);color:#3a2500;box-shadow:0 4px 12px rgba(143,101,36,.3)}
+.score-badge{
+  font-family:var(--f-ui);font-size:.62rem;font-weight:700;padding:.1rem .45rem;border-radius:999px;
+  background:rgba(122,42,58,.12);color:var(--wijn);
+}
+.duo-paneel{display:none}
+.duo-paneel.active{display:block}
+.quiz-vraag{border-radius:14px;border:1px solid var(--parchment-edge);background:#fffdf4;padding:.9rem 1rem;margin:.7rem 0}
+.quiz-vraag .q{font-weight:600;font-size:1.02rem;color:var(--paper-text);margin-bottom:.55rem}
+.quiz-opties{display:flex;flex-direction:column;gap:.4rem}
+.quiz-optie{
+  text-align:left;font-size:.98rem;padding:.55rem .8rem;border-radius:10px;cursor:pointer;
+  border:1.5px solid var(--parchment-edge);background:var(--parchment-soft);color:var(--paper-text);
+  transition:all .18s;font-family:var(--f-body);
+}
+.quiz-optie:hover{border-color:var(--oro)}
+.quiz-vraag.klaar .quiz-optie{cursor:default;opacity:.6}
+.quiz-vraag.klaar .quiz-optie.goed{opacity:1;border-color:var(--salvia-diep);background:#e8f5ec;font-weight:700}
+.quiz-vraag.klaar .quiz-optie.fout-gekozen{opacity:1;border-color:#c0392b;background:#fbe9e5}
+.quiz-feedback{display:none;margin-top:.55rem;font-size:.92rem;font-style:italic;color:var(--salvia-diep)}
+.quiz-vraag.klaar .quiz-feedback{display:block}
+.bingo{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.bingo-item{
+  border-radius:12px;border:1.5px solid var(--parchment-edge);background:#fffdf4;
+  padding:.7rem .4rem;text-align:center;font-size:.82rem;cursor:pointer;user-select:none;
+  display:flex;flex-direction:column;gap:.15rem;align-items:center;color:var(--paper-soft);
+  transition:all .2s;font-family:var(--f-ui);
+}
+.bingo-item .ic{font-size:1.5rem}
+.bingo-item.gevonden{background:linear-gradient(165deg,#e9f6ee,#d9efe2);border-color:var(--salvia-diep);color:var(--salvia-diep);font-weight:700;transform:scale(.97)}
+.bingo-item.gevonden::after{content:"✓ gespot";font-size:.6rem;letter-spacing:.1em;text-transform:uppercase}
+.lang-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.6rem}
+.lang-card{
+  border-radius:12px;border:1.5px solid var(--parchment-edge);background:#fffdf4;
+  padding:.7rem .8rem;cursor:pointer;position:relative;transition:all .2s;
+}
+.lang-card:hover{border-color:var(--oro);transform:translateY(-2px)}
+.lang-card .speaker{position:absolute;top:.5rem;right:.6rem;font-size:.85rem;opacity:.6}
+.lang-card .nl{font-family:var(--f-ui);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-soft)}
+.lang-card .foreign{font-size:1.12rem;font-weight:700;color:var(--wijn)}
+.lang-card .pron{font-size:.82rem;font-style:italic;color:var(--paper-soft)}
+.stamp-row{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;margin-top:1.1rem}
+.stamp-btn{
+  font-family:var(--f-display);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;
+  padding:.75rem 1.3rem;border-radius:14px;cursor:pointer;
+  border:2px solid var(--wijn);color:var(--wijn);background:transparent;transition:all .25s;
+  display:flex;align-items:center;gap:.5rem;
+}
+.stamp-btn .stamp-icon{font-size:1.2rem}
+.stamp-btn.gestempeld{
+  background:var(--wijn);color:#fff;transform:rotate(-2deg);
+  box-shadow:0 6px 18px rgba(122,42,58,.4);
+}
+.stamp-undo-hint{font-family:var(--f-hand);font-size:1.05rem;color:var(--paper-soft)}
+
+/* ============ NEXT STOP ============ */
+.next-stop{
+  margin:0;padding:1.7rem 1.6rem 1.9rem;text-align:center;color:var(--parchment);
+  background:linear-gradient(180deg,#0d2c44,#081d30);position:relative;
+  border-top:1px solid rgba(242,207,126,.35);
+}
+.next-stop .auto-icoon{font-size:2rem}
+.next-stop-leader{font-family:var(--f-display);font-size:.68rem;letter-spacing:.4em;text-transform:uppercase;color:var(--oro-licht);margin-top:.3rem}
+.next-stop-title{font-family:var(--f-display);font-weight:700;font-size:1.5rem;margin:.25rem 0 0;color:#fff}
+.next-stop-tagline{font-family:var(--f-hand);font-size:1.35rem;color:var(--rosa-zacht)}
+.next-stop-meta{font-family:var(--f-ui);font-size:.82rem;color:rgba(253,241,211,.8);margin:.5rem 0 1rem}
+.next-stop-meta b{color:var(--oro-glans)}
+.next-stop-actions{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap}
+.maps-btn{
+  display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;
+  font-family:var(--f-display);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:.75rem 1.4rem;border-radius:999px;
+  background:linear-gradient(90deg,var(--oro),var(--oro-licht));color:#3a2500;font-weight:700;
+  box-shadow:0 6px 20px rgba(217,164,65,.4);transition:transform .2s;
+}
+.maps-btn:hover{transform:translateY(-2px)}
+.maps-secondary{
+  font-family:var(--f-ui);font-size:.75rem;letter-spacing:.06em;padding:.7rem 1.1rem;border-radius:999px;
+  border:1.5px solid rgba(242,207,126,.5);background:transparent;color:var(--oro-licht);cursor:pointer;transition:all .2s;
+}
+.maps-secondary:hover{background:rgba(217,164,65,.15)}
+.gem{
+  padding:1.1rem 1.6rem 1.3rem;font-size:.98rem;color:var(--paper-soft);
+  background:var(--parchment-warm);border-top:1px dashed var(--parchment-edge);
+}
+.gem .star{font-family:var(--f-display);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--oro-diep);margin-right:.3rem}
+
+/* ============ PRAKTISCH ============ */
+.practical{
+  margin:2.4rem 0;border-radius:22px;padding:1.7rem 1.6rem;
+  background:linear-gradient(165deg,var(--parchment-soft),var(--parchment));
+  border:1px solid var(--parchment-edge);box-shadow:var(--shadow-soft);
+}
+.practical h2{font-family:var(--f-display);font-size:1.5rem;margin:0 0 .2rem;color:var(--paper-text)}
+.practical .prak-sub{font-family:var(--f-hand);font-size:1.35rem;color:var(--paper-soft);margin:0 0 1rem}
+.check-lijst{display:flex;flex-direction:column;gap:.45rem;margin-top:.6rem}
+.check-item{
+  display:flex;align-items:flex-start;gap:.7rem;padding:.6rem .8rem;border-radius:12px;
+  border:1px solid var(--parchment-edge);background:#fffdf4;cursor:pointer;transition:all .2s;
+  font-size:.98rem;color:var(--paper-text);
+}
+.check-item .box{
+  flex:0 0 22px;height:22px;border-radius:7px;border:2px solid var(--oro-diep);
+  display:flex;align-items:center;justify-content:center;font-size:.8rem;color:#fff;margin-top:.15rem;
+}
+.check-item.af{opacity:.65}
+.check-item.af .box{background:var(--salvia-diep);border-color:var(--salvia-diep)}
+.check-item.af .tekst{text-decoration:line-through}
+.check-item .tekst b{color:var(--wijn)}
+
+/* ============ QUEST ============ */
+.quest-fab{
+  position:fixed;right:1rem;bottom:1rem;z-index:90;cursor:pointer;
+  display:flex;align-items:center;gap:.5rem;padding:.75rem 1.15rem;border-radius:999px;
+  font-family:var(--f-display);font-size:.72rem;letter-spacing:.18em;font-weight:700;
+  border:2px solid var(--oro-licht);color:#3a2500;
+  background:linear-gradient(90deg,var(--oro),var(--oro-glans));
+  box-shadow:0 8px 26px rgba(217,164,65,.5);transition:transform .2s;
+}
+.quest-fab:hover{transform:translateY(-3px)}
+.quest-fab .qf-icon{font-size:1.15rem}
+.questmode{
+  margin:3rem 0;border-radius:26px;overflow:hidden;
+  border:2px solid var(--oro);box-shadow:var(--shadow-deep),0 0 50px rgba(217,164,65,.2);
+  background:linear-gradient(180deg,var(--parchment-soft),var(--parchment));
+}
+.quest-kop{
+  padding:2rem 1.6rem 1.4rem;text-align:center;color:#fff;
+  background:linear-gradient(180deg,#0d2c44,#123a54);
+  border-bottom:2px solid var(--oro);
+}
+.quest-kop h2{font-family:var(--f-display);font-weight:700;font-size:2rem;margin:.1rem 0;color:var(--oro-glans)}
+.quest-kop .q-sub{font-family:var(--f-hand);font-size:1.4rem;color:var(--rosa-zacht)}
+.xp-balk-wrap{max-width:420px;margin:1rem auto 0}
+.xp-cijfers{display:flex;justify-content:space-between;font-family:var(--f-ui);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(253,241,211,.8);margin-bottom:.3rem}
+.xp-balk{height:12px;border-radius:999px;background:rgba(253,241,211,.15);overflow:hidden;border:1px solid rgba(242,207,126,.4)}
+.xp-vul{height:100%;width:0%;border-radius:999px;background:linear-gradient(90deg,var(--oro-diep),var(--oro-licht),var(--oro-glans));box-shadow:0 0 12px var(--oro-glans);transition:width .5s ease}
+.quest-body{padding:1.5rem 1.4rem 1.8rem}
+@media(min-width:700px){.quest-body{padding:1.8rem 2.2rem 2.2rem}}
+.quest-sectie-titel{font-family:var(--f-display);font-size:1.05rem;letter-spacing:.08em;color:var(--paper-text);margin:1.4rem 0 .7rem;display:flex;align-items:center;gap:.5rem}
+.quest-day-tabs{display:flex;gap:.4rem;overflow-x:auto;padding-bottom:.4rem;scrollbar-width:none}
+.quest-day-tabs::-webkit-scrollbar{display:none}
+.qd-tab{
+  flex-shrink:0;font-family:var(--f-display);font-size:.72rem;letter-spacing:.08em;
+  padding:.5rem .8rem;border-radius:12px;cursor:pointer;border:1.5px solid var(--parchment-edge);
+  background:#fffdf4;color:var(--paper-soft);transition:all .2s;text-align:center;
+}
+.qd-tab.active{background:var(--wijn);border-color:var(--wijn);color:#fff}
+.qd-tab .qd-klaar{display:block;font-size:.58rem;color:var(--salvia-diep)}
+.qd-tab.active .qd-klaar{color:var(--salvia)}
+.quest-opdracht{
+  display:flex;align-items:flex-start;gap:.7rem;padding:.7rem .9rem;border-radius:12px;
+  border:1px solid var(--parchment-edge);background:#fffdf4;cursor:pointer;margin:.45rem 0;
+  transition:all .2s;font-size:.98rem;
+}
+.quest-opdracht .box{
+  flex:0 0 24px;height:24px;border-radius:8px;border:2px solid var(--oro-diep);
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:.8rem;margin-top:.1rem;
+}
+.quest-opdracht.af{background:#f0f8f2}
+.quest-opdracht.af .box{background:var(--salvia-diep);border-color:var(--salvia-diep)}
+.quest-opdracht.af .tekst{text-decoration:line-through;opacity:.7}
+.quest-opdracht .xp{margin-left:auto;font-family:var(--f-display);font-size:.7rem;color:var(--oro-diep);white-space:nowrap;padding-top:.2rem}
+.badge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:.7rem}
+.badge-kaart{
+  border-radius:14px;border:1.5px solid var(--parchment-edge);background:#fffdf4;
+  padding:.8rem .5rem;text-align:center;transition:all .3s;
+}
+.badge-kaart .b-icoon{font-size:1.9rem;filter:grayscale(1);opacity:.35;transition:all .4s}
+.badge-kaart .b-naam{font-family:var(--f-display);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-soft);margin-top:.3rem}
+.badge-kaart .b-hoe{font-family:var(--f-ui);font-size:.66rem;color:var(--paper-soft);opacity:.75;line-height:1.4;margin-top:.15rem}
+.badge-kaart.verdiend{border-color:var(--oro);background:linear-gradient(165deg,#fdf6e0,#f9ecc8);box-shadow:0 4px 16px rgba(217,164,65,.3)}
+.badge-kaart.verdiend .b-icoon{filter:none;opacity:1;transform:scale(1.1)}
+.badge-kaart.verdiend .b-naam{color:var(--oro-diep)}
+
+/* ============ PASPOORT ============ */
+.paspoort{
+  margin:3rem auto;max-width:640px;border-radius:26px;overflow:hidden;
+  border:2px solid var(--oro);box-shadow:var(--shadow-deep);
+  background:linear-gradient(165deg,#12405c,#0b2740);color:var(--parchment);
+}
+.pas-kop{padding:1.8rem 1.6rem 1.2rem;text-align:center;border-bottom:2px solid var(--oro)}
+.pas-kop .p-eyebrow{font-family:var(--f-display);font-size:.66rem;letter-spacing:.45em;text-transform:uppercase;color:var(--oro-licht)}
+.pas-kop h2{font-family:var(--f-display);font-weight:700;font-size:1.9rem;margin:.2rem 0 0;color:#fff}
+.pas-body{padding:1.5rem 1.6rem 2rem}
+.pas-houder{display:flex;align-items:center;gap:1rem;padding:1rem;border-radius:16px;background:rgba(253,241,211,.07);border:1px solid rgba(242,207,126,.35);margin-bottom:1.3rem}
+.pas-houder .p-avatar{width:64px;height:64px;border-radius:50%;border:2.5px solid var(--oro);display:flex;align-items:center;justify-content:center;font-size:2rem;background:rgba(255,255,255,.08)}
+.pas-houder .p-naam{font-family:var(--f-display);font-size:1.2rem;color:#fff}
+.pas-houder .p-rol{font-family:var(--f-hand);font-size:1.15rem;color:var(--rosa-zacht)}
+.stempel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem}
+.stempel-vak{
+  aspect-ratio:1;border-radius:16px;border:2px dashed rgba(242,207,126,.45);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.2rem;
+  color:rgba(253,241,211,.5);text-align:center;padding:.5rem;
+}
+.stempel-vak .s-icoon{font-size:2rem;opacity:.4}
+.stempel-vak .s-naam{font-family:var(--f-display);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.stempel-vak .s-datum{font-family:var(--f-hand);font-size:1rem}
+.stempel-vak.gezet{
+  border:2.5px solid var(--rosa);color:var(--rosa-gloed);transform:rotate(-3deg);
+  background:rgba(231,138,160,.12);box-shadow:0 0 24px rgba(231,138,160,.3);
+}
+.stempel-vak.gezet .s-icoon{opacity:1}
+.stempel-vak:nth-child(2).gezet{transform:rotate(2deg)}
+.pas-totalen{display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center;margin-top:1.4rem}
+.pas-totaal{
+  padding:.6rem 1rem .5rem;border-radius:12px;border:1px solid rgba(242,207,126,.35);
+  background:rgba(253,241,211,.06);text-align:center;min-width:88px;
+}
+.pas-totaal .pt-num{font-family:var(--f-display);font-weight:700;font-size:1.3rem;color:var(--oro-glans);font-variant-numeric:tabular-nums}
+.pas-totaal .pt-label{font-family:var(--f-ui);font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(253,241,211,.7)}
+
+/* ============ SCORES ============ */
+.scores{
+  margin:3rem auto;max-width:640px;border-radius:26px;padding:1.8rem 1.6rem 2rem;
+  background:linear-gradient(165deg,var(--parchment-soft),var(--parchment));
+  border:1px solid var(--parchment-edge);box-shadow:var(--shadow-deep);text-align:center;
+}
+.scores h2{font-family:var(--f-display);font-size:1.7rem;margin:0 0 .1rem;color:var(--paper-text)}
+.scores .sc-sub{font-family:var(--f-hand);font-size:1.35rem;color:var(--paper-soft);margin:0 0 1.3rem}
+.duel{display:grid;grid-template-columns:1fr auto 1fr;gap:.8rem;align-items:center}
+.duel-kant{border-radius:18px;padding:1.1rem .8rem;border:2px solid var(--parchment-edge);background:#fffdf4}
+.duel-kant.roos{border-color:var(--rosa)}
+.duel-kant.marco{border-color:var(--lago)}
+.duel-kant.leidt{box-shadow:0 0 26px rgba(217,164,65,.45);border-color:var(--oro)}
+.duel-kant .d-avatar{font-size:2.3rem}
+.duel-kant .d-naam{font-family:var(--f-display);font-size:1.05rem;color:var(--paper-text)}
+.duel-kant .d-score{font-family:var(--f-display);font-weight:700;font-size:2.2rem;color:var(--wijn);font-variant-numeric:tabular-nums}
+.duel-kant .d-detail{font-family:var(--f-ui);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-soft)}
+.duel-vs{font-family:var(--f-display);font-weight:700;font-size:1.3rem;color:var(--oro-diep)}
+.sc-hint{margin-top:1rem;font-family:var(--f-hand);font-size:1.15rem;color:var(--paper-soft)}
+
+/* ============ MINIGAME ============ */
+.arcade{
+  margin:3rem 0;border-radius:26px;overflow:hidden;
+  border:2px solid var(--rosa);box-shadow:var(--shadow-deep),0 0 50px rgba(231,138,160,.2);
+  background:linear-gradient(180deg,#12405c,#0b2740);color:var(--parchment);text-align:center;
+}
+.arcade-kop{padding:1.8rem 1.4rem .6rem}
+.arcade-kop h2{font-family:var(--f-display);font-size:1.8rem;margin:0;color:var(--rosa-gloed)}
+.arcade-kop .a-sub{font-family:var(--f-hand);font-size:1.35rem;color:rgba(253,241,211,.85)}
+.arcade-hud{display:flex;gap:1.4rem;justify-content:center;font-family:var(--f-display);font-size:.8rem;letter-spacing:.15em;color:var(--oro-licht);padding:.4rem 0 .6rem}
+.arcade-hud b{color:#fff;font-variant-numeric:tabular-nums}
+#gelato-canvas{display:block;width:100%;max-width:560px;margin:0 auto;background:linear-gradient(180deg,#0a2438 0%,#175070 70%,#c98a5a 100%);border-top:1px solid rgba(242,207,126,.3);touch-action:none}
+.arcade-voet{padding:1rem 1.4rem 1.6rem;display:flex;flex-direction:column;gap:.6rem;align-items:center}
+.arcade-start{
+  font-family:var(--f-display);font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
+  padding:.8rem 1.8rem;border-radius:999px;cursor:pointer;border:2px solid var(--rosa);
+  background:linear-gradient(90deg,var(--rosa),var(--rosa-zacht));color:#4a1420;
+  box-shadow:0 6px 22px rgba(231,138,160,.4);transition:transform .2s;
+}
+.arcade-start:hover{transform:translateY(-2px)}
+.arcade-uitleg{font-family:var(--f-ui);font-size:.75rem;color:rgba(253,241,211,.7);max-width:420px}
+
+/* ============ PERSONA MODAL ============ */
+.persona-overlay{
+  position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;
+  background:rgba(4,19,31,.85);backdrop-filter:blur(8px);padding:1rem;
+}
+.persona-overlay.open{display:flex}
+.persona-modal{
+  max-width:480px;width:100%;border-radius:26px;padding:2rem 1.6rem 1.8rem;text-align:center;
+  background:linear-gradient(165deg,var(--parchment-soft),var(--parchment));
+  border:2px solid var(--oro);box-shadow:var(--shadow-deep);position:relative;
+  max-height:92vh;overflow-y:auto;
+}
+.persona-modal .pm-eyebrow{font-family:var(--f-display);font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--oro-diep)}
+.persona-modal h2{font-family:var(--f-display);font-size:1.7rem;margin:.3rem 0 .2rem;color:var(--paper-text)}
+.persona-modal .pm-sub{font-size:.98rem;color:var(--paper-soft);max-width:360px;margin:0 auto 1.2rem}
+.persona-keuzes{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.persona-keuze{
+  border-radius:18px;padding:1.2rem .8rem 1rem;cursor:pointer;border:2px solid var(--parchment-edge);
+  background:#fffdf4;transition:all .2s;font-family:var(--f-body);
+}
+.persona-keuze:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(58,44,22,.2)}
+.persona-keuze.roos:hover{border-color:var(--rosa)}
+.persona-keuze.marco:hover{border-color:var(--lago)}
+.persona-keuze .pk-avatar{font-size:2.6rem}
+.persona-keuze .pk-naam{font-family:var(--f-display);font-size:1.15rem;font-weight:700;color:var(--paper-text);margin-top:.3rem}
+.persona-keuze .pk-rol{font-family:var(--f-hand);font-size:1.15rem;color:var(--wijn)}
+.persona-modal .pm-voet{font-family:var(--f-hand);font-size:1.1rem;color:var(--paper-soft);margin-top:1.1rem}
+.persona-sluit{position:absolute;top:.7rem;right:1rem;border:none;background:none;font-size:1.5rem;cursor:pointer;color:var(--paper-soft)}
+
+/* ============ TOAST + MUZIEK ============ */
+.toast{
+  position:fixed;left:50%;bottom:5rem;transform:translate(-50%,20px);z-index:300;
+  background:var(--notte-mid);color:var(--parchment);border:1px solid var(--oro);
+  padding:.7rem 1.3rem;border-radius:999px;font-family:var(--f-ui);font-size:.8rem;
+  opacity:0;pointer-events:none;transition:all .35s;box-shadow:var(--shadow-deep);max-width:90vw;text-align:center;
+}
+.toast.zichtbaar{opacity:1;transform:translate(-50%,0)}
+.muziek-knop{
+  position:fixed;left:1rem;bottom:1rem;z-index:90;width:46px;height:46px;border-radius:50%;
+  border:2px solid rgba(242,207,126,.6);background:rgba(8,34,52,.85);color:var(--oro-licht);
+  font-size:1.15rem;cursor:pointer;box-shadow:var(--shadow-soft);transition:all .25s;
+}
+.muziek-knop.speelt{border-color:var(--oro-glans);box-shadow:0 0 20px rgba(255,226,138,.5);animation:muziekPuls 2s ease-in-out infinite}
+@keyframes muziekPuls{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+
+/* ============ FOOTER ============ */
+.voet{
+  text-align:center;padding:3rem 1rem 4rem;color:rgba(253,241,211,.75);position:relative;z-index:1;
+}
+.voet .v-ster{color:var(--oro);font-size:1.3rem}
+.voet p{margin:.4rem 0;font-size:.95rem}
+.voet .v-hand{font-family:var(--f-hand);font-size:1.35rem;color:var(--rosa-zacht)}
+.voet .v-klein{font-family:var(--f-ui);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(253,241,211,.45)}
+
+@media(max-width:560px){
+  .facts .k{flex-basis:86px}
+  .duel{grid-template-columns:1fr;gap:.6rem}
+  .duel-vs{padding:.2rem 0}
+  .cover-maan{width:80px;height:80px;top:9%;right:7%}
+}
+</style>
+</head>
+<body>
+<nav class="kompas" aria-label="Route">
+  <div class="kompas-inner">
+    <div class="kompas-brand"><span class="star">✦</span> NAZOMER MMXXVI</div>
+    <div class="kompas-route" id="kompas-route">
+      <a class="kompas-stop" href="#cassano" data-stop="cassano"><span class="kompas-dot"></span>I · Cassano</a>
+      <a class="kompas-stop" href="#sangregorio" data-stop="sangregorio"><span class="kompas-dot"></span>II · S. Gregorio</a>
+      <a class="kompas-stop" href="#burchen" data-stop="burchen"><span class="kompas-dot"></span>III · Bürchen</a>
+      <a class="kompas-stop" href="#questmode"><span class="kompas-dot"></span>🏆 Quest</a>
+      <a class="kompas-stop" href="#paspoort"><span class="kompas-dot"></span>✦ Paspoort</a>
+      <a class="kompas-stop" href="#scores"><span class="kompas-dot"></span>★ Scores</a>
+      <a class="kompas-stop" href="#arcade"><span class="kompas-dot"></span>🕹️ Arcade</a>
+    </div>
+    <button class="kompas-badge" id="kompas-badge" title="Wissel van reisgenoot" aria-label="Wissel van reisgenoot"><span id="kompas-badge-emoji">🧳</span></button>
+    <div class="kompas-progress"><div class="kompas-progress-bar" id="kompas-progress-bar"></div></div>
+  </div>
+</nav>
+
+<header class="cover" id="cover">
+  <canvas id="vuurvliegjes" aria-hidden="true"></canvas>
+  <div class="cover-maan" id="cover-maan" title="Psst... klik op de maan" aria-hidden="true"></div>
+  <div class="cover-eyebrow">Nazomer · MMXXVI</div>
+  <h1>Nazomerdroom</h1>
+  <p class="cover-sub">tien dagen la dolce vita, van de Po-vlakte tot de Alpen</p>
+  <div class="cover-meta">VOOR ROOS &amp; MARCO · 21 — 30 SEPTEMBER</div>
+  <div class="cover-namen">
+    <div class="cover-naam roos"><div class="cover-avatar">🌹</div>Rosanne</div>
+    <div class="cover-amp">&amp;</div>
+    <div class="cover-naam marco"><div class="cover-avatar">🧭</div>Marco</div>
+  </div>
+  <div class="countdown" id="countdown">
+    <div class="cd-titel" id="cd-titel">nog even geduld, dan begint het...</div>
+    <div class="cd-cel"><div class="cd-num" id="cd-d">–</div><div class="cd-label">dagen</div></div>
+    <div class="cd-cel"><div class="cd-num" id="cd-h">–</div><div class="cd-label">uren</div></div>
+    <div class="cd-cel"><div class="cd-num" id="cd-m">–</div><div class="cd-label">minuten</div></div>
+    <div class="cd-cel"><div class="cd-num" id="cd-s">–</div><div class="cd-label">seconden</div></div>
+  </div>
+  <div class="scrollhint">▾ blader door jullie reis ▾</div>
+</header>
+
+<main class="page">
+
+<section class="intro">
+  <div class="intro-eyebrow">Het verhaal</div>
+  <h2>Tien dagen onderweg</h2>
+  <p class="intro-sub">twee mensen, één Cupra, drieduizend kilometer</p>
+  <p class="lead">Tien septemberdagen lang ruilen jullie Leerbroek in voor de nazomer van Europa. Eerst één nacht landen in Lombardije, dan vijf nachten in een middeleeuws bergdorpje boven Rome: espresso op de piazza, keizers en gladiatoren, de as van de Vesuvius. En als afsluiter drie nachten op een zonneterras in de Walliser Alpen, waar de lariksen goud kleuren en de raclette pruttelt. Dit boekje is jullie reisgenoot: lees, speel, stempel en versla elkaar in de quiz.</p>
+  <div class="stats-rij">
+    <div class="stat-tegel"><div class="stat-num">10</div><div class="stat-label">dagen</div></div>
+    <div class="stat-tegel"><div class="stat-num">4</div><div class="stat-label">landen</div></div>
+    <div class="stat-tegel"><div class="stat-num">±3.300</div><div class="stat-label">kilometer</div></div>
+    <div class="stat-tegel"><div class="stat-num">3</div><div class="stat-label">verblijven</div></div>
+    <div class="stat-tegel"><div class="stat-num">∞</div><div class="stat-label">gelato-potentieel</div></div>
+  </div>
+</section>
+
+<div class="flourish">✦</div>
+
+<section aria-label="Kaart van de route">
+  <div class="kaart-wrap">
+    <div class="kaart-titel">De Route</div>
+    <svg viewBox="0 0 940 560" role="img" aria-label="Routekaart van Leerbroek via Cassano Magnago en San Gregorio da Sassola naar Bürchen">
+      <defs>
+        <linearGradient id="kaartlucht" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0c2a40"/><stop offset="1" stop-color="#092033"/>
+        </linearGradient>
+        <radialGradient id="kaartgloed" cx="50%" cy="45%" r="65%">
+          <stop offset="0" stop-color="rgba(242,207,126,.10)"/><stop offset="1" stop-color="rgba(242,207,126,0)"/>
+        </radialGradient>
+      </defs>
+      <rect width="940" height="560" fill="url(#kaartlucht)"/>
+      <rect width="940" height="560" fill="url(#kaartgloed)"/>
+      <!-- gestileerd Europa: kustlijnen -->
+      <path d="M 240 40 L 300 55 L 330 95 L 310 130 L 340 150 L 330 195 L 360 230 L 350 275 L 385 300 L 375 345 L 410 370 L 430 420 L 470 445 L 460 490 L 490 520 L 520 555 L 200 555 L 190 500 L 220 470 L 205 430 L 235 400 L 220 355 L 250 320 L 235 280 L 265 250 L 250 205 L 280 175 L 260 135 L 285 100 L 250 75 Z" fill="rgba(31,106,138,.28)" stroke="rgba(169,212,189,.35)" stroke-width="1.5"/>
+      <path d="M 520 555 L 490 520 L 505 480 L 545 455 L 560 415 L 600 400 L 640 420 L 660 470 L 700 500 L 720 555 Z" fill="rgba(31,106,138,.22)" stroke="rgba(169,212,189,.3)" stroke-width="1.5"/>
+      <path d="M 700 40 L 940 40 L 940 350 L 860 330 L 820 290 L 780 300 L 740 260 L 760 210 L 720 170 L 740 120 L 710 80 Z" fill="rgba(31,106,138,.18)" stroke="rgba(169,212,189,.22)" stroke-width="1"/>
+      <!-- Alpen suggestie -->
+      <g fill="none" stroke="rgba(253,241,211,.35)" stroke-width="2" stroke-linecap="round">
+        <path d="M 380 330 l 14 -18 l 12 18"/><path d="M 415 322 l 14 -20 l 12 20"/><path d="M 450 330 l 13 -16 l 11 16"/><path d="M 340 340 l 12 -14 l 10 14"/>
+      </g>
+      <!-- laars van Italië -->
+      <path d="M 430 360 L 470 375 L 500 420 L 520 470 L 560 505 L 600 520 L 590 545 L 545 540 L 505 505 L 480 460 L 450 420 L 425 390 Z" fill="rgba(211,118,63,.2)" stroke="rgba(242,207,126,.4)" stroke-width="1.5"/>
+      <!-- route -->
+      <path id="route-pad" class="route-lijn" d="M 300 120 C 330 190, 350 240, 395 320 C 420 365, 445 380, 460 415 C 475 450, 490 470, 505 490 C 480 470, 450 440, 430 400 C 415 370, 400 350, 390 335"/>
+      <!-- thuis -->
+      <g class="kaart-stop kaart-thuis">
+        <circle class="kern" cx="300" cy="120" r="6" fill="#a9d4bd"/>
+        <text x="315" y="116">🏡 Leerbroek</text>
+      </g>
+      <a href="#cassano"><g class="kaart-stop">
+        <circle class="ring" cx="395" cy="320" r="6"/><circle class="kern" cx="395" cy="320" r="6"/>
+        <text x="410" y="315">I · Cassano Magnago</text>
+      </g></a>
+      <a href="#sangregorio"><g class="kaart-stop">
+        <circle class="ring" cx="505" cy="490" r="6"/><circle class="kern" cx="505" cy="490" r="6"/>
+        <text x="520" y="486">II · San Gregorio da Sassola</text>
+      </g></a>
+      <a href="#burchen"><g class="kaart-stop">
+        <circle class="ring" cx="390" cy="335" r="6"/><circle class="kern" cx="390" cy="335" r="6"/>
+        <text x="290" y="360" text-anchor="end">III · Bürchen ⛰️</text>
+      </g></a>
+      <!-- rijdend autootje over de route -->
+      <g class="auto-dot"><circle r="5" fill="#ffe28a">
+        <animateMotion dur="18s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#route-pad"/>
+        </animateMotion>
+      </circle></g>
+    </svg>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="intro" style="padding-top:2rem">
+    <div class="intro-eyebrow">De hoofdrolspelers</div>
+    <h2>Het reisgezelschap</h2>
+    <p class="intro-sub">klein team, grote plannen</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-kaart roos">
+      <div class="team-leeftijd">24</div>
+      <div class="grote-avatar">🌹</div>
+      <h3>Rosanne</h3>
+      <p class="team-rol">navigator &amp; smaakcommissie</p>
+      <p class="bio">Bewaakt de route, de speellijst én de kwaliteit van elke gelato. Niets passeert de grens zonder haar goedkeuring. Officieel ook hoofd van de afdeling "nog heel even blijven zitten in de zon".</p>
+    </div>
+    <div class="team-kaart marco">
+      <div class="team-leeftijd">25</div>
+      <div class="grote-avatar">🧭</div>
+      <h3>Marco</h3>
+      <p class="team-rol">chauffeur &amp; espressoscout</p>
+      <p class="bio">Stuurt de Cupra Leon over Gotthard en Simplon alsof het de A27 is. Vindt in elk dorp binnen tien minuten de beste bar voor een espresso al banco. Claimt dat hij niet competitief is; de quiz gaat dat weerleggen.</p>
+    </div>
+  </div>
+</section>
+
+<div class="flourish">✦</div>
+
+<section class="dagteller" id="dagteller">
+  <div class="dt-eyebrow">✦ Reisdagboek ✦</div>
+  <div class="dt-groot" id="dt-groot">–</div>
+  <div class="dt-sub" id="dt-sub">van jullie nazomerdroom</div>
+  <div class="dt-vandaag" id="dt-vandaag"></div>
+</section>
+
+<section class="feitjes" aria-label="Feitjes">
+  <div class="feit-kaart">
+    <div class="f-icoon" id="feit-icoon">✦</div>
+    <div class="f-tekst" id="feit-tekst">Trek een feitje en verbaas je reisgenoot onderweg.</div>
+  </div>
+  <div class="feit-knoppen">
+    <button class="feit-btn" id="feit-btn">✦ Trek een feitje</button>
+  </div>
+</section>
+
+<section aria-label="Vakantietellers">
+  <div class="tellers">
+    <button class="teller" data-teller="gelato"><span class="t-icoon">🍦</span><span class="t-num" data-teller-num="gelato">0</span><span class="t-label">gelato's</span></button>
+    <button class="teller" data-teller="pizza"><span class="t-icoon">🍕</span><span class="t-num" data-teller-num="pizza">0</span><span class="t-label">pizza's</span></button>
+    <button class="teller" data-teller="espresso"><span class="t-icoon">☕</span><span class="t-num" data-teller-num="espresso">0</span><span class="t-label">espresso's</span></button>
+    <button class="teller" data-teller="pas"><span class="t-icoon">⛰️</span><span class="t-num" data-teller-num="pas">0</span><span class="t-label">bergpassen</span></button>
+  </div>
+  <p class="tellers-hint">tik om te turven, lang ingedrukt houden om terug te tellen</p>
+</section>
+
+<div class="flourish">✦</div>
+
+<!-- ============ I · CASSANO MAGNAGO ============ -->
+<section class="loc" id="cassano">
+  <div class="loc-hero">
+    <svg viewBox="0 0 940 360" role="img" aria-label="Avond in Lombardije: campanile en heuvels">
+      <defs>
+        <linearGradient id="cas-lucht" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0d2c44"/><stop offset=".45" stop-color="#31688a"/>
+          <stop offset=".75" stop-color="#c9805a"/><stop offset="1" stop-color="#e8a56b"/>
+        </linearGradient>
+      </defs>
+      <rect width="940" height="360" fill="url(#cas-lucht)"/>
+      <circle cx="700" cy="150" r="46" fill="#ffe9b0" opacity=".95"/>
+      <circle cx="700" cy="150" r="70" fill="#ffe9b0" opacity=".18"/>
+      <g fill="#fff" opacity=".8"><circle cx="120" cy="60" r="2"/><circle cx="260" cy="40" r="1.5"/><circle cx="420" cy="70" r="2"/><circle cx="560" cy="45" r="1.5"/><circle cx="850" cy="65" r="2"/></g>
+      <!-- verre Alpen -->
+      <path d="M 0 200 L 90 150 L 170 195 L 250 140 L 330 190 L 410 155 L 490 200 L 940 200 L 940 360 L 0 360 Z" fill="#1d4a66" opacity=".8"/>
+      <!-- heuvels -->
+      <path d="M 0 250 Q 160 195 320 245 T 640 245 T 940 235 L 940 360 L 0 360 Z" fill="#7a4a3f" opacity=".85"/>
+      <!-- dorp silhouet -->
+      <g fill="#33202b">
+        <rect x="330" y="228" width="34" height="72"/>
+        <polygon points="330,228 347,206 364,228"/>
+        <rect x="344" y="248" width="6" height="10" fill="#ffd98a"/>
+        <rect x="400" y="258" width="60" height="45"/>
+        <polygon points="400,258 430,240 460,258"/>
+        <rect x="470" y="268" width="46" height="36"/>
+        <rect x="524" y="262" width="52" height="42"/>
+        <polygon points="524,262 550,246 576,262"/>
+        <rect x="412" y="272" width="8" height="10" fill="#ffd98a"/><rect x="438" y="272" width="8" height="10" fill="#ffd98a"/>
+        <rect x="484" y="278" width="7" height="9" fill="#ffc46b"/><rect x="540" y="274" width="7" height="9" fill="#ffd98a"/>
+      </g>
+      <!-- cipressen -->
+      <g fill="#22303b">
+        <ellipse cx="640" cy="272" rx="10" ry="36"/><ellipse cx="668" cy="280" rx="8" ry="28"/>
+        <ellipse cx="180" cy="280" rx="9" ry="30"/><ellipse cx="152" cy="288" rx="7" ry="22"/>
+      </g>
+      <path d="M 0 320 Q 235 300 470 316 T 940 312 L 940 360 L 0 360 Z" fill="#241722"/>
+    </svg>
+    <div class="label">
+      <div class="num">I — De zachte landing</div>
+      <h2>Cassano Magnago</h2>
+      <div class="meta">Maandag 21 → dinsdag 22 september · één nacht · Lombardije, Italië</div>
+    </div>
+  </div>
+  <div class="loc-body">
+    <p class="hero-text">Negen en een half uur Cupra liggen achter jullie: het Duitse asfalt, de Gotthard die zich zeventien kilometer door de berg boort, en dan opeens dat andere licht aan de zuidkant. Palmen bij de meren, terracotta daken, "buonasera" in plaats van "Grüezi". Cassano Magnago is geen bezienswaardigheid en dat is precies de charme: dit is een gewoon Lombardisch stadje waar de vakantie begint met een pizza, een passeggiata en een bed.</p>
+    <p class="expanded">Het stadje ligt in de provincie Varese, op een kwartier van de Zwitserse grens en ver van elke toeristenbus. Vanavond doen jullie waar Italianen goed in zijn: nergens haast om maken. Morgen wacht de lange rit naar Rome, dus het doel van vandaag is simpel: aankomen, eten, slapen, en morgenochtend als echte Italianen aan de bar een espresso staan te drinken bij het ontbijt.</p>
+    <div class="facts">
+      <div class="row"><span class="k">Rijtijd</span><span class="v">Leerbroek › Cassano Magnago: ±9,5 u rijden (±980 km) via Karlsruhe, Basel en de Gotthardtunnel. Vertrek vroeg, dan sta je vóór de avondspits van Milaan aan de goede kant.</span></div>
+      <div class="row"><span class="k">Let op</span><span class="v">Zwitsers vignet (CHF 40) vóór Basel regelen, digitaal via de e-vignet-site. Italiaanse tol betaal je per traject, gewoon met pinpas bij het poortje.</span></div>
+      <div class="row"><span class="k">Doel</span><span class="v">Stuur loslaten, benen strekken, eerste pizza van de reis scoren.</span></div>
+    </div>
+    <div class="activity-guide">
+      <h3 class="activity-guide-title">🧭 Voor de avond en de ochtend</h3>
+      <div class="activity-grid">
+        <div class="activity-card must-see"><h4>✨ Als er nog energie is</h4><ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Castiglione+Olona" target="_blank" rel="noopener">Castiglione Olona</a>: tien minuten rijden, een piepklein Toscaans-ogend renaissancedorpje. Perfect voor een avondwandeling.</li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Sacro+Monte+di+Varese" target="_blank" rel="noopener">Sacro Monte di Varese</a>: UNESCO-bedevaartsweg met uitzicht over de meren, mooi bij zonsondergang (25 min).</li>
+          <li>Of gewoon: het centro van Cassano zelf, een gelato en vroeg het bed in.</li>
+        </ul></div>
+        <div class="activity-card rain"><h4>🌙 Ochtendritueel</h4><ul>
+          <li>Espresso + brioche aan de bar, staand, zoals het hoort. Cappuccino mag ook: het is vóór 11 uur, dus het is legaal.</li>
+          <li>Tanken vóór de snelweg; langs de autostrada is benzine merkbaar duurder.</li>
+        </ul></div>
+      </div>
+      <div class="food-card"><h4>🍴 Eerste avond eten</h4><ul>
+        <li>Zoek een pizzeria met houtoven in het centro; in Lombardije is de pizza dunner en knapperiger dan thuis.</li>
+        <li>Bestel eens een <i>pizza con burrata</i>: september is nazomers, de terrassen zijn nog open.</li>
+        <li>Afsluiten met een <i>amaro</i> of limoncello, want jullie hoeven nergens meer heen.</li>
+      </ul></div>
+    </div>
+
+    <div class="duo-zone" data-loc="cassano">
+      <h3>🎲 Voor Roos &amp; Marco</h3>
+      <p class="sub">eerste avond, eerste duel: wie kent Italië het best?</p>
+      <div class="duo-tabs">
+        <button class="duo-tab active" data-panel="quiz">🧠 Quiz-duel <span class="score-badge" data-score-loc="cassano">0 / 3</span></button>
+        <button class="duo-tab" data-panel="bingo">👀 Onderweg-bingo <span class="score-badge" data-bingo-loc="cassano">0 / 9</span></button>
+        <button class="duo-tab" data-panel="lang">🗣️ Italiaans</button>
+      </div>
+      <div class="duo-paneel quiz active">
+        <div class="quiz-vraag" data-q="0">
+          <div class="q">Hoe lang is de Gotthard-wegtunnel waar jullie vandaag doorheen rijden?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">8,2 kilometer</button>
+            <button class="quiz-optie" data-correct="1">16,9 kilometer</button>
+            <button class="quiz-optie" data-correct="0">24,5 kilometer</button>
+          </div>
+          <div class="quiz-feedback">16,9 km: bij opening in 1980 de langste wegtunnel ter wereld. Radio valt weg, dus zet vast een download klaar.</div>
+        </div>
+        <div class="quiz-vraag" data-q="1">
+          <div class="q">Waarom kijkt een Italiaanse barista je raar aan bij een cappuccino om 15:00?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">Cappuccino is alleen voor toeristen</button>
+            <button class="quiz-optie" data-correct="1">Melk na de lunch geldt als slecht voor de spijsvertering</button>
+            <button class="quiz-optie" data-correct="0">Melk is 's middags duurder</button>
+          </div>
+          <div class="quiz-feedback">Italianen drinken melkkoffie alleen bij het ontbijt; daarna is het caffè (espresso). Na 11 uur bestel je op eigen risico.</div>
+        </div>
+        <div class="quiz-vraag" data-q="2">
+          <div class="q">Wat betekent "passeggiata"?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">Een pastagerecht met salie</button>
+            <button class="quiz-optie" data-correct="1">De avondwandeling door het dorp, om te zien en gezien te worden</button>
+            <button class="quiz-optie" data-correct="0">De middagpauze waarin alles dicht is</button>
+          </div>
+          <div class="quiz-feedback">Het dagelijkse avondommetje, liefst met gelato in de hand. Vanavond doen jullie er zelf een.</div>
+        </div>
+      </div>
+      <div class="duo-paneel bingo">
+        <div class="bingo">
+          <div class="bingo-item" data-i="0"><span class="ic">🚗</span>Fiat 500</div>
+          <div class="bingo-item" data-i="1"><span class="ic">🛵</span>Vespa</div>
+          <div class="bingo-item" data-i="2"><span class="ic">🌴</span>Palmboom</div>
+          <div class="bingo-item" data-i="3"><span class="ic">🏔️</span>Sneeuwrest op een top</div>
+          <div class="bingo-item" data-i="4"><span class="ic">⛪</span>Campanile (klokkentoren)</div>
+          <div class="bingo-item" data-i="5"><span class="ic">👵</span>Nonna op een bankje</div>
+          <div class="bingo-item" data-i="6"><span class="ic">🧺</span>Wasgoed aan een lijn</div>
+          <div class="bingo-item" data-i="7"><span class="ic">🍕</span>Houtoven-pizzeria</div>
+          <div class="bingo-item" data-i="8"><span class="ic">🚧</span>Italiaans inhaalmanoeuvre</div>
+        </div>
+      </div>
+      <div class="duo-paneel lang">
+        <div class="lang-cards">
+          <div class="lang-card" data-text="Buonasera" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Goedenavond</div><div class="foreign">Buonasera</div><div class="pron">[bwo-na-see-ra]</div></div>
+          <div class="lang-card" data-text="Grazie mille" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Duizendmaal dank</div><div class="foreign">Grazie mille</div><div class="pron">[graat-sie-e mie-le]</div></div>
+          <div class="lang-card" data-text="Un tavolo per due, per favore" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Een tafel voor twee</div><div class="foreign">Un tavolo per due</div><div class="pron">[oen taa-vo-lo per doe-e]</div></div>
+          <div class="lang-card" data-text="Due gelati, per favore" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Twee ijsjes graag</div><div class="foreign">Due gelati, per favore</div><div class="pron">[doe-e dzje-laa-tie]</div></div>
+          <div class="lang-card" data-text="Il conto, per favore" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">De rekening graag</div><div class="foreign">Il conto, per favore</div><div class="pron">[iel kon-to]</div></div>
+          <div class="lang-card" data-text="Che bello!" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Wat mooi!</div><div class="foreign">Che bello!</div><div class="pron">[kee bel-lo]</div></div>
+        </div>
+        <p style="text-align:center;font-size:.82rem;color:var(--paper-soft);margin:.6rem 0 0;font-style:italic">Tik op een kaartje en je telefoon spreekt het uit 🔊</p>
+      </div>
+      <div class="stamp-row">
+        <button class="stamp-btn" data-stamp="cassano"><span class="stamp-icon">🍕</span> Wij waren in Cassano!</button>
+        <span class="stamp-undo-hint">nogmaals drukken om uit te wissen</span>
+      </div>
+    </div>
+  </div>
+  <div class="next-stop">
+    <div class="auto-icoon">🚗💨</div>
+    <div class="next-stop-leader">Volgende halte</div>
+    <div class="next-stop-title">🏰 San Gregorio da Sassola</div>
+    <div class="next-stop-tagline">het borgo boven Rome wacht</div>
+    <div class="next-stop-meta"><b>±6 u</b> · ±640 km · A1 via Bologna en Florence, tolweg</div>
+    <div class="next-stop-actions">
+      <a class="maps-btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Cassano+Magnago,+Italy&amp;destination=San+Gregorio+da+Sassola,+Italy&amp;travelmode=driving" target="_blank" rel="noopener"><span>Open route in Maps</span><span class="arrow">→</span></a>
+      <button type="button" class="maps-secondary copy-link" data-url="https://www.google.com/maps/search/?api=1&amp;query=San+Gregorio+da+Sassola" data-name="San Gregorio da Sassola">⎘ Kopieer link</button>
+    </div>
+  </div>
+  <div class="gem"><span class="star">★ Hidden gem</span><b>Lago di Como is maar 40 minuten rijden.</b> Vertrekken jullie morgen tóch iets later, rijd dan eerst even naar Como-stad voor een cappuccino aan het meer. Duurder dan in Cassano, maar het uitzicht betaalt het verschil.</div>
+</section>
+
+<div class="flourish">✦</div>
+<!-- ============ II · SAN GREGORIO DA SASSOLA ============ -->
+<section class="loc" id="sangregorio">
+  <div class="loc-hero">
+    <svg viewBox="0 0 940 360" role="img" aria-label="Middeleeuws borgo op een heuvel bij Rome in avondlicht">
+      <defs>
+        <linearGradient id="sg-lucht" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#122a44"/><stop offset=".4" stop-color="#5a4a72"/>
+          <stop offset=".7" stop-color="#c96f5a"/><stop offset="1" stop-color="#eda56e"/>
+        </linearGradient>
+      </defs>
+      <rect width="940" height="360" fill="url(#sg-lucht)"/>
+      <circle cx="210" cy="130" r="52" fill="#ffddb0" opacity=".95"/>
+      <circle cx="210" cy="130" r="80" fill="#ffddb0" opacity=".16"/>
+      <g fill="#fff" opacity=".75"><circle cx="520" cy="55" r="2"/><circle cx="660" cy="80" r="1.5"/><circle cx="800" cy="50" r="2"/><circle cx="400" cy="45" r="1.5"/></g>
+      <!-- verre bergen (Monti Prenestini) -->
+      <path d="M 0 215 L 120 175 L 260 220 L 420 165 L 580 215 L 720 180 L 940 220 L 940 360 L 0 360 Z" fill="#4a3552" opacity=".75"/>
+      <!-- heuvel met borgo -->
+      <path d="M 250 360 Q 470 170 700 360 Z" fill="#5e3a35"/>
+      <!-- borgo op de top -->
+      <g fill="#2e1c26">
+        <rect x="420" y="196" width="30" height="60"/>
+        <polygon points="416,196 435,168 454,196"/>
+        <rect x="452" y="216" width="44" height="46"/>
+        <rect x="392" y="222" width="30" height="42"/>
+        <rect x="498" y="228" width="38" height="40"/>
+        <rect x="366" y="238" width="28" height="34"/>
+        <rect x="538" y="238" width="30" height="34"/>
+        <rect x="430" y="212" width="7" height="9" fill="#ffd98a"/>
+        <rect x="464" y="230" width="8" height="10" fill="#ffd98a"/><rect x="482" y="230" width="8" height="10" fill="#ffc46b"/>
+        <rect x="402" y="234" width="7" height="9" fill="#ffd98a"/><rect x="508" y="240" width="7" height="9" fill="#ffd98a"/>
+        <rect x="374" y="248" width="6" height="8" fill="#ffc46b"/><rect x="546" y="248" width="6" height="8" fill="#ffd98a"/>
+      </g>
+      <!-- kasteeltorens -->
+      <g fill="#241521">
+        <rect x="573" y="222" width="20" height="46"/>
+        <polygon points="571,222 573,214 578,222 583,214 588,222 593,214 595,222"/>
+      </g>
+      <!-- cipressen -->
+      <g fill="#1f2b31">
+        <ellipse cx="310" cy="316" rx="11" ry="40"/><ellipse cx="345" cy="326" rx="9" ry="30"/>
+        <ellipse cx="660" cy="320" rx="10" ry="36"/><ellipse cx="695" cy="330" rx="8" ry="26"/>
+      </g>
+      <!-- olijfgaard glooiing -->
+      <path d="M 0 330 Q 235 305 470 325 T 940 318 L 940 360 L 0 360 Z" fill="#20141f"/>
+    </svg>
+    <div class="label">
+      <div class="num">II — Het borgo boven Rome</div>
+      <h2>San Gregorio da Sassola</h2>
+      <div class="meta">Dinsdag 22 → zondag 27 september · vijf nachten · Lazio, Italië</div>
+    </div>
+  </div>
+  <div class="loc-body">
+    <p class="hero-text">Veertig minuten van het Colosseum, maar het voelt als een andere eeuw. San Gregorio da Sassola is een middeleeuws borgo van amper vijftienhonderd inwoners, gestapeld op een heuvel in de Monti Prenestini: smalle steegjes, bogen boven de straat, een kasteel, en 's avonds alleen het geluid van bestek en krekels. Dit is vijf nachten lang jullie uitvalsbasis, met Rome, Tivoli en zelfs Pompeii binnen bereik. Overdag keizers en tempels, 's avonds terug naar de rust van het dorp met een fles wijn uit de streek.</p>
+    <p class="expanded">Het geheim van deze plek: jullie slapen wáár Romeinen zelf in het weekend heen vluchten. Tivoli, met twee villa's op de UNESCO-lijst, ligt op twaalf kilometer. En omdat jullie buiten de stad slapen, ontsnappen jullie elke avond aan de drukte én aan de Romeinse parkeerchaos. Eén gouden regel: rijd Rome zelf niet in. De ZTL-zones (verkeersvrije binnenstad met camera's) delen boetes uit die maanden later op de mat vallen. Parkeer bij metrostation Ponte Mammolo en rijd in twintig minuten naar het Colosseum.</p>
+    <div class="facts">
+      <div class="row"><span class="k">Rijtijd</span><span class="v">Cassano Magnago › San Gregorio: ±6 u (±640 km) over de A1, langs Bologna en Florence. Tip: lunchpauze bij een Autogrill, bestel een panino met porchetta.</span></div>
+      <div class="row"><span class="k">Rome-truc</span><span class="v">Auto naar <a href="https://www.google.com/maps/search/?api=1&amp;query=Parcheggio+Ponte+Mammolo+Roma" target="_blank" rel="noopener">P+R Ponte Mammolo</a> (±35 min), dan metro B rechtstreeks naar Colosseo. Nooit de ZTL in.</span></div>
+      <div class="row"><span class="k">Ritme</span><span class="v">Vijf nachten: twee dagen Rome, één dag Pompeii en Napels, één dag Tivoli, en genoeg avonden om het borgo zelf te proeven.</span></div>
+    </div>
+
+    <div class="dagplan" id="dagplan">
+      <h3 class="activity-guide-title">📜 Jullie week, dag voor dag</h3>
+      <div class="dagplan-tabs" id="dagplan-tabs">
+        <button class="dagplan-tab active" data-dag="0">di 22 · aankomst</button>
+        <button class="dagplan-tab" data-dag="1">wo 23 · Rome I</button>
+        <button class="dagplan-tab" data-dag="2">do 24 · Rome II</button>
+        <button class="dagplan-tab" data-dag="3">vr 25 · Pompeii</button>
+        <button class="dagplan-tab" data-dag="4">za 26 · Tivoli</button>
+      </div>
+      <div class="dagplan-paneel active" data-dag="0">
+        <h4>Aankomst in het borgo</h4>
+        <p class="dp-sub">rustig landen, het dorp verkennen</p>
+        <ul>
+          <li><span class="dp-tijd">±16:00</span>Aankomen, inchecken, koffers de steegjes door (auto buiten het oude centrum laten).</li>
+          <li><span class="dp-tijd">18:00</span>Verkenningsrondje: de Piazza Marconi, het <a href="https://www.google.com/maps/search/?api=1&amp;query=Castello+Brancaccio+San+Gregorio+da+Sassola" target="_blank" rel="noopener">Castello Brancaccio</a> en het uitzicht over de campagna.</li>
+          <li><span class="dp-tijd">20:00</span>Avondeten in het dorp; vraag naar de pasta van de dag en de huiswijn. Meer heb je niet nodig.</li>
+        </ul>
+      </div>
+      <div class="dagplan-paneel" data-dag="1">
+        <h4>Rome, het klassieke hart</h4>
+        <p class="dp-sub">gladiatoren, keizers en de mooiste puinhopen ter wereld</p>
+        <ul>
+          <li><span class="dp-tijd">07:30</span>Vroeg weg: auto naar Ponte Mammolo, metro B naar Colosseo.</li>
+          <li><span class="dp-tijd">09:00</span><b>Colosseum</b> (tickets vooraf online!), daarna Forum Romanum en de Palatijn: één combiticket.</li>
+          <li><span class="dp-tijd">13:30</span>Lunch in Monti, de leukste wijk naast het Forum: carbonara of cacio e pepe.</li>
+          <li><span class="dp-tijd">15:00</span>Slenteren: Piazza Venezia, het uitzicht vanaf het Capitool, de Tiber over naar Trastevere.</li>
+          <li><span class="dp-tijd">19:00</span>Aperitivo en avondeten in Trastevere, daarna metro en auto terug.</li>
+        </ul>
+      </div>
+      <div class="dagplan-paneel" data-dag="2">
+        <h4>Rome, het barokke hart</h4>
+        <p class="dp-sub">fonteinen, koepels en de beste tiramisu</p>
+        <ul>
+          <li><span class="dp-tijd">08:00</span>Zelfde truc: Ponte Mammolo, metro naar Termini en doorsteken.</li>
+          <li><span class="dp-tijd">09:00</span><b>Pantheon</b> vroeg, als het licht door de oculus valt en de bussen er nog niet zijn.</li>
+          <li><span class="dp-tijd">10:30</span>Piazza Navona, espresso bij Sant'Eustachio, dan de <b>Trevifontein</b>: muntje erin, dat betekent dat jullie terugkomen.</li>
+          <li><span class="dp-tijd">13:00</span>Lunch en gelato (Giolitti of Frigidarium: Roos beslist welke wint).</li>
+          <li><span class="dp-tijd">15:00</span>Spaanse Trappen en Villa Borghese-park, of het Vaticaan als jullie de Sixtijnse Kapel willen zien (tickets ruim vooraf boeken).</li>
+          <li><span class="dp-tijd">18:30</span>Zonsondergang vanaf Pincio-terras over de koepels van Rome. Dat beeld gaat nooit meer weg.</li>
+        </ul>
+      </div>
+      <div class="dagplan-paneel" data-dag="3">
+        <h4>Pompeii en Napels</h4>
+        <p class="dp-sub">de stad die stilstond in het jaar 79</p>
+        <ul>
+          <li><span class="dp-tijd">07:00</span>Vroegste start van de week: ±2,5 u rijden naar <b>Pompeii</b> (parkeren bij Pompei Scavi).</li>
+          <li><span class="dp-tijd">09:30</span>Drie uur door de opgravingen: het amfitheater, de fresco's van de Villa dei Misteri, de gipsafgietsels. De Vesuvius kijkt de hele tijd mee.</li>
+          <li><span class="dp-tijd">13:30</span>Met de Circumvesuviana-trein naar <b>Napels</b> (±35 min, auto blijft veilig bij Pompeii staan).</li>
+          <li><span class="dp-tijd">14:30</span>Pizza waar hij is uitgevonden: L'Antica Pizzeria da Michele of Sorbillo. Margherita, punt.</li>
+          <li><span class="dp-tijd">16:00</span>Spaccanapoli en de Via San Gregorio Armeno doorlopen; chaos, wasgoed en opera uit open ramen.</li>
+          <li><span class="dp-tijd">18:00</span>Trein terug naar de auto en rustig naar het borgo. Lange dag, maar déze dag vertellen jullie later door.</li>
+        </ul>
+      </div>
+      <div class="dagplan-paneel" data-dag="4">
+        <h4>Tivoli, de villa's van keizers</h4>
+        <p class="dp-sub">de dag zonder wekker</p>
+        <ul>
+          <li><span class="dp-tijd">10:00</span>Kwartiertje rijden naar <b>Villa d'Este</b>: honderden fonteinen in renaissancetuinen, allemaal op zwaartekracht.</li>
+          <li><span class="dp-tijd">13:00</span>Lunch in het centro van Tivoli.</li>
+          <li><span class="dp-tijd">14:30</span><b>Villa Adriana</b>, het buitenpaleis van keizer Hadrianus: zo groot als een dorp, zo leeg als een geheim.</li>
+          <li><span class="dp-tijd">17:30</span>Terug naar San Gregorio: inpakken, laatste passeggiata, afscheidsdiner. Morgen de bergen in.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="activity-guide">
+      <div class="activity-grid">
+        <div class="activity-card rain"><h4>☔ Bij regen</h4><ul>
+          <li>Rome is de beste regenstad ter wereld: Vaticaanse Musea, Pantheon en kerken zijn allemaal binnen.</li>
+          <li>Galleria Borghese: Bernini's beelden, tickets vooraf.</li>
+          <li>Of: lange lunch. Ook een activiteit.</li>
+        </ul></div>
+        <div class="activity-card must-see"><h4>✨ Niet overslaan</h4><ul>
+          <li>Minstens één avond niets plannen en in het borgo blijven.</li>
+          <li>Porchetta uit deze streek: de Castelli Romani ernaast zijn er beroemd om.</li>
+          <li>Muntje in de Trevi. Traditie is traditie.</li>
+        </ul></div>
+      </div>
+      <div class="food-card"><h4>🍴 De Romeinse vier</h4><ul>
+        <li><i>Carbonara</i>, <i>cacio e pepe</i>, <i>amatriciana</i> en <i>gricia</i>: de vier klassiekers. Doel: alle vier geproefd voor zondag.</li>
+        <li>Huiswijn uit Lazio (Frascati!) is goedkoop en goed; september is bovendien wijnoogstmaand.</li>
+        <li>Supplì (gefrituurde risottoballetjes) als streetfood-snack in Rome.</li>
+      </ul></div>
+    </div>
+
+    <div class="duo-zone" data-loc="sangregorio">
+      <h3>🎲 Voor Roos &amp; Marco</h3>
+      <p class="sub">vijf dagen, dus extra vragen: het duel wordt serieus</p>
+      <div class="duo-tabs">
+        <button class="duo-tab active" data-panel="quiz">🧠 Quiz-duel <span class="score-badge" data-score-loc="sangregorio">0 / 4</span></button>
+        <button class="duo-tab" data-panel="bingo">👀 Rome-bingo <span class="score-badge" data-bingo-loc="sangregorio">0 / 9</span></button>
+        <button class="duo-tab" data-panel="lang">🗣️ Italiaans</button>
+      </div>
+      <div class="duo-paneel quiz active">
+        <div class="quiz-vraag" data-q="0">
+          <div class="q">In welk jaar bedolf de Vesuvius Pompeii onder de as?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">Het jaar 33</button>
+            <button class="quiz-optie" data-correct="1">Het jaar 79</button>
+            <button class="quiz-optie" data-correct="0">Het jaar 476</button>
+          </div>
+          <div class="quiz-feedback">79 na Christus. De stad lag zeventien eeuwen onder de as en is daardoor juist zó goed bewaard.</div>
+        </div>
+        <div class="quiz-vraag" data-q="1">
+          <div class="q">Hoeveel geld wordt er per jaar uit de Trevifontein gevist?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">Ongeveer €80.000</button>
+            <button class="quiz-optie" data-correct="1">Meer dan een miljoen euro</button>
+            <button class="quiz-optie" data-correct="0">Muntjes eruit halen is verboden, dus niets</button>
+          </div>
+          <div class="quiz-feedback">Ruim een miljoen per jaar, en het gaat naar een goed doel. Jullie muntje is dus dubbel goed besteed.</div>
+        </div>
+        <div class="quiz-vraag" data-q="2">
+          <div class="q">Wat zit er níét in een echte carbonara?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="1">Room</button>
+            <button class="quiz-optie" data-correct="0">Guanciale (varkenswang)</button>
+            <button class="quiz-optie" data-correct="0">Pecorino en ei</button>
+          </div>
+          <div class="quiz-feedback">Room is vloeken in de kerk. Ei, pecorino, guanciale en peper: meer niet. Dit hardop zeggen in Rome levert respect op.</div>
+        </div>
+        <div class="quiz-vraag" data-q="3">
+          <div class="q">Het Pantheon heeft een gat in de koepel. Wat gebeurt er als het regent?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">Er schuift een glazen plaat overheen</button>
+            <button class="quiz-optie" data-correct="1">Het regent gewoon naar binnen; de vloer heeft afvoergaten</button>
+            <button class="quiz-optie" data-correct="0">Het gat zit onder een afdakje</button>
+          </div>
+          <div class="quiz-feedback">De oculus is al bijna 1900 jaar open. De marmeren vloer loopt bol en heeft antieke afvoergaatjes. Romeinse ingenieurs, hè.</div>
+        </div>
+      </div>
+      <div class="duo-paneel bingo">
+        <div class="bingo">
+          <div class="bingo-item" data-i="0"><span class="ic">🏛️</span>Zuil ouder dan 2000 jaar</div>
+          <div class="bingo-item" data-i="1"><span class="ic">⛲</span>Drinkfonteintje (nasone)</div>
+          <div class="bingo-item" data-i="2"><span class="ic">🛡️</span>Verklede gladiator</div>
+          <div class="bingo-item" data-i="3"><span class="ic">💒</span>Bruidspaar op fotoshoot</div>
+          <div class="bingo-item" data-i="4"><span class="ic">🐈</span>Kat op een ruïne</div>
+          <div class="bingo-item" data-i="5"><span class="ic">🧑‍🎨</span>Straatartiest</div>
+          <div class="bingo-item" data-i="6"><span class="ic">🍝</span>Pasta-menu zonder plaatjes</div>
+          <div class="bingo-item" data-i="7"><span class="ic">🌋</span>De Vesuvius</div>
+          <div class="bingo-item" data-i="8"><span class="ic">🛵</span>Vespa met drie passagiers</div>
+        </div>
+      </div>
+      <div class="duo-paneel lang">
+        <div class="lang-cards">
+          <div class="lang-card" data-text="Buongiorno" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Goedemorgen</div><div class="foreign">Buongiorno</div><div class="pron">[bwon-dzjor-no]</div></div>
+          <div class="lang-card" data-text="Due biglietti, per favore" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Twee kaartjes graag</div><div class="foreign">Due biglietti</div><div class="pron">[doe-e biel-jet-tie]</div></div>
+          <div class="lang-card" data-text="Dov'è la metro?" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Waar is de metro?</div><div class="foreign">Dov'è la metro?</div><div class="pron">[do-vè la mee-tro]</div></div>
+          <div class="lang-card" data-text="Una carbonara e una cacio e pepe" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">De juiste bestelling</div><div class="foreign">Una carbonara e una cacio e pepe</div><div class="pron">[katsjo e pee-pe]</div></div>
+          <div class="lang-card" data-text="Quanto costa?" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Wat kost het?</div><div class="foreign">Quanto costa?</div><div class="pron">[kwan-to kos-ta]</div></div>
+          <div class="lang-card" data-text="È bellissimo qui" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Het is hier prachtig</div><div class="foreign">È bellissimo qui</div><div class="pron">[è bel-lies-sie-mo kwie]</div></div>
+        </div>
+        <p style="text-align:center;font-size:.82rem;color:var(--paper-soft);margin:.6rem 0 0;font-style:italic">Tik op een kaartje en je telefoon spreekt het uit 🔊</p>
+      </div>
+      <div class="stamp-row">
+        <button class="stamp-btn" data-stamp="sangregorio"><span class="stamp-icon">🏛️</span> Wij waren in San Gregorio!</button>
+        <span class="stamp-undo-hint">nogmaals drukken om uit te wissen</span>
+      </div>
+    </div>
+  </div>
+  <div class="next-stop">
+    <div class="auto-icoon">🚗💨</div>
+    <div class="next-stop-leader">Volgende halte</div>
+    <div class="next-stop-title">🏔️ Bürchen</div>
+    <div class="next-stop-tagline">van keizers naar vierduizenders</div>
+    <div class="next-stop-meta"><b>±8 u</b> · ±790 km · A1 naar Milaan, dan over de Simplonpas het Wallis in</div>
+    <div class="next-stop-actions">
+      <a class="maps-btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=San+Gregorio+da+Sassola,+Italy&amp;destination=B%C3%BCrchen,+Switzerland&amp;travelmode=driving" target="_blank" rel="noopener"><span>Open route in Maps</span><span class="arrow">→</span></a>
+      <button type="button" class="maps-secondary copy-link" data-url="https://www.google.com/maps/search/?api=1&amp;query=B%C3%BCrchen+Switzerland" data-name="Bürchen">⎘ Kopieer link</button>
+    </div>
+  </div>
+  <div class="gem"><span class="star">★ Hidden gem</span><b>De Simplonpas zelf is het uitzicht van de dag.</b> Na Domodossola klimt de weg naar 2005 meter: haarspelden, watervallen en boven op de pas een reusachtige stenen adelaar. Stop daar even; de foto met de Cupra is verplicht.</div>
+</section>
+
+<div class="flourish">✦</div>
+
+<!-- ============ III · BÜRCHEN ============ -->
+<section class="loc" id="burchen">
+  <div class="loc-hero">
+    <svg viewBox="0 0 940 360" role="img" aria-label="Chalets en bergtoppen in het Wallis bij avond">
+      <defs>
+        <linearGradient id="bu-lucht" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#081c30"/><stop offset=".5" stop-color="#1d4a66"/>
+          <stop offset=".8" stop-color="#7a5a72"/><stop offset="1" stop-color="#c98a6b"/>
+        </linearGradient>
+      </defs>
+      <rect width="940" height="360" fill="url(#bu-lucht)"/>
+      <g fill="#fff" opacity=".85"><circle cx="150" cy="50" r="2"/><circle cx="320" cy="35" r="1.5"/><circle cx="500" cy="60" r="2"/><circle cx="700" cy="40" r="1.5"/><circle cx="860" cy="70" r="2"/><circle cx="240" cy="90" r="1.2"/><circle cx="600" cy="95" r="1.2"/></g>
+      <!-- Matterhorn-achtige piek -->
+      <path d="M 560 300 L 660 105 L 685 150 L 705 125 L 790 300 Z" fill="#28374d"/>
+      <path d="M 660 105 L 685 150 L 705 125 L 718 152 L 688 175 L 664 140 Z" fill="#e8eef4" opacity=".9"/>
+      <!-- bergketen -->
+      <path d="M 0 300 L 90 170 L 150 240 L 230 130 L 320 250 L 400 180 L 480 300 Z" fill="#2e3f56"/>
+      <path d="M 230 130 L 258 172 L 232 190 L 205 165 Z" fill="#e8eef4" opacity=".85"/>
+      <path d="M 90 170 L 108 200 L 88 212 L 74 195 Z" fill="#e8eef4" opacity=".75"/>
+      <!-- beboste hellingen -->
+      <path d="M 0 300 Q 235 245 470 285 T 940 280 L 940 360 L 0 360 Z" fill="#1c2a24"/>
+      <!-- lariksen -->
+      <g fill="#3d4a26">
+        <polygon points="130,290 140,258 150,290"/><polygon points="160,296 170,266 180,296"/>
+        <polygon points="740,286 750,254 760,286"/><polygon points="775,292 785,262 795,292"/>
+        <polygon points="820,296 830,268 840,296"/>
+      </g>
+      <!-- chalets -->
+      <g>
+        <rect x="380" y="272" width="52" height="34" fill="#4a3020"/>
+        <polygon points="372,272 406,248 440,272" fill="#2e1d12"/>
+        <rect x="392" y="284" width="10" height="12" fill="#ffd98a"/><rect x="412" y="284" width="10" height="12" fill="#ffc46b"/>
+        <rect x="480" y="282" width="44" height="28" fill="#4a3020"/>
+        <polygon points="473,282 502,262 531,282" fill="#2e1d12"/>
+        <rect x="492" y="292" width="9" height="10" fill="#ffd98a"/>
+        <rect x="560" y="290" width="38" height="24" fill="#42291a"/>
+        <polygon points="554,290 579,272 604,290" fill="#2a190e"/>
+        <rect x="570" y="298" width="8" height="9" fill="#ffd98a"/>
+      </g>
+      <path d="M 0 336 Q 235 322 470 334 T 940 330 L 940 360 L 0 360 Z" fill="#121b16"/>
+    </svg>
+    <div class="label">
+      <div class="num">III — Het zonneterras</div>
+      <h2>Bürchen</h2>
+      <div class="meta">Zondag 27 → woensdag 30 september · drie nachten · Wallis, Zwitserland</div>
+    </div>
+  </div>
+  <div class="loc-body">
+    <p class="hero-text">Van veertig rijstroken Romeinse chaos naar een dorp waar de koeien het verkeer zijn. Bürchen ligt op zo'n 1350 meter op de zonnehelling boven het Rhônedal, tussen lariksen die eind september net goud beginnen te kleuren. Aan de overkant van het dal staat de Bietschhorn te wachten tot jullie hem fotograferen. Hier draait alles om drie dingen: wandelen, uitzicht en kaas. In die volgorde, of andersom, dat mogen jullie zelf weten.</p>
+    <p class="expanded">Het Wallis is het kanton van de vierduizenders: 45 van de 48 hoogste toppen van Zwitserland staan hier. Vanuit Bürchen rijd je in tien minuten naar het bergstation Ronalp op de Moosalp, en in veertig minuten sta je in Täsch voor de shuttle naar het autovrije Zermatt. September is stiekem de beste bergmaand: heldere lucht, lege paden, en de zomerliften draaien nog net.</p>
+    <div class="facts">
+      <div class="row"><span class="k">Rijtijd</span><span class="v">San Gregorio › Bürchen: ±8 u (±790 km). Via Milaan en de Simplonpas het Wallis binnen; de laatste 20 minuten klim je van Visp de zonnehelling op.</span></div>
+      <div class="row"><span class="k">Frankjes</span><span class="v">Zwitserland doet niet aan euro's: pin gewoon, maar check of je pas geen gekke wisselkosten rekent. Het vignet heb je al sinds de heenreis.</span></div>
+      <div class="row"><span class="k">Ritme</span><span class="v">Eén Moosalp-dag, één grote uitstap (Zermatt of Aletsch), één dag voor het dorp, de sauna en het inpakken.</span></div>
+    </div>
+    <div class="activity-guide">
+      <h3 class="activity-guide-title">🧭 Activiteiten</h3>
+      <div class="activity-grid">
+        <div class="activity-card must-see"><h4>✨ Must do</h4><ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Moosalp+B%C3%BCrchen" target="_blank" rel="noopener">Moosalp</a>: jullie eigen huisberg. Panoramawandeling langs bergmeertjes, koeien met bellen inbegrepen.</li>
+          <li><b>Zermatt + Gornergrat</b>: auto in Täsch, treintje naar Zermatt, dan de tandradbaan naar 3089 m. De Matterhorn recht voor je neus.</li>
+          <li><a href="https://www.aletscharena.ch/en/" target="_blank" rel="noopener">Aletsch Arena</a>: kabelbaan vanuit Mörel naar de grootste gletsjer van de Alpen, 20 km ijs (ook UNESCO... jullie derde van de reis).</li>
+        </ul></div>
+        <div class="activity-card rain"><h4>☔ Bij slecht weer</h4><ul>
+          <li><a href="https://www.leukerbad.ch/en/" target="_blank" rel="noopener">Leukerbad</a>: thermaalbaden op 1400 m, buiten dampen terwijl de wolken langs de rotswanden trekken (±45 min).</li>
+          <li>De Lötschberg-autotrein ervaren of gewoon: haard aan, boek open, fondueset erbij.</li>
+        </ul></div>
+      </div>
+      <div class="food-card"><h4>🍴 Kaasplicht</h4><ul>
+        <li><i>Raclette du Valais</i>: hier uitgevonden. Op de Moosalp serveren berghutten hem van het hele wiel.</li>
+        <li><i>Rösti</i> met spek en spiegelei na een wandeling: gerechtvaardigd.</li>
+        <li>Walliser witte wijn (Fendant) bij de kaas, en Aprikosenwähe (abrikozentaart) als toetje: het Wallis is óók abrikozenland.</li>
+      </ul></div>
+    </div>
+
+    <div class="duo-zone" data-loc="burchen">
+      <h3>🎲 Voor Roos &amp; Marco</h3>
+      <p class="sub">de beslissende ronde van het duel</p>
+      <div class="duo-tabs">
+        <button class="duo-tab active" data-panel="quiz">🧠 Quiz-duel <span class="score-badge" data-score-loc="burchen">0 / 3</span></button>
+        <button class="duo-tab" data-panel="bingo">👀 Alpen-bingo <span class="score-badge" data-bingo-loc="burchen">0 / 9</span></button>
+        <button class="duo-tab" data-panel="lang">🗣️ Walliserduits</button>
+      </div>
+      <div class="duo-paneel quiz active">
+        <div class="quiz-vraag" data-q="0">
+          <div class="q">Hoe hoog is de Matterhorn?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">3.089 meter</button>
+            <button class="quiz-optie" data-correct="1">4.478 meter</button>
+            <button class="quiz-optie" data-correct="0">5.204 meter</button>
+          </div>
+          <div class="quiz-feedback">4.478 m. En ja, hij staat op de verpakking van Toblerone; check maar in de supermarkt.</div>
+        </div>
+        <div class="quiz-vraag" data-q="1">
+          <div class="q">Wat is er bijzonder aan de Grote Aletschgletsjer?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="1">Het is de langste gletsjer van de Alpen, ruim 20 km</button>
+            <button class="quiz-optie" data-correct="0">Hij is de enige gletsjer die 's zomers groeit</button>
+            <button class="quiz-optie" data-correct="0">Hij is roze door algen</button>
+          </div>
+          <div class="quiz-feedback">Ruim 20 kilometer ijs, tot 800 meter dik. Vanaf de View Point bij Moosfluh kijk je over de hele lengte.</div>
+        </div>
+        <div class="quiz-vraag" data-q="2">
+          <div class="q">Waarom staan er geen auto's in Zermatt?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">De straten zijn te steil voor auto's</button>
+            <button class="quiz-optie" data-correct="1">Het dorp is al sinds 1961 officieel autovrij; alleen elektrische karretjes mogen er rijden</button>
+            <button class="quiz-optie" data-correct="0">Er is simpelweg geen weg naartoe</button>
+          </div>
+          <div class="quiz-feedback">Autovrij per volksstemming, voor de schone berglucht. Daarom parkeer je in Täsch en pak je de shuttle-trein.</div>
+        </div>
+      </div>
+      <div class="duo-paneel bingo">
+        <div class="bingo">
+          <div class="bingo-item" data-i="0"><span class="ic">🐄</span>Koe met bel</div>
+          <div class="bingo-item" data-i="1"><span class="ic">🏔️</span>De Matterhorn</div>
+          <div class="bingo-item" data-i="2"><span class="ic">🚠</span>Kabelbaan</div>
+          <div class="bingo-item" data-i="3"><span class="ic">🐐</span>Zwartnekgeit (Walliser ras!)</div>
+          <div class="bingo-item" data-i="4"><span class="ic">🧀</span>Raclette van het wiel</div>
+          <div class="bingo-item" data-i="5"><span class="ic">🌲</span>Goudgele lariks</div>
+          <div class="bingo-item" data-i="6"><span class="ic">🪂</span>Paraglider</div>
+          <div class="bingo-item" data-i="7"><span class="ic">🚞</span>Rode bergtrein</div>
+          <div class="bingo-item" data-i="8"><span class="ic">⛰️</span>Gletsjer in het echt</div>
+        </div>
+      </div>
+      <div class="duo-paneel lang">
+        <div class="lang-cards">
+          <div class="lang-card" data-text="Grüezi" data-lang="de-CH"><span class="speaker">🔊</span><div class="nl">Hallo (Zwitsers)</div><div class="foreign">Grüezi</div><div class="pron">[gruu-e-tsi]</div></div>
+          <div class="lang-card" data-text="Merci vilmal" data-lang="de-CH"><span class="speaker">🔊</span><div class="nl">Dank je wel</div><div class="foreign">Merci vilmal</div><div class="pron">[mer-si fiel-maal]</div></div>
+          <div class="lang-card" data-text="Ein Raclette, bitte" data-lang="de-CH"><span class="speaker">🔊</span><div class="nl">De belangrijkste zin</div><div class="foreign">Ein Raclette, bitte</div><div class="pron">[ain ra-klet, bit-te]</div></div>
+          <div class="lang-card" data-text="Wie viel kostet das?" data-lang="de-CH"><span class="speaker">🔊</span><div class="nl">Wat kost dat? (vaak nodig hier)</div><div class="foreign">Wie viel kostet das?</div><div class="pron">[vie fiel kos-tet das]</div></div>
+          <div class="lang-card" data-text="Das ist wunderschön" data-lang="de-CH"><span class="speaker">🔊</span><div class="nl">Dat is prachtig</div><div class="foreign">Das ist wunderschön</div><div class="pron">[das ist voen-der-sjeun]</div></div>
+          <div class="lang-card" data-text="En Guete" data-lang="de-CH"><span class="speaker">🔊</span><div class="nl">Eet smakelijk</div><div class="foreign">En Guete!</div><div class="pron">[en goe-e-te]</div></div>
+        </div>
+        <p style="text-align:center;font-size:.82rem;color:var(--paper-soft);margin:.6rem 0 0;font-style:italic">Tik op een kaartje en je telefoon spreekt het uit 🔊</p>
+      </div>
+      <div class="stamp-row">
+        <button class="stamp-btn" data-stamp="burchen"><span class="stamp-icon">🏔️</span> Wij waren in Bürchen!</button>
+        <span class="stamp-undo-hint">nogmaals drukken om uit te wissen</span>
+      </div>
+    </div>
+  </div>
+  <div class="next-stop">
+    <div class="auto-icoon">🚗🏠</div>
+    <div class="next-stop-leader">Laatste etappe</div>
+    <div class="next-stop-title">🏡 Terug naar Leerbroek</div>
+    <div class="next-stop-tagline">met een koffer vol verhalen</div>
+    <div class="next-stop-meta"><b>±8,5 u</b> · ±880 km · via Bern, Basel en het Duitse asfalt naar huis</div>
+    <div class="next-stop-actions">
+      <a class="maps-btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=B%C3%BCrchen,+Switzerland&amp;destination=Leerbroek,+Netherlands&amp;travelmode=driving" target="_blank" rel="noopener"><span>Open route in Maps</span><span class="arrow">→</span></a>
+      <button type="button" class="maps-secondary copy-link" data-url="https://www.google.com/maps/dir/?api=1&amp;origin=B%C3%BCrchen,+Switzerland&amp;destination=Leerbroek,+Netherlands" data-name="Route naar huis">⎘ Kopieer link</button>
+    </div>
+  </div>
+  <div class="gem"><span class="star">★ Hidden gem</span><b>De Lötschberg-autotrein</b> is de leukste shortcut van Zwitserland: bij Goppenstein rijd je de Cupra zó de trein op en kwartier later sta je aan de andere kant van het bergmassief in Kandersteg. Scheelt omrijden op de terugweg én het is een ervaring op zich.</div>
+</section>
+
+<div class="flourish">✦</div>
+
+<section class="practical" id="praktisch">
+  <h2>🧳 De grote checklist</h2>
+  <p class="prak-sub">afvinken mag, vergeten niet</p>
+  <div class="check-lijst">
+    <div class="check-item" data-check="0"><span class="box">✓</span><span class="tekst"><b>Zwitsers e-vignet</b> (CHF 40) kopen vóór vertrek via via.admin.ch, gekoppeld aan het kenteken.</span></div>
+    <div class="check-item" data-check="1"><span class="box">✓</span><span class="tekst"><b>Colosseum-tickets</b> vooraf boeken (officiële site, tijdslot); geldt ook voor Vaticaanse Musea en Galleria Borghese.</span></div>
+    <div class="check-item" data-check="2"><span class="box">✓</span><span class="tekst"><b>ZTL-check</b>: nooit de binnenstad van Rome of Napels inrijden. Parkeer bij P+R Ponte Mammolo (Rome) en Pompei Scavi (Napels-dag).</span></div>
+    <div class="check-item" data-check="3"><span class="box">✓</span><span class="tekst"><b>Cupra-check</b>: bandenspanning (vol beladen!), olie, koelvloeistof, ruitensproeier. Groene kaart en pechhulp-pas in het dashboardkastje.</span></div>
+    <div class="check-item" data-check="4"><span class="box">✓</span><span class="tekst"><b>Tolbudget Italië</b>: reken op ±€50 per lange rit op de A1; betalen kan met pinpas bij de poortjes (witte borden "carte").</span></div>
+    <div class="check-item" data-check="5"><span class="box">✓</span><span class="tekst"><b>Laagjes inpakken</b>: september is 25° in Rome en soms 5° op 2000 meter. Zwemkleding mee voor Leukerbad, wandelschoenen voor de Moosalp.</span></div>
+    <div class="check-item" data-check="6"><span class="box">✓</span><span class="tekst"><b>Offline kaarten</b> downloaden (Google Maps: Lazio + Wallis) voor de tunnels en de bergen.</span></div>
+    <div class="check-item" data-check="7"><span class="box">✓</span><span class="tekst"><b>Reisverzekering + EHIC-pas</b> checken, en de reserve-autosleutel in de andere koffer dan de eerste.</span></div>
+  </div>
+</section>
+
+<button type="button" class="quest-fab" id="quest-fab" aria-label="Open Quest-modus"><span class="qf-icon">🏆</span><span>QUEST</span></button>
+
+<section class="questmode" id="questmode" aria-label="Nazomerdroom Quest">
+  <div class="quest-kop">
+    <h2>🏆 De Nazomer-Quest</h2>
+    <p class="q-sub">tien dagen, dertig opdrachten, twaalf badges: veel plezier</p>
+    <div class="xp-balk-wrap">
+      <div class="xp-cijfers"><span id="xp-level">Niveau: Thuisblijver</span><span id="xp-stand">0 XP</span></div>
+      <div class="xp-balk"><div class="xp-vul" id="xp-vul"></div></div>
+    </div>
+  </div>
+  <div class="quest-body">
+    <div class="quest-sectie-titel">📅 Opdrachten per dag <span style="margin-left:auto;font-family:var(--f-hand);font-size:1.1rem;color:var(--oro-diep)" id="quest-dag-naam"></span></div>
+    <div class="quest-day-tabs" id="quest-day-tabs"></div>
+    <div id="quest-daglijst"></div>
+    <div class="quest-sectie-titel">🎖️ Badges <span style="margin-left:auto;font-family:var(--f-display);font-size:.8rem;color:var(--oro-diep)" id="badge-teller">0/12</span></div>
+    <div class="badge-grid" id="badge-grid"></div>
+  </div>
+</section>
+
+<section class="paspoort" id="paspoort">
+  <div class="pas-kop">
+    <div class="p-eyebrow">Nazomerdroom · MMXXVI</div>
+    <h2>✦ Reispaspoort ✦</h2>
+  </div>
+  <div class="pas-body">
+    <div class="pas-houder">
+      <div class="p-avatar" id="pas-avatar">🧳</div>
+      <div>
+        <div class="p-naam" id="pas-naam">Kies eerst je reisgenoot</div>
+        <div class="p-rol" id="pas-rol">tik op de badge rechtsboven</div>
+      </div>
+    </div>
+    <div class="stempel-grid">
+      <div class="stempel-vak" data-stempel="cassano"><span class="s-icoon">🍕</span><span class="s-naam">Cassano Magnago</span><span class="s-datum" data-stempel-datum="cassano">nog niet</span></div>
+      <div class="stempel-vak" data-stempel="sangregorio"><span class="s-icoon">🏛️</span><span class="s-naam">San Gregorio</span><span class="s-datum" data-stempel-datum="sangregorio">nog niet</span></div>
+      <div class="stempel-vak" data-stempel="burchen"><span class="s-icoon">🏔️</span><span class="s-naam">Bürchen</span><span class="s-datum" data-stempel-datum="burchen">nog niet</span></div>
+    </div>
+    <div class="pas-totalen">
+      <div class="pas-totaal"><div class="pt-num" id="pt-xp">0</div><div class="pt-label">XP</div></div>
+      <div class="pas-totaal"><div class="pt-num" id="pt-badges">0</div><div class="pt-label">badges</div></div>
+      <div class="pas-totaal"><div class="pt-num" id="pt-gelato">0</div><div class="pt-label">gelato's</div></div>
+      <div class="pas-totaal"><div class="pt-num" id="pt-km">±3.300</div><div class="pt-label">km</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="scores" id="scores">
+  <h2>★ Het Grote Duel ★</h2>
+  <p class="sc-sub">quizpunten tellen alleen voor wie ze aanklikt: wissel dus eerlijk van badge!</p>
+  <div class="duel">
+    <div class="duel-kant roos" id="duel-roos">
+      <div class="d-avatar">🌹</div>
+      <div class="d-naam">Rosanne</div>
+      <div class="d-score" id="score-roos">0</div>
+      <div class="d-detail">quizpunten</div>
+    </div>
+    <div class="duel-vs">VS</div>
+    <div class="duel-kant marco" id="duel-marco">
+      <div class="d-avatar">🧭</div>
+      <div class="d-naam">Marco</div>
+      <div class="d-score" id="score-marco">0</div>
+      <div class="d-detail">quizpunten</div>
+    </div>
+  </div>
+  <p class="sc-hint" id="duel-oordeel">nog geen vraag beantwoord... wie durft eerst?</p>
+</section>
+
+<section class="arcade" id="arcade">
+  <div class="arcade-kop">
+    <h2>🕹️ Gelato Rush</h2>
+    <p class="a-sub">vang de gelato, ontwijk de regenwolk: hoogste score wint het eeuwige recht op de voorstoel</p>
+  </div>
+  <div class="arcade-hud">
+    <span>SCORE <b id="ar-score">0</b></span>
+    <span>LEVENS <b id="ar-levens">❤❤❤</b></span>
+    <span>RECORD <b id="ar-record">0</b></span>
+  </div>
+  <canvas id="gelato-canvas" width="560" height="420"></canvas>
+  <div class="arcade-voet">
+    <button class="arcade-start" id="arcade-start">▶ Start als <span id="arcade-wie">reiziger</span></button>
+    <p class="arcade-uitleg">Pijltjestoetsen of sleep met je vinger. Gelato 🍦 = 10 punten, pizza 🍕 = 25, regenwolken ☁️ kosten een leven. Het gaat steeds sneller...</p>
+  </div>
+</section>
+
+</main>
+
+<div class="persona-overlay" id="persona-overlay">
+  <div class="persona-modal" role="dialog" aria-modal="true" aria-labelledby="pm-titel">
+    <button class="persona-sluit" id="persona-sluit" aria-label="Sluiten">×</button>
+    <div class="pm-eyebrow">★ Wie ben jij? ★</div>
+    <h2 id="pm-titel">Kies je reisgenoot</h2>
+    <p class="pm-sub">Met wiens ogen lees jij deze gids? Quizpunten en de arcade-highscore tellen voor wie er ingelogd is. Wisselen kan altijd via de badge rechtsboven.</p>
+    <div class="persona-keuzes">
+      <button class="persona-keuze roos" data-persona="roos">
+        <div class="pk-avatar">🌹</div>
+        <div class="pk-naam">Rosanne</div>
+        <div class="pk-rol">24 · navigator &amp; smaakcommissie</div>
+      </button>
+      <button class="persona-keuze marco" data-persona="marco">
+        <div class="pk-avatar">🧭</div>
+        <div class="pk-naam">Marco</div>
+        <div class="pk-rol">25 · chauffeur &amp; espressoscout</div>
+      </button>
+    </div>
+    <p class="pm-voet">wisselen mag altijd, valsspelen in het duel niet 😉</p>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<button class="muziek-knop" id="muziek-knop" title="Reismuziekje aan/uit" aria-label="Muziek aan of uit">🎵</button>
+
+<footer class="voet">
+  <div class="v-ster">✦ ✦ ✦</div>
+  <p class="v-hand">gemaakt met liefde, voor de mooiste reis van het jaar</p>
+  <p>Roos &amp; Marco · 21 tot 30 september 2026 · Leerbroek → Lombardije → Lazio → Wallis → thuis</p>
+  <p class="v-klein">Nazomerdroom · met een knipoog naar het origineel van broer Jarno... maar deze heeft wél een arcade 😏</p>
+</footer>
+<script>
+(function(){
+"use strict";
+/* ============ STATE ============ */
+var LS="nzd_";
+function lees(k,d){try{var v=localStorage.getItem(LS+k);return v===null?d:JSON.parse(v);}catch(e){return d;}}
+function schrijf(k,v){try{localStorage.setItem(LS+k,JSON.stringify(v));}catch(e){}}
+var staat={
+  persona:lees("persona",null),
+  tellers:lees("tellers",{gelato:0,pizza:0,espresso:0,pas:0}),
+  quiz:lees("quiz",{}),            // "loc:q" -> {goed:true/false, wie:"roos"}
+  bingo:lees("bingo",{}),          // "loc:i" -> true
+  stempels:lees("stempels",{}),    // loc -> datumstring
+  quest:lees("quest",{}),          // "dag:i" -> true
+  checks:lees("checks",{}),        // i -> true
+  arcade:lees("arcade",{roos:0,marco:0})
+};
+var PERSONAS={
+  roos:{naam:"Rosanne",emoji:"🌹",rol:"navigator & smaakcommissie",kleur:"roos"},
+  marco:{naam:"Marco",emoji:"🧭",rol:"chauffeur & espressoscout",kleur:"marco"}
+};
+var START=new Date(2026,8,21), EIND=new Date(2026,8,30,23,59,59);
+var $=function(s,c){return (c||document).querySelector(s);};
+var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));};
+
+/* ============ TOAST ============ */
+var toastTimer=null;
+function toast(t){var el=$("#toast");el.textContent=t;el.classList.add("zichtbaar");clearTimeout(toastTimer);toastTimer=setTimeout(function(){el.classList.remove("zichtbaar");},2600);}
+
+/* ============ PERSONA ============ */
+function zetPersona(p){
+  staat.persona=p;schrijf("persona",p);
+  var badge=$("#kompas-badge");
+  badge.classList.remove("p-roos","p-marco");
+  if(p){badge.classList.add("p-"+p);$("#kompas-badge-emoji").textContent=PERSONAS[p].emoji;}
+  var pa=$("#pas-avatar"),pn=$("#pas-naam"),pr=$("#pas-rol");
+  if(p){pa.textContent=PERSONAS[p].emoji;pn.textContent=PERSONAS[p].naam;pr.textContent=PERSONAS[p].rol;}
+  $("#arcade-wie").textContent=p?PERSONAS[p].naam:"reiziger";
+  $("#ar-record").textContent=p?(staat.arcade[p]||0):0;
+  herbereken();
+}
+$("#kompas-badge").addEventListener("click",function(){$("#persona-overlay").classList.add("open");});
+$("#persona-sluit").addEventListener("click",function(){$("#persona-overlay").classList.remove("open");});
+$("#persona-overlay").addEventListener("click",function(e){if(e.target===this)this.classList.remove("open");});
+$$(".persona-keuze").forEach(function(b){
+  b.addEventListener("click",function(){
+    zetPersona(b.dataset.persona);
+    $("#persona-overlay").classList.remove("open");
+    toast(PERSONAS[b.dataset.persona].emoji+" Welkom, "+PERSONAS[b.dataset.persona].naam+"! Jouw punten tellen nu mee.");
+  });
+});
+if(!staat.persona){setTimeout(function(){$("#persona-overlay").classList.add("open");},900);}
+
+/* ============ KOMPAS: scrollspy + voortgang ============ */
+var secties=["cassano","sangregorio","burchen"].map(function(id){return document.getElementById(id);});
+function updateKompas(){
+  var y=window.scrollY,h=document.documentElement.scrollHeight-window.innerHeight;
+  $("#kompas-progress-bar").style.width=(h>0?(y/h*100):0)+"%";
+  var actief=null;
+  secties.forEach(function(s){if(s.getBoundingClientRect().top<window.innerHeight*.45)actief=s.id;});
+  $$(".kompas-stop[data-stop]").forEach(function(st){
+    st.classList.remove("current","visited");
+    var idx=secties.findIndex(function(s){return s.id===st.dataset.stop;});
+    var actIdx=secties.findIndex(function(s){return s.id===actief;});
+    if(st.dataset.stop===actief)st.classList.add("current");
+    else if(actIdx>-1&&idx<actIdx)st.classList.add("visited");
+  });
+}
+window.addEventListener("scroll",updateKompas,{passive:true});updateKompas();
+
+/* ============ COUNTDOWN + DAGTELLER ============ */
+function pad(n){return String(n).padStart(2,"0");}
+function updateTijd(){
+  var nu=new Date();
+  var cd=$("#countdown");
+  if(nu<START){
+    var diff=START-nu;
+    $("#cd-titel").textContent="het aftellen is begonnen...";
+    $("#cd-d").textContent=Math.floor(diff/864e5);
+    $("#cd-h").textContent=pad(Math.floor(diff/36e5)%24);
+    $("#cd-m").textContent=pad(Math.floor(diff/6e4)%60);
+    $("#cd-s").textContent=pad(Math.floor(diff/1e3)%60);
+  }else if(nu<=EIND){
+    cd.innerHTML='<div class="cd-titel">🚗 Jullie zijn onderweg! Buon viaggio!</div>';
+  }else{
+    cd.innerHTML='<div class="cd-titel">✨ De reis zit erop... maar de herinneringen niet.</div>';
+  }
+  var dagen=["Heenreis naar Cassano Magnago 🚗","Rit naar het borgo: San Gregorio 🏰","Rome, dag één 🏛️","Rome, dag twee ⛲","Pompeii en Napels 🌋","Tivoli en de villa's 🌿","Over de Simplon naar Bürchen ⛰️","Moosalp-dag 🐄","De grote bergdag 🏔️","Terugreis naar Leerbroek 🏡"];
+  var dg=$("#dt-groot"),ds=$("#dt-sub"),dv=$("#dt-vandaag");
+  if(nu<START){
+    dg.textContent=Math.ceil((START-nu)/864e5);
+    ds.textContent="nachtjes slapen tot vertrek";
+    dv.innerHTML="Eerste etappe: <b>Leerbroek → Cassano Magnago</b>, maandag 21 september.";
+  }else if(nu<=EIND){
+    var dag=Math.floor((nu-START)/864e5)+1;
+    dg.textContent=dag;ds.textContent="van jullie nazomerdroom";
+    dv.innerHTML="Vandaag: <b>"+(dagen[dag-1]||"genieten")+"</b>";
+  }else{
+    dg.textContent="✓";ds.textContent="nazomerdroom volbracht";
+    dv.innerHTML="Tot de volgende... en vergeet het <b>muntje in de Trevi</b> niet: jullie kómen terug.";
+  }
+}
+updateTijd();setInterval(updateTijd,1000);
+
+/* ============ FEITJES ============ */
+var feiten=[
+  ["🚇","De Gotthardtunnel was bij de opening in 1980 de langste wegtunnel ter wereld: 16,9 km. Jullie zijn er in twaalf minuten doorheen."],
+  ["🍦","Gelato bevat minder vet en minder lucht dan Nederlands ijs, en wordt warmer geserveerd. Daarom smaakt het intenser. Wetenschap zegt: neem er nog één."],
+  ["⛲","Rome heeft meer dan 2.500 gratis drinkfonteintjes, de 'nasoni'. Houd het gat onderaan dicht en er spuit een boogje omhoog: gratis en ijskoud."],
+  ["🌋","Pompeii werd in het jaar 79 bedolven en pas in 1748 serieus opgegraven. Er ligt nóg een derde van de stad onder de as."],
+  ["🏛️","De koepel van het Pantheon is al 1.900 jaar de grootste ongewapende betonkoepel ter wereld. Het Romeinse beton-recept zijn we eeuwenlang kwijt geweest."],
+  ["💰","Er wordt jaarlijks ruim een miljoen euro uit de Trevifontein gehaald. Alles gaat naar een goededoelenorganisatie."],
+  ["🏔️","De Matterhorn (4.478 m) werd pas in 1865 voor het eerst beklommen. Vier van de zeven klimmers overleefden de afdaling niet; het touw hangt in het museum in Zermatt."],
+  ["🧊","De Grote Aletschgletsjer is ruim 20 km lang en op het dikste punt 800 meter dik. Hij beweegt zo'n 200 meter per jaar."],
+  ["🧀","Raclette komt uit het Wallis: herders smolten de snijkant van een kaaswiel bij het vuur en schraapten hem af. 'Racler' is Frans voor schrapen."],
+  ["🍇","September is in Italië de maand van de vendemmia, de wijnoogst. In de Castelli Romani bij San Gregorio ruikt het dan letterlijk naar most."],
+  ["🚗","De Simplonpas (2.005 m) werd op bevel van Napoleon aangelegd, zodat zijn kanonnen de Alpen over konden. Jullie Cupra heeft het iets makkelijker."],
+  ["🐐","Het Wallis heeft een eigen geitenras: de zwartnekgeit, half zwart, half wit, precies doormidden. Eenmaal gezien, nooit meer vergeten."],
+  ["☕","Espresso 'al banco' (staand aan de bar) kost in Italië vaak ruim de helft minder dan zittend aan een tafeltje. Marco's budget-hack bestaat dus echt."],
+  ["🚞","De Gornergratbahn klimt sinds 1898 naar 3.089 meter en was de eerste volledig elektrische tandradbaan van Zwitserland."],
+  ["🌲","De lariks is de enige naaldboom die zijn naalden verliest. Eind september beginnen de hellingen boven Bürchen goud te kleuren: jullie timing is perfect."],
+  ["🍕","De pizza margherita is vernoemd naar koningin Margherita, die in 1889 in Napels een pizza in de kleuren van de vlag kreeg: tomaat, mozzarella, basilicum."]
+];
+var feitIdx=-1;
+$("#feit-btn").addEventListener("click",function(){
+  var i;do{i=Math.floor(Math.random()*feiten.length);}while(i===feitIdx&&feiten.length>1);
+  feitIdx=i;
+  $("#feit-icoon").textContent=feiten[i][0];
+  $("#feit-tekst").textContent=feiten[i][1];
+});
+
+/* ============ TELLERS ============ */
+$$(".teller").forEach(function(t){
+  var key=t.dataset.teller,hold=null,gehouden=false;
+  function render(){$('[data-teller-num="'+key+'"]').textContent=staat.tellers[key]||0;}
+  render();
+  t.addEventListener("pointerdown",function(){
+    gehouden=false;
+    hold=setTimeout(function(){
+      gehouden=true;
+      if(staat.tellers[key]>0){staat.tellers[key]--;schrijf("tellers",staat.tellers);render();herbereken();toast("−1 ... foutje hersteld");}
+    },600);
+  });
+  function los(){clearTimeout(hold);}
+  t.addEventListener("pointerleave",los);t.addEventListener("pointercancel",los);
+  t.addEventListener("pointerup",function(){
+    clearTimeout(hold);
+    if(gehouden)return;
+    staat.tellers[key]=(staat.tellers[key]||0)+1;schrijf("tellers",staat.tellers);render();herbereken();
+  });
+  t.addEventListener("contextmenu",function(e){e.preventDefault();});
+});
+
+/* ============ QUIZ ============ */
+$$(".duo-zone").forEach(function(zone){
+  var loc=zone.dataset.loc;
+  $$(".duo-tab",zone).forEach(function(tab){
+    tab.addEventListener("click",function(){
+      $$(".duo-tab",zone).forEach(function(t){t.classList.remove("active");});
+      tab.classList.add("active");
+      $$(".duo-paneel",zone).forEach(function(p){p.classList.remove("active");});
+      var pnl=zone.querySelector(".duo-paneel."+tab.dataset.panel);
+      if(pnl)pnl.classList.add("active");
+    });
+  });
+  $$(".quiz-vraag",zone).forEach(function(vraag){
+    var q=vraag.dataset.q,sleutel=loc+":"+q;
+    var opgeslagen=staat.quiz[sleutel];
+    if(opgeslagen){
+      vraag.classList.add("klaar");
+      $$(".quiz-optie",vraag).forEach(function(o){
+        if(o.dataset.correct==="1")o.classList.add("goed");
+      });
+    }
+    $$(".quiz-optie",vraag).forEach(function(optie){
+      optie.addEventListener("click",function(){
+        if(vraag.classList.contains("klaar"))return;
+        if(!staat.persona){$("#persona-overlay").classList.add("open");toast("Kies eerst wie je bent, anders tellen de punten niet!");return;}
+        vraag.classList.add("klaar");
+        var goed=optie.dataset.correct==="1";
+        $$(".quiz-optie",vraag).forEach(function(o){if(o.dataset.correct==="1")o.classList.add("goed");});
+        if(!goed)optie.classList.add("fout-gekozen");
+        staat.quiz[sleutel]={goed:goed,wie:staat.persona};
+        schrijf("quiz",staat.quiz);
+        toast(goed?"✔ Goed! +1 punt voor "+PERSONAS[staat.persona].naam:"✘ Helaas... geen punt. Wisselen van reisgenoot helpt niet, we zien alles 😉");
+        herbereken();
+      });
+    });
+  });
+  $$(".bingo-item",zone).forEach(function(item){
+    var sleutel=loc+":"+item.dataset.i;
+    if(staat.bingo[sleutel])item.classList.add("gevonden");
+    item.addEventListener("click",function(){
+      if(staat.bingo[sleutel]){delete staat.bingo[sleutel];item.classList.remove("gevonden");}
+      else{staat.bingo[sleutel]=true;item.classList.add("gevonden");}
+      schrijf("bingo",staat.bingo);herbereken();
+    });
+  });
+  $$(".lang-card",zone).forEach(function(kaart){
+    kaart.addEventListener("click",function(){
+      try{
+        var u=new SpeechSynthesisUtterance(kaart.dataset.text);
+        u.lang=kaart.dataset.lang||"it-IT";u.rate=.9;
+        speechSynthesis.cancel();speechSynthesis.speak(u);
+      }catch(e){toast("Uitspreken lukt niet op dit apparaat");}
+    });
+  });
+});
+
+/* ============ STEMPELS ============ */
+var stempelNamen={cassano:"Cassano Magnago",sangregorio:"San Gregorio",burchen:"Bürchen"};
+function renderStempels(){
+  $$(".stamp-btn").forEach(function(b){b.classList.toggle("gestempeld",!!staat.stempels[b.dataset.stamp]);});
+  $$(".stempel-vak").forEach(function(v){
+    var loc=v.dataset.stempel,gezet=!!staat.stempels[loc];
+    v.classList.toggle("gezet",gezet);
+    $('[data-stempel-datum="'+loc+'"]').textContent=gezet?staat.stempels[loc]:"nog niet";
+  });
+}
+$$(".stamp-btn").forEach(function(b){
+  b.addEventListener("click",function(){
+    var loc=b.dataset.stamp;
+    if(staat.stempels[loc]){delete staat.stempels[loc];toast("Stempel uitgewist");}
+    else{
+      var d=new Date();
+      staat.stempels[loc]=d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear();
+      toast("🛂 Stempel gezet: "+stempelNamen[loc]+"!");
+    }
+    schrijf("stempels",staat.stempels);renderStempels();herbereken();
+  });
+});
+renderStempels();
+
+/* ============ DAGPLANNER ============ */
+$$("#dagplan-tabs .dagplan-tab").forEach(function(tab){
+  tab.addEventListener("click",function(){
+    $$("#dagplan-tabs .dagplan-tab").forEach(function(t){t.classList.remove("active");});
+    tab.classList.add("active");
+    $$("#dagplan .dagplan-paneel").forEach(function(p){p.classList.toggle("active",p.dataset.dag===tab.dataset.dag);});
+  });
+});
+
+/* ============ CHECKLIST ============ */
+$$(".check-item").forEach(function(c){
+  if(staat.checks[c.dataset.check])c.classList.add("af");
+  c.addEventListener("click",function(){
+    if(staat.checks[c.dataset.check]){delete staat.checks[c.dataset.check];c.classList.remove("af");}
+    else{staat.checks[c.dataset.check]=true;c.classList.add("af");}
+    schrijf("checks",staat.checks);herbereken();
+  });
+});
+
+/* ============ QUEST ============ */
+var questDagen=[
+  {d:"ma 21",naam:"Heenreis + Cassano",ops:[["Zonder ruzie de Gotthard gehaald",15],["Eerste Italiaanse pizza gegeten",10],["'Buonasera' tegen een echte Italiaan gezegd",10]]},
+  {d:"di 22",naam:"Rit naar het borgo",ops:[["Panino met porchetta gescoord bij een Autogrill",10],["Aangekomen zonder één verkeerde afslag (navigator-eer)",15],["Avondrondje door San Gregorio gelopen",10]]},
+  {d:"wo 23",naam:"Rome I",ops:[["Vóór 9 uur bij het Colosseum gestaan",15],["Selfie met het Forum op de achtergrond",10],["Carbonara óf cacio e pepe gegeten in Monti",10]]},
+  {d:"do 24",naam:"Rome II",ops:[["Muntje in de Trevifontein gegooid",10],["De oculus van het Pantheon gezien",10],["Zonsondergang vanaf de Pincio bekeken",15]]},
+  {d:"vr 25",naam:"Pompeii + Napels",ops:[["Voor 8 uur in de auto gezeten (respect)",15],["De Vesuvius gefotografeerd vanuit Pompeii",10],["Pizza gegeten in de stad waar hij is uitgevonden",15]]},
+  {d:"za 26",naam:"Tivoli",ops:[["Honderd fonteinen geteld in Villa d'Este (schatting mag)",10],["Door Villa Adriana gedwaald",10],["Laatste Italiaanse gelato... geteld in de teller",10]]},
+  {d:"zo 27",naam:"Naar Bürchen",ops:[["Foto met de Cupra op de Simplonpas",15],["De adelaar op de pas gespot",10],["Eerste 'Grüezi' correct uitgesproken",10]]},
+  {d:"ma 28",naam:"Moosalp",ops:[["Bergmeertje bereikt te voet",15],["Raclette gegeten waar hij is uitgevonden",15],["Koe met bel geaaid (of in elk geval geprobeerd)",10]]},
+  {d:"di 29",naam:"De grote bergdag",ops:[["De Matterhorn of de Aletschgletsjer in het echt gezien",20],["Boven de 3.000 meter geweest",15],["Toblerone naast de echte Matterhorn gehouden",10]]},
+  {d:"wo 30",naam:"Terugreis",ops:[["Koffer dicht gekregen ondanks de kaas",10],["Top 3 momenten van de reis uitgewisseld in de auto",15],["Veilig thuis: nazomerdroom volbracht",20]]}
+];
+var actieveQuestDag=0;
+function questKlaarPerDag(di){var n=0;questDagen[di].ops.forEach(function(_,i){if(staat.quest[di+":"+i])n++;});return n;}
+function renderQuestTabs(){
+  var wrap=$("#quest-day-tabs");wrap.innerHTML="";
+  questDagen.forEach(function(dag,di){
+    var b=document.createElement("button");
+    b.className="qd-tab"+(di===actieveQuestDag?" active":"");
+    b.innerHTML=dag.d+'<span class="qd-klaar">'+questKlaarPerDag(di)+"/"+dag.ops.length+"</span>";
+    b.addEventListener("click",function(){actieveQuestDag=di;renderQuestTabs();renderQuestLijst();});
+    wrap.appendChild(b);
+  });
+  $("#quest-dag-naam").textContent=questDagen[actieveQuestDag].naam;
+}
+function renderQuestLijst(){
+  var wrap=$("#quest-daglijst");wrap.innerHTML="";
+  questDagen[actieveQuestDag].ops.forEach(function(op,i){
+    var sleutel=actieveQuestDag+":"+i;
+    var el=document.createElement("div");
+    el.className="quest-opdracht"+(staat.quest[sleutel]?" af":"");
+    el.innerHTML='<span class="box">✓</span><span class="tekst">'+op[0]+'</span><span class="xp">+'+op[1]+' XP</span>';
+    el.addEventListener("click",function(){
+      if(staat.quest[sleutel]){delete staat.quest[sleutel];}
+      else{staat.quest[sleutel]=true;toast("🏆 +"+op[1]+" XP!");}
+      schrijf("quest",staat.quest);
+      renderQuestTabs();renderQuestLijst();herbereken();
+    });
+    wrap.appendChild(el);
+  });
+}
+// bij reisdag: automatisch juiste dag openen
+(function(){var nu=new Date();if(nu>=START&&nu<=EIND){actieveQuestDag=Math.min(9,Math.floor((nu-START)/864e5));}})();
+renderQuestTabs();renderQuestLijst();
+
+/* ============ BADGES ============ */
+var badges=[
+  {id:"vertrokken",icoon:"🚗",naam:"Kilometervreter",hoe:"vink alle rij-opdrachten af",check:function(){return staat.quest["0:0"]&&staat.quest["6:0"]&&staat.quest["9:2"];}},
+  {id:"stempels",icoon:"🛂",naam:"Stempelaar",hoe:"alle 3 de stempels gezet",check:function(){return ["cassano","sangregorio","burchen"].every(function(l){return staat.stempels[l];});}},
+  {id:"gladiator",icoon:"🏛️",naam:"Gladiator",hoe:"Rome-dag I volledig",check:function(){return [0,1,2].every(function(i){return staat.quest["2:"+i];});}},
+  {id:"vulkaan",icoon:"🌋",naam:"Vulkaanbedwinger",hoe:"Pompeii-dag volledig",check:function(){return [0,1,2].every(function(i){return staat.quest["4:"+i];});}},
+  {id:"trevi",icoon:"🪙",naam:"Fonteinwerper",hoe:"muntje in de Trevi",check:function(){return !!staat.quest["3:0"];}},
+  {id:"matterhorn",icoon:"🏔️",naam:"Matterhorn-spotter",hoe:"de grote berg gezien",check:function(){return !!staat.quest["8:0"];}},
+  {id:"gelato",icoon:"🍦",naam:"Gelato-goeroe",hoe:"7 gelato's geturfd",check:function(){return (staat.tellers.gelato||0)>=7;}},
+  {id:"pizzaiolo",icoon:"🍕",naam:"Pizzaiolo",hoe:"5 pizza's geturfd",check:function(){return (staat.tellers.pizza||0)>=5;}},
+  {id:"barista",icoon:"☕",naam:"Barista's vriend",hoe:"10 espresso's geturfd",check:function(){return (staat.tellers.espresso||0)>=10;}},
+  {id:"quiz",icoon:"🧠",naam:"Quizmeester",hoe:"alle 10 quizvragen goed",check:function(){var goed=0;for(var k in staat.quiz){if(staat.quiz[k].goed)goed++;}return goed>=10;}},
+  {id:"bingo",icoon:"🎯",naam:"Bingo-legende",hoe:"alle 27 bingovakjes",check:function(){return Object.keys(staat.bingo).length>=27;}},
+  {id:"arcade",icoon:"🕹️",naam:"Arcade-kampioen",hoe:"score 300+ in Gelato Rush",check:function(){return Math.max(staat.arcade.roos||0,staat.arcade.marco||0)>=300;}}
+];
+var eerderVerdiend=lees("badges_gezien",{});
+function renderBadges(){
+  var grid=$("#badge-grid");grid.innerHTML="";var verdiend=0;
+  badges.forEach(function(b){
+    var af=!!b.check();if(af)verdiend++;
+    if(af&&!eerderVerdiend[b.id]){eerderVerdiend[b.id]=true;schrijf("badges_gezien",eerderVerdiend);toast("🎖️ Badge verdiend: "+b.naam+"!");}
+    var el=document.createElement("div");
+    el.className="badge-kaart"+(af?" verdiend":"");
+    el.innerHTML='<div class="b-icoon">'+b.icoon+'</div><div class="b-naam">'+b.naam+'</div><div class="b-hoe">'+b.hoe+'</div>';
+    grid.appendChild(el);
+  });
+  $("#badge-teller").textContent=verdiend+"/12";
+  return verdiend;
+}
+
+/* ============ XP + SCORES + PASPOORT ============ */
+var MAXXP=questDagen.reduce(function(s,d){return s+d.ops.reduce(function(a,o){return a+o[1];},0);},0);
+var niveaus=[[0,"Thuisblijver"],[60,"Dagjesmens"],[140,"Reiziger"],[240,"Avonturier"],[330,"Wereldburger"],[MAXXP,"Nazomerdromer"]];
+function herbereken(){
+  var xp=0;
+  questDagen.forEach(function(dag,di){dag.ops.forEach(function(op,i){if(staat.quest[di+":"+i])xp+=op[1];});});
+  var niveau=niveaus[0][1];niveaus.forEach(function(n){if(xp>=n[0])niveau=n[1];});
+  $("#xp-stand").textContent=xp+" / "+MAXXP+" XP";
+  $("#xp-level").textContent="Niveau: "+niveau;
+  $("#xp-vul").style.width=Math.min(100,xp/MAXXP*100)+"%";
+  // score-badges per locatie
+  $$("[data-score-loc]").forEach(function(sb){
+    var loc=sb.dataset.scoreLoc,tot=0,goed=0;
+    $$('.duo-zone[data-loc="'+loc+'"] .quiz-vraag').forEach(function(v){
+      tot++;var st=staat.quiz[loc+":"+v.dataset.q];if(st&&st.goed)goed++;
+    });
+    sb.textContent=goed+" / "+tot;
+  });
+  $$("[data-bingo-loc]").forEach(function(bb){
+    var loc=bb.dataset.bingoLoc,n=0;
+    for(var k in staat.bingo){if(k.indexOf(loc+":")===0)n++;}
+    bb.textContent=n+" / 9";
+  });
+  // duel
+  var sr=0,sm=0;
+  for(var k in staat.quiz){if(staat.quiz[k].goed){if(staat.quiz[k].wie==="roos")sr++;else if(staat.quiz[k].wie==="marco")sm++;}}
+  $("#score-roos").textContent=sr;$("#score-marco").textContent=sm;
+  $("#duel-roos").classList.toggle("leidt",sr>sm);
+  $("#duel-marco").classList.toggle("leidt",sm>sr);
+  var oordeel=$("#duel-oordeel");
+  if(sr===0&&sm===0)oordeel.textContent="nog geen vraag beantwoord... wie durft eerst?";
+  else if(sr===sm)oordeel.textContent="gelijkspel! dit vraagt om een beslissingsronde bij de gelateria";
+  else if(sr>sm)oordeel.textContent="Roos leidt met "+(sr-sm)+" punt"+(sr-sm>1?"en":"")+" ... Marco, de achterbank lonkt";
+  else oordeel.textContent="Marco leidt met "+(sm-sr)+" punt"+(sm-sr>1?"en":"")+" ... Roos, tijd voor een tegenaanval";
+  // paspoort
+  var verdiend=renderBadges();
+  $("#pt-xp").textContent=xp;
+  $("#pt-badges").textContent=verdiend;
+  $("#pt-gelato").textContent=staat.tellers.gelato||0;
+}
+$("#quest-fab").addEventListener("click",function(){document.getElementById("questmode").scrollIntoView({behavior:"smooth"});});
+
+/* ============ KOPIEER-KNOPPEN ============ */
+$$(".copy-link").forEach(function(b){
+  b.addEventListener("click",function(){
+    var url=b.dataset.url;
+    function ok(){toast("Link gekopieerd: stuur naar jezelf of plak in je navigatie-app");}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(ok,function(){toast(url);});}
+    else{toast(url);}
+  });
+});
+
+/* ============ MAAN EASTER EGG ============ */
+var maanTikken=0;
+$("#cover-maan").addEventListener("click",function(){
+  maanTikken++;
+  if(maanTikken===3){toast("🌙 Geheim: wie het eerst de Matterhorn ziet, mag de terugreis-playlist kiezen.");maanTikken=0;}
+  else toast("✨");
+});
+
+/* ============ VUURVLIEGJES ============ */
+(function(){
+  var canvas=$("#vuurvliegjes");if(!canvas)return;
+  var ctx=canvas.getContext("2d"),vlgs=[],rM=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(rM)return;
+  function maat(){canvas.width=canvas.offsetWidth;canvas.height=canvas.offsetHeight;}
+  maat();window.addEventListener("resize",maat);
+  for(var i=0;i<26;i++){vlgs.push({x:Math.random(),y:Math.random(),r:1+Math.random()*2,f:.2+Math.random()*.8,ph:Math.random()*7,vx:(Math.random()-.5)*.0004,vy:(Math.random()-.5)*.0003});}
+  (function teken(t){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    vlgs.forEach(function(v){
+      v.x+=v.vx;v.y+=v.vy;
+      if(v.x<0||v.x>1)v.vx*=-1;if(v.y<0||v.y>1)v.vy*=-1;
+      var a=.25+.55*Math.abs(Math.sin(t*.001*v.f+v.ph));
+      ctx.beginPath();ctx.arc(v.x*canvas.width,v.y*canvas.height,v.r,0,7);
+      ctx.fillStyle="rgba(255,226,138,"+a+")";ctx.shadowBlur=8;ctx.shadowColor="rgba(255,226,138,.8)";ctx.fill();ctx.shadowBlur=0;
+    });
+    requestAnimationFrame(teken);
+  })(0);
+})();
+
+/* ============ MUZIEK (WebAudio doosje) ============ */
+(function(){
+  var actx=null,speelt=false,timer=null,knop=$("#muziek-knop");
+  var toonladder=[293.66,329.63,369.99,440,493.88,587.33,659.25];  // D-groot pentatonisch-achtig
+  function noot(){
+    if(!actx)return;
+    var nu=actx.currentTime;
+    var f=toonladder[Math.floor(Math.random()*toonladder.length)]*(Math.random()<.25?.5:1);
+    var o=actx.createOscillator(),g=actx.createGain();
+    o.type="sine";o.frequency.value=f;
+    g.gain.setValueAtTime(0,nu);
+    g.gain.linearRampToValueAtTime(.05,nu+.05);
+    g.gain.exponentialRampToValueAtTime(.0001,nu+2.4);
+    o.connect(g);g.connect(actx.destination);
+    o.start(nu);o.stop(nu+2.5);
+  }
+  knop.addEventListener("click",function(){
+    if(!speelt){
+      try{
+        if(!actx)actx=new (window.AudioContext||window.webkitAudioContext)();
+        actx.resume();
+        speelt=true;knop.classList.add("speelt");knop.textContent="🎶";
+        noot();timer=setInterval(noot,1400);
+        toast("🎵 Reismuziekje aan (zachtjes, beloofd)");
+      }catch(e){toast("Geen audio beschikbaar op dit apparaat");}
+    }else{
+      speelt=false;clearInterval(timer);knop.classList.remove("speelt");knop.textContent="🎵";
+      toast("Muziek uit");
+    }
+  });
+})();
+
+/* ============ GELATO RUSH ============ */
+(function(){
+  var canvas=$("#gelato-canvas"),ctx=canvas.getContext("2d");
+  var bezig=false,score=0,levens=3,spullen=[],speler={x:.5},laatste=0,spawnTimer=0,snelheid=1;
+  var W=560,H=420;
+  function record(){return staat.persona?(staat.arcade[staat.persona]||0):0;}
+  function hud(){
+    $("#ar-score").textContent=score;
+    $("#ar-levens").textContent=levens>0?"❤".repeat(levens):"—";
+    $("#ar-record").textContent=record();
+  }
+  function achtergrond(){
+    ctx.clearRect(0,0,W,H);
+    ctx.fillStyle="rgba(255,255,255,.5)";
+    [[60,40],[180,90],[320,50],[460,80],[520,30],[100,140],[400,150]].forEach(function(s){ctx.fillRect(s[0],s[1],2,2);});
+    ctx.font="30px serif";ctx.fillText("🏔️",30,395);ctx.fillText("🏔️",495,395);
+  }
+  function tekenSpeler(){
+    ctx.font="42px serif";ctx.textAlign="center";
+    ctx.fillText("🛒",speler.x*W,H-18);
+  }
+  function tekenIntro(){
+    achtergrond();
+    ctx.fillStyle="rgba(253,241,211,.95)";ctx.textAlign="center";
+    ctx.font="700 26px Georgia";ctx.fillText("GELATO RUSH",W/2,150);
+    ctx.font="15px Georgia";ctx.fillText("Vang wat lekker is, ontwijk de wolken",W/2,185);
+    ctx.font="52px serif";ctx.fillText("🍦 🍕 ☁️",W/2,260);
+    tekenSpeler();
+  }
+  function start(){
+    if(!staat.persona){$("#persona-overlay").classList.add("open");toast("Kies eerst wie je bent: de highscore is persoonlijk!");return;}
+    bezig=true;score=0;levens=3;spullen=[];snelheid=1;spawnTimer=0;laatste=performance.now();
+    hud();requestAnimationFrame(stap);
+  }
+  function spawn(){
+    var r=Math.random();
+    var soort=r<.5?"gelato":(r<.72?"pizza":(r<.9?"wolk":"kaas"));
+    spullen.push({soort:soort,x:.06+Math.random()*.88,y:-.08,vy:(.16+Math.random()*.12)*snelheid,rot:Math.random()*6});
+  }
+  function stap(t){
+    if(!bezig)return;
+    var dt=Math.min(.05,(t-laatste)/1000);laatste=t;
+    spawnTimer-=dt;
+    if(spawnTimer<=0){spawn();spawnTimer=Math.max(.35,1-.06*snelheid)/snelheid*.9;}
+    snelheid+=dt*.02;
+    achtergrond();
+    var vangX=speler.x,vangY=1-.075;
+    spullen=spullen.filter(function(s){
+      s.y+=s.vy*dt*(s.soort==="wolk"?.85:1);
+      var em=s.soort==="gelato"?"🍦":s.soort==="pizza"?"🍕":s.soort==="kaas"?"🧀":"☁️";
+      ctx.font="34px serif";ctx.textAlign="center";
+      ctx.fillText(em,s.x*W,s.y*H);
+      if(Math.abs(s.x-vangX)<.075&&Math.abs(s.y-vangY)<.06){
+        if(s.soort==="wolk"){levens--;toast("☁️ Nat pak! −1 leven");}
+        else{score+=s.soort==="pizza"?25:s.soort==="kaas"?15:10;}
+        hud();return false;
+      }
+      return s.y<1.1;
+    });
+    tekenSpeler();
+    ctx.fillStyle="rgba(253,241,211,.6)";ctx.font="12px Georgia";ctx.textAlign="left";
+    ctx.fillText("snelheid "+snelheid.toFixed(1)+"×",10,H-10);
+    if(levens<=0){einde();return;}
+    requestAnimationFrame(stap);
+  }
+  function einde(){
+    bezig=false;
+    var oud=record();
+    if(staat.persona&&score>oud){staat.arcade[staat.persona]=score;schrijf("arcade",staat.arcade);toast("🏆 Nieuw record voor "+PERSONAS[staat.persona].naam+": "+score+"!");}
+    hud();herbereken();
+    achtergrond();
+    ctx.fillStyle="rgba(253,241,211,.95)";ctx.textAlign="center";
+    ctx.font="700 30px Georgia";ctx.fillText("GAME OVER",W/2,170);
+    ctx.font="18px Georgia";ctx.fillText("Score: "+score+(score>oud?"  ·  NIEUW RECORD! 🎉":""),W/2,210);
+    ctx.font="14px Georgia";ctx.fillText("Druk op start voor nog een rondje",W/2,245);
+  }
+  function beweeg(clientX){
+    var r=canvas.getBoundingClientRect();
+    speler.x=Math.min(.96,Math.max(.04,(clientX-r.left)/r.width));
+  }
+  canvas.addEventListener("pointermove",function(e){beweeg(e.clientX);});
+  canvas.addEventListener("pointerdown",function(e){beweeg(e.clientX);});
+  window.addEventListener("keydown",function(e){
+    if(!bezig)return;
+    if(e.key==="ArrowLeft"){speler.x=Math.max(.04,speler.x-.05);e.preventDefault();}
+    if(e.key==="ArrowRight"){speler.x=Math.min(.96,speler.x+.05);e.preventDefault();}
+  });
+  $("#arcade-start").addEventListener("click",start);
+  tekenIntro();hud();
+})();
+
+/* init */
+zetPersona(staat.persona);
+herbereken();
+})();
+</script>
+</body>
+</html>

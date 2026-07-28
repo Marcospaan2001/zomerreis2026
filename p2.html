@@ -1,0 +1,319 @@
+<nav class="kompas" aria-label="Route">
+  <div class="kompas-inner">
+    <div class="kompas-brand"><span class="star">✦</span> NAZOMER MMXXVI</div>
+    <div class="kompas-route" id="kompas-route">
+      <a class="kompas-stop" href="#cassano" data-stop="cassano"><span class="kompas-dot"></span>I · Cassano</a>
+      <a class="kompas-stop" href="#sangregorio" data-stop="sangregorio"><span class="kompas-dot"></span>II · S. Gregorio</a>
+      <a class="kompas-stop" href="#burchen" data-stop="burchen"><span class="kompas-dot"></span>III · Bürchen</a>
+      <a class="kompas-stop" href="#questmode"><span class="kompas-dot"></span>🏆 Quest</a>
+      <a class="kompas-stop" href="#paspoort"><span class="kompas-dot"></span>✦ Paspoort</a>
+      <a class="kompas-stop" href="#scores"><span class="kompas-dot"></span>★ Scores</a>
+      <a class="kompas-stop" href="#arcade"><span class="kompas-dot"></span>🕹️ Arcade</a>
+    </div>
+    <button class="kompas-badge" id="kompas-badge" title="Wissel van reisgenoot" aria-label="Wissel van reisgenoot"><span id="kompas-badge-emoji">🧳</span></button>
+    <div class="kompas-progress"><div class="kompas-progress-bar" id="kompas-progress-bar"></div></div>
+  </div>
+</nav>
+
+<header class="cover" id="cover">
+  <canvas id="vuurvliegjes" aria-hidden="true"></canvas>
+  <div class="cover-maan" id="cover-maan" title="Psst... klik op de maan" aria-hidden="true"></div>
+  <div class="cover-eyebrow">Nazomer · MMXXVI</div>
+  <h1>Nazomerdroom</h1>
+  <p class="cover-sub">tien dagen la dolce vita, van de Po-vlakte tot de Alpen</p>
+  <div class="cover-meta">VOOR ROOS &amp; MARCO · 21 — 30 SEPTEMBER</div>
+  <div class="cover-namen">
+    <div class="cover-naam roos"><div class="cover-avatar">🌹</div>Rosanne</div>
+    <div class="cover-amp">&amp;</div>
+    <div class="cover-naam marco"><div class="cover-avatar">🧭</div>Marco</div>
+  </div>
+  <div class="countdown" id="countdown">
+    <div class="cd-titel" id="cd-titel">nog even geduld, dan begint het...</div>
+    <div class="cd-cel"><div class="cd-num" id="cd-d">–</div><div class="cd-label">dagen</div></div>
+    <div class="cd-cel"><div class="cd-num" id="cd-h">–</div><div class="cd-label">uren</div></div>
+    <div class="cd-cel"><div class="cd-num" id="cd-m">–</div><div class="cd-label">minuten</div></div>
+    <div class="cd-cel"><div class="cd-num" id="cd-s">–</div><div class="cd-label">seconden</div></div>
+  </div>
+  <div class="scrollhint">▾ blader door jullie reis ▾</div>
+</header>
+
+<main class="page">
+
+<section class="intro">
+  <div class="intro-eyebrow">Het verhaal</div>
+  <h2>Tien dagen onderweg</h2>
+  <p class="intro-sub">twee mensen, één Cupra, drieduizend kilometer</p>
+  <p class="lead">Tien septemberdagen lang ruilen jullie Leerbroek in voor de nazomer van Europa. Eerst één nacht landen in Lombardije, dan vijf nachten in een middeleeuws bergdorpje boven Rome: espresso op de piazza, keizers en gladiatoren, de as van de Vesuvius. En als afsluiter drie nachten op een zonneterras in de Walliser Alpen, waar de lariksen goud kleuren en de raclette pruttelt. Dit boekje is jullie reisgenoot: lees, speel, stempel en versla elkaar in de quiz.</p>
+  <div class="stats-rij">
+    <div class="stat-tegel"><div class="stat-num">10</div><div class="stat-label">dagen</div></div>
+    <div class="stat-tegel"><div class="stat-num">4</div><div class="stat-label">landen</div></div>
+    <div class="stat-tegel"><div class="stat-num">±3.300</div><div class="stat-label">kilometer</div></div>
+    <div class="stat-tegel"><div class="stat-num">3</div><div class="stat-label">verblijven</div></div>
+    <div class="stat-tegel"><div class="stat-num">∞</div><div class="stat-label">gelato-potentieel</div></div>
+  </div>
+</section>
+
+<div class="flourish">✦</div>
+
+<section aria-label="Kaart van de route">
+  <div class="kaart-wrap">
+    <div class="kaart-titel">De Route</div>
+    <svg viewBox="0 0 940 560" role="img" aria-label="Routekaart van Leerbroek via Cassano Magnago en San Gregorio da Sassola naar Bürchen">
+      <defs>
+        <linearGradient id="kaartlucht" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0c2a40"/><stop offset="1" stop-color="#092033"/>
+        </linearGradient>
+        <radialGradient id="kaartgloed" cx="50%" cy="45%" r="65%">
+          <stop offset="0" stop-color="rgba(242,207,126,.10)"/><stop offset="1" stop-color="rgba(242,207,126,0)"/>
+        </radialGradient>
+      </defs>
+      <rect width="940" height="560" fill="url(#kaartlucht)"/>
+      <rect width="940" height="560" fill="url(#kaartgloed)"/>
+      <!-- gestileerd Europa: kustlijnen -->
+      <path d="M 240 40 L 300 55 L 330 95 L 310 130 L 340 150 L 330 195 L 360 230 L 350 275 L 385 300 L 375 345 L 410 370 L 430 420 L 470 445 L 460 490 L 490 520 L 520 555 L 200 555 L 190 500 L 220 470 L 205 430 L 235 400 L 220 355 L 250 320 L 235 280 L 265 250 L 250 205 L 280 175 L 260 135 L 285 100 L 250 75 Z" fill="rgba(31,106,138,.28)" stroke="rgba(169,212,189,.35)" stroke-width="1.5"/>
+      <path d="M 520 555 L 490 520 L 505 480 L 545 455 L 560 415 L 600 400 L 640 420 L 660 470 L 700 500 L 720 555 Z" fill="rgba(31,106,138,.22)" stroke="rgba(169,212,189,.3)" stroke-width="1.5"/>
+      <path d="M 700 40 L 940 40 L 940 350 L 860 330 L 820 290 L 780 300 L 740 260 L 760 210 L 720 170 L 740 120 L 710 80 Z" fill="rgba(31,106,138,.18)" stroke="rgba(169,212,189,.22)" stroke-width="1"/>
+      <!-- Alpen suggestie -->
+      <g fill="none" stroke="rgba(253,241,211,.35)" stroke-width="2" stroke-linecap="round">
+        <path d="M 380 330 l 14 -18 l 12 18"/><path d="M 415 322 l 14 -20 l 12 20"/><path d="M 450 330 l 13 -16 l 11 16"/><path d="M 340 340 l 12 -14 l 10 14"/>
+      </g>
+      <!-- laars van Italië -->
+      <path d="M 430 360 L 470 375 L 500 420 L 520 470 L 560 505 L 600 520 L 590 545 L 545 540 L 505 505 L 480 460 L 450 420 L 425 390 Z" fill="rgba(211,118,63,.2)" stroke="rgba(242,207,126,.4)" stroke-width="1.5"/>
+      <!-- route -->
+      <path id="route-pad" class="route-lijn" d="M 300 120 C 330 190, 350 240, 395 320 C 420 365, 445 380, 460 415 C 475 450, 490 470, 505 490 C 480 470, 450 440, 430 400 C 415 370, 400 350, 390 335"/>
+      <!-- thuis -->
+      <g class="kaart-stop kaart-thuis">
+        <circle class="kern" cx="300" cy="120" r="6" fill="#a9d4bd"/>
+        <text x="315" y="116">🏡 Leerbroek</text>
+      </g>
+      <a href="#cassano"><g class="kaart-stop">
+        <circle class="ring" cx="395" cy="320" r="6"/><circle class="kern" cx="395" cy="320" r="6"/>
+        <text x="410" y="315">I · Cassano Magnago</text>
+      </g></a>
+      <a href="#sangregorio"><g class="kaart-stop">
+        <circle class="ring" cx="505" cy="490" r="6"/><circle class="kern" cx="505" cy="490" r="6"/>
+        <text x="520" y="486">II · San Gregorio da Sassola</text>
+      </g></a>
+      <a href="#burchen"><g class="kaart-stop">
+        <circle class="ring" cx="390" cy="335" r="6"/><circle class="kern" cx="390" cy="335" r="6"/>
+        <text x="290" y="360" text-anchor="end">III · Bürchen ⛰️</text>
+      </g></a>
+      <!-- rijdend autootje over de route -->
+      <g class="auto-dot"><circle r="5" fill="#ffe28a">
+        <animateMotion dur="18s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#route-pad"/>
+        </animateMotion>
+      </circle></g>
+    </svg>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="intro" style="padding-top:2rem">
+    <div class="intro-eyebrow">De hoofdrolspelers</div>
+    <h2>Het reisgezelschap</h2>
+    <p class="intro-sub">klein team, grote plannen</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-kaart roos">
+      <div class="team-leeftijd">24</div>
+      <div class="grote-avatar">🌹</div>
+      <h3>Rosanne</h3>
+      <p class="team-rol">navigator &amp; smaakcommissie</p>
+      <p class="bio">Bewaakt de route, de speellijst én de kwaliteit van elke gelato. Niets passeert de grens zonder haar goedkeuring. Officieel ook hoofd van de afdeling "nog heel even blijven zitten in de zon".</p>
+    </div>
+    <div class="team-kaart marco">
+      <div class="team-leeftijd">25</div>
+      <div class="grote-avatar">🧭</div>
+      <h3>Marco</h3>
+      <p class="team-rol">chauffeur &amp; espressoscout</p>
+      <p class="bio">Stuurt de Cupra Leon over Gotthard en Simplon alsof het de A27 is. Vindt in elk dorp binnen tien minuten de beste bar voor een espresso al banco. Claimt dat hij niet competitief is; de quiz gaat dat weerleggen.</p>
+    </div>
+  </div>
+</section>
+
+<div class="flourish">✦</div>
+
+<section class="dagteller" id="dagteller">
+  <div class="dt-eyebrow">✦ Reisdagboek ✦</div>
+  <div class="dt-groot" id="dt-groot">–</div>
+  <div class="dt-sub" id="dt-sub">van jullie nazomerdroom</div>
+  <div class="dt-vandaag" id="dt-vandaag"></div>
+</section>
+
+<section class="feitjes" aria-label="Feitjes">
+  <div class="feit-kaart">
+    <div class="f-icoon" id="feit-icoon">✦</div>
+    <div class="f-tekst" id="feit-tekst">Trek een feitje en verbaas je reisgenoot onderweg.</div>
+  </div>
+  <div class="feit-knoppen">
+    <button class="feit-btn" id="feit-btn">✦ Trek een feitje</button>
+  </div>
+</section>
+
+<section aria-label="Vakantietellers">
+  <div class="tellers">
+    <button class="teller" data-teller="gelato"><span class="t-icoon">🍦</span><span class="t-num" data-teller-num="gelato">0</span><span class="t-label">gelato's</span></button>
+    <button class="teller" data-teller="pizza"><span class="t-icoon">🍕</span><span class="t-num" data-teller-num="pizza">0</span><span class="t-label">pizza's</span></button>
+    <button class="teller" data-teller="espresso"><span class="t-icoon">☕</span><span class="t-num" data-teller-num="espresso">0</span><span class="t-label">espresso's</span></button>
+    <button class="teller" data-teller="pas"><span class="t-icoon">⛰️</span><span class="t-num" data-teller-num="pas">0</span><span class="t-label">bergpassen</span></button>
+  </div>
+  <p class="tellers-hint">tik om te turven, lang ingedrukt houden om terug te tellen</p>
+</section>
+
+<div class="flourish">✦</div>
+
+<!-- ============ I · CASSANO MAGNAGO ============ -->
+<section class="loc" id="cassano">
+  <div class="loc-hero">
+    <svg viewBox="0 0 940 360" role="img" aria-label="Avond in Lombardije: campanile en heuvels">
+      <defs>
+        <linearGradient id="cas-lucht" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0d2c44"/><stop offset=".45" stop-color="#31688a"/>
+          <stop offset=".75" stop-color="#c9805a"/><stop offset="1" stop-color="#e8a56b"/>
+        </linearGradient>
+      </defs>
+      <rect width="940" height="360" fill="url(#cas-lucht)"/>
+      <circle cx="700" cy="150" r="46" fill="#ffe9b0" opacity=".95"/>
+      <circle cx="700" cy="150" r="70" fill="#ffe9b0" opacity=".18"/>
+      <g fill="#fff" opacity=".8"><circle cx="120" cy="60" r="2"/><circle cx="260" cy="40" r="1.5"/><circle cx="420" cy="70" r="2"/><circle cx="560" cy="45" r="1.5"/><circle cx="850" cy="65" r="2"/></g>
+      <!-- verre Alpen -->
+      <path d="M 0 200 L 90 150 L 170 195 L 250 140 L 330 190 L 410 155 L 490 200 L 940 200 L 940 360 L 0 360 Z" fill="#1d4a66" opacity=".8"/>
+      <!-- heuvels -->
+      <path d="M 0 250 Q 160 195 320 245 T 640 245 T 940 235 L 940 360 L 0 360 Z" fill="#7a4a3f" opacity=".85"/>
+      <!-- dorp silhouet -->
+      <g fill="#33202b">
+        <rect x="330" y="228" width="34" height="72"/>
+        <polygon points="330,228 347,206 364,228"/>
+        <rect x="344" y="248" width="6" height="10" fill="#ffd98a"/>
+        <rect x="400" y="258" width="60" height="45"/>
+        <polygon points="400,258 430,240 460,258"/>
+        <rect x="470" y="268" width="46" height="36"/>
+        <rect x="524" y="262" width="52" height="42"/>
+        <polygon points="524,262 550,246 576,262"/>
+        <rect x="412" y="272" width="8" height="10" fill="#ffd98a"/><rect x="438" y="272" width="8" height="10" fill="#ffd98a"/>
+        <rect x="484" y="278" width="7" height="9" fill="#ffc46b"/><rect x="540" y="274" width="7" height="9" fill="#ffd98a"/>
+      </g>
+      <!-- cipressen -->
+      <g fill="#22303b">
+        <ellipse cx="640" cy="272" rx="10" ry="36"/><ellipse cx="668" cy="280" rx="8" ry="28"/>
+        <ellipse cx="180" cy="280" rx="9" ry="30"/><ellipse cx="152" cy="288" rx="7" ry="22"/>
+      </g>
+      <path d="M 0 320 Q 235 300 470 316 T 940 312 L 940 360 L 0 360 Z" fill="#241722"/>
+    </svg>
+    <div class="label">
+      <div class="num">I — De zachte landing</div>
+      <h2>Cassano Magnago</h2>
+      <div class="meta">Maandag 21 → dinsdag 22 september · één nacht · Lombardije, Italië</div>
+    </div>
+  </div>
+  <div class="loc-body">
+    <p class="hero-text">Negen en een half uur Cupra liggen achter jullie: het Duitse asfalt, de Gotthard die zich zeventien kilometer door de berg boort, en dan opeens dat andere licht aan de zuidkant. Palmen bij de meren, terracotta daken, "buonasera" in plaats van "Grüezi". Cassano Magnago is geen bezienswaardigheid en dat is precies de charme: dit is een gewoon Lombardisch stadje waar de vakantie begint met een pizza, een passeggiata en een bed.</p>
+    <p class="expanded">Het stadje ligt in de provincie Varese, op een kwartier van de Zwitserse grens en ver van elke toeristenbus. Vanavond doen jullie waar Italianen goed in zijn: nergens haast om maken. Morgen wacht de lange rit naar Rome, dus het doel van vandaag is simpel: aankomen, eten, slapen, en morgenochtend als echte Italianen aan de bar een espresso staan te drinken bij het ontbijt.</p>
+    <div class="facts">
+      <div class="row"><span class="k">Rijtijd</span><span class="v">Leerbroek › Cassano Magnago: ±9,5 u rijden (±980 km) via Karlsruhe, Basel en de Gotthardtunnel. Vertrek vroeg, dan sta je vóór de avondspits van Milaan aan de goede kant.</span></div>
+      <div class="row"><span class="k">Let op</span><span class="v">Zwitsers vignet (CHF 40) vóór Basel regelen, digitaal via de e-vignet-site. Italiaanse tol betaal je per traject, gewoon met pinpas bij het poortje.</span></div>
+      <div class="row"><span class="k">Doel</span><span class="v">Stuur loslaten, benen strekken, eerste pizza van de reis scoren.</span></div>
+    </div>
+    <div class="activity-guide">
+      <h3 class="activity-guide-title">🧭 Voor de avond en de ochtend</h3>
+      <div class="activity-grid">
+        <div class="activity-card must-see"><h4>✨ Als er nog energie is</h4><ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Castiglione+Olona" target="_blank" rel="noopener">Castiglione Olona</a>: tien minuten rijden, een piepklein Toscaans-ogend renaissancedorpje. Perfect voor een avondwandeling.</li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Sacro+Monte+di+Varese" target="_blank" rel="noopener">Sacro Monte di Varese</a>: UNESCO-bedevaartsweg met uitzicht over de meren, mooi bij zonsondergang (25 min).</li>
+          <li>Of gewoon: het centro van Cassano zelf, een gelato en vroeg het bed in.</li>
+        </ul></div>
+        <div class="activity-card rain"><h4>🌙 Ochtendritueel</h4><ul>
+          <li>Espresso + brioche aan de bar, staand, zoals het hoort. Cappuccino mag ook: het is vóór 11 uur, dus het is legaal.</li>
+          <li>Tanken vóór de snelweg; langs de autostrada is benzine merkbaar duurder.</li>
+        </ul></div>
+      </div>
+      <div class="food-card"><h4>🍴 Eerste avond eten</h4><ul>
+        <li>Zoek een pizzeria met houtoven in het centro; in Lombardije is de pizza dunner en knapperiger dan thuis.</li>
+        <li>Bestel eens een <i>pizza con burrata</i>: september is nazomers, de terrassen zijn nog open.</li>
+        <li>Afsluiten met een <i>amaro</i> of limoncello, want jullie hoeven nergens meer heen.</li>
+      </ul></div>
+    </div>
+
+    <div class="duo-zone" data-loc="cassano">
+      <h3>🎲 Voor Roos &amp; Marco</h3>
+      <p class="sub">eerste avond, eerste duel: wie kent Italië het best?</p>
+      <div class="duo-tabs">
+        <button class="duo-tab active" data-panel="quiz">🧠 Quiz-duel <span class="score-badge" data-score-loc="cassano">0 / 3</span></button>
+        <button class="duo-tab" data-panel="bingo">👀 Onderweg-bingo <span class="score-badge" data-bingo-loc="cassano">0 / 9</span></button>
+        <button class="duo-tab" data-panel="lang">🗣️ Italiaans</button>
+      </div>
+      <div class="duo-paneel quiz active">
+        <div class="quiz-vraag" data-q="0">
+          <div class="q">Hoe lang is de Gotthard-wegtunnel waar jullie vandaag doorheen rijden?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">8,2 kilometer</button>
+            <button class="quiz-optie" data-correct="1">16,9 kilometer</button>
+            <button class="quiz-optie" data-correct="0">24,5 kilometer</button>
+          </div>
+          <div class="quiz-feedback">16,9 km: bij opening in 1980 de langste wegtunnel ter wereld. Radio valt weg, dus zet vast een download klaar.</div>
+        </div>
+        <div class="quiz-vraag" data-q="1">
+          <div class="q">Waarom kijkt een Italiaanse barista je raar aan bij een cappuccino om 15:00?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">Cappuccino is alleen voor toeristen</button>
+            <button class="quiz-optie" data-correct="1">Melk na de lunch geldt als slecht voor de spijsvertering</button>
+            <button class="quiz-optie" data-correct="0">Melk is 's middags duurder</button>
+          </div>
+          <div class="quiz-feedback">Italianen drinken melkkoffie alleen bij het ontbijt; daarna is het caffè (espresso). Na 11 uur bestel je op eigen risico.</div>
+        </div>
+        <div class="quiz-vraag" data-q="2">
+          <div class="q">Wat betekent "passeggiata"?</div>
+          <div class="quiz-opties">
+            <button class="quiz-optie" data-correct="0">Een pastagerecht met salie</button>
+            <button class="quiz-optie" data-correct="1">De avondwandeling door het dorp, om te zien en gezien te worden</button>
+            <button class="quiz-optie" data-correct="0">De middagpauze waarin alles dicht is</button>
+          </div>
+          <div class="quiz-feedback">Het dagelijkse avondommetje, liefst met gelato in de hand. Vanavond doen jullie er zelf een.</div>
+        </div>
+      </div>
+      <div class="duo-paneel bingo">
+        <div class="bingo">
+          <div class="bingo-item" data-i="0"><span class="ic">🚗</span>Fiat 500</div>
+          <div class="bingo-item" data-i="1"><span class="ic">🛵</span>Vespa</div>
+          <div class="bingo-item" data-i="2"><span class="ic">🌴</span>Palmboom</div>
+          <div class="bingo-item" data-i="3"><span class="ic">🏔️</span>Sneeuwrest op een top</div>
+          <div class="bingo-item" data-i="4"><span class="ic">⛪</span>Campanile (klokkentoren)</div>
+          <div class="bingo-item" data-i="5"><span class="ic">👵</span>Nonna op een bankje</div>
+          <div class="bingo-item" data-i="6"><span class="ic">🧺</span>Wasgoed aan een lijn</div>
+          <div class="bingo-item" data-i="7"><span class="ic">🍕</span>Houtoven-pizzeria</div>
+          <div class="bingo-item" data-i="8"><span class="ic">🚧</span>Italiaans inhaalmanoeuvre</div>
+        </div>
+      </div>
+      <div class="duo-paneel lang">
+        <div class="lang-cards">
+          <div class="lang-card" data-text="Buonasera" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Goedenavond</div><div class="foreign">Buonasera</div><div class="pron">[bwo-na-see-ra]</div></div>
+          <div class="lang-card" data-text="Grazie mille" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Duizendmaal dank</div><div class="foreign">Grazie mille</div><div class="pron">[graat-sie-e mie-le]</div></div>
+          <div class="lang-card" data-text="Un tavolo per due, per favore" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Een tafel voor twee</div><div class="foreign">Un tavolo per due</div><div class="pron">[oen taa-vo-lo per doe-e]</div></div>
+          <div class="lang-card" data-text="Due gelati, per favore" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Twee ijsjes graag</div><div class="foreign">Due gelati, per favore</div><div class="pron">[doe-e dzje-laa-tie]</div></div>
+          <div class="lang-card" data-text="Il conto, per favore" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">De rekening graag</div><div class="foreign">Il conto, per favore</div><div class="pron">[iel kon-to]</div></div>
+          <div class="lang-card" data-text="Che bello!" data-lang="it-IT"><span class="speaker">🔊</span><div class="nl">Wat mooi!</div><div class="foreign">Che bello!</div><div class="pron">[kee bel-lo]</div></div>
+        </div>
+        <p style="text-align:center;font-size:.82rem;color:var(--paper-soft);margin:.6rem 0 0;font-style:italic">Tik op een kaartje en je telefoon spreekt het uit 🔊</p>
+      </div>
+      <div class="stamp-row">
+        <button class="stamp-btn" data-stamp="cassano"><span class="stamp-icon">🍕</span> Wij waren in Cassano!</button>
+        <span class="stamp-undo-hint">nogmaals drukken om uit te wissen</span>
+      </div>
+    </div>
+  </div>
+  <div class="next-stop">
+    <div class="auto-icoon">🚗💨</div>
+    <div class="next-stop-leader">Volgende halte</div>
+    <div class="next-stop-title">🏰 San Gregorio da Sassola</div>
+    <div class="next-stop-tagline">het borgo boven Rome wacht</div>
+    <div class="next-stop-meta"><b>±6 u</b> · ±640 km · A1 via Bologna en Florence, tolweg</div>
+    <div class="next-stop-actions">
+      <a class="maps-btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Cassano+Magnago,+Italy&amp;destination=San+Gregorio+da+Sassola,+Italy&amp;travelmode=driving" target="_blank" rel="noopener"><span>Open route in Maps</span><span class="arrow">→</span></a>
+      <button type="button" class="maps-secondary copy-link" data-url="https://www.google.com/maps/search/?api=1&amp;query=San+Gregorio+da+Sassola" data-name="San Gregorio da Sassola">⎘ Kopieer link</button>
+    </div>
+  </div>
+  <div class="gem"><span class="star">★ Hidden gem</span><b>Lago di Como is maar 40 minuten rijden.</b> Vertrekken jullie morgen tóch iets later, rijd dan eerst even naar Como-stad voor een cappuccino aan het meer. Duurder dan in Cassano, maar het uitzicht betaalt het verschil.</div>
+</section>
+
+<div class="flourish">✦</div>
